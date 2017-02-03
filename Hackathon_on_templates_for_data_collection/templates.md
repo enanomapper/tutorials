@@ -18,7 +18,9 @@
 
 * [Template: In-vitro Immunotoxicity Cytokine secretion](https://goo.gl/forms/sL8hdf6gZwd8Ihqw2)
 
-* [In-vitro Genotoxicty Micronucleus](https://goo.gl/forms/PNlOaMuxr0CBgRhs2)
+* [Genotoxicty Micronucleus](https://goo.gl/forms/PNlOaMuxr0CBgRhs2)
+
+* [Cytotoxicity by LDH assay] (https://goo.gl/forms/zNugQJTwfgwwZpHI2)
 
 ## In vivo assays
 
