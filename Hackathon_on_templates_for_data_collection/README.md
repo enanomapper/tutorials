@@ -12,4 +12,4 @@ The exercises will include data preparation and upload using selected set of the
 
 [4] Assessment of template fields relevance quiz
 
-[5] Ontology mapping exercise
+[5] [Determining the appropriateness of the eNanoMapper ontology](https://docs.google.com/forms/d/e/1FAIpQLScYMQWy4ULxmK7tyU4NCNPocnQNEiQw9c62eneAQP7vlI3tSg/formResponse)
