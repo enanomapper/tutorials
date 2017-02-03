@@ -10,6 +10,6 @@ The exercises will include data preparation and upload using selected set of the
 
 [3] https://github.com/enanomapper/tutorials/tree/master/DataTemplates 
 
-[4] Assessment of template fields relevance quiz
+[4] [Assessment of template fields relevance quiz](templates.md)
 
 [5] [Determining the appropriateness of the eNanoMapper ontology](https://docs.google.com/forms/d/e/1FAIpQLScYMQWy4ULxmK7tyU4NCNPocnQNEiQw9c62eneAQP7vlI3tSg/formResponse)
