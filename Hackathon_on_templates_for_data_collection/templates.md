@@ -8,6 +8,10 @@
 
 * [Elemental composition](https://goo.gl/forms/zdiNs7TZjlrxwYNh1)
 
+* [Isoelectric point](https://goo.gl/forms/J9qLcOaiZuL0Q60M2)
+
+* [Sizeby TEM](https://goo.gl/forms/eJ2dX1gaLSBbPqW92)
+
 ## In vitro assays
 
 * [Genotoxicity by COMET assay ](https://goo.gl/forms/Q48apDQKeJGoqGor2)
