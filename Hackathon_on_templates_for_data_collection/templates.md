@@ -6,23 +6,18 @@ The NANoREG templates are developed by JRC with collaboration with FP7 NANoREG p
 
 The NANoREG templates are organized as one spreadsheet per assay, multiple NM can be entered as rows. One Excel file may contain more than one assay, measuring the same endpoint. The metadata is organised in several groups:
 
-### Sample information.
+* Sample information. Contains information about the NM (including names, ID, supplier, vial number and replicate number, as well as dispersant). The reporting organisation, operator and date of the experiment are also in this section.
 
-Contains information about the NM (including names, ID, supplier, vial number and replicate number, as well as dispersant). The reporting organisation, operator and date of the experiment are also in this section.
+* Unnamed group listing the module, the endpoint, and the assay name. 
+  
+   - module (phys-chem, in-vitro or in-vivo),
+   
+   - endpoint (e.g. cell viability)
 
-### Unnamed group listing the module, the endpoint, and the assay name
+   - assay name (e.g. “Alamar blue”).
 
-module (phys-chem, in-vitro or in-vivo),
-
-endpoint (e.g. cell viability)
-
-assay name (e.g. “Alamar blue”).
-
-### Method and instrument information
-
-A subgroup `size distribution` , providing placeholders for size distribution measured for the sample (including details on the dispersion protocol and dispersion medium). These fields are (almost) constant across all templates.
-
-Any parameter describing the experiment, including cell lines, instrument, controls, time points, concentratons. These differ widely across different experiments.
+* Method and instrument information. Any parameter describing the experiment, including cell lines, instrument, controls, time points, concentratons. These differ widely across different experiments.
+* A subgroup `size distribution` , providing placeholders for size distribution measured for the sample (including details on the dispersion protocol and dispersion medium). These fields are (almost) constant across all templates.
 
 ### Results
 
