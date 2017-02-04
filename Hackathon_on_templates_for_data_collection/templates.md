@@ -18,11 +18,8 @@ The NANoREG templates are organized as one spreadsheet per assay, multiple NM ca
 
 * Method and instrument information. Any parameter describing the experiment, including cell lines, instrument, controls, time points, concentratons. These differ widely across different experiments.
 * A subgroup `size distribution` , providing placeholders for size distribution measured for the sample (including details on the dispersion protocol and dispersion medium). These fields are (almost) constant across all templates.
-
-### Results
-
-Several columns to specify measurement outcomes, along with uncertaintly.
-SOP (reference to the protocol)
+* Results. Several fields, specifying measurement outcomes, along with uncertaintly.
+* SOP (reference to the protocol)
 
 ## The questionnaire
 
