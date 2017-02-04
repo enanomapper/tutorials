@@ -1,4 +1,4 @@
-# JRC/NANoREG templates fields relevance quiz
+# JRC/NANoREG templates fields relevance questionnaire
 
 ## NANoREG templates
 
@@ -16,7 +16,7 @@ module (phys-chem, in-vitro or in-vivo),
 
 endpoint (e.g. cell viability)
 
-assay name (e.g. ìAlamar blueî).
+assay name (e.g. ‚ÄúAlamar blue‚Äù).
 
 ### Method and instrument information
 
@@ -29,7 +29,9 @@ Any parameter describing the experiment, including cell lines, instrument, contr
 Several columns to specify measurement outcomes, along with uncertaintly.
 SOP (reference to the protocol)
 
-The questionnaire follows the NANoREG templates structure [tbd]
+## The questionnaire
+
+The questionnaire follows the NANoREG templates structure. There are one questionnaire per template (links below). Each questionnaire consists of several sections, corresponding to the section of the template. Each section consists of questions asking to estimate how much the field listed in the section is relevant for the data entry template.
 
 ![questionnaire](quiz.png)
 
