@@ -1,0 +1,349 @@
+{
+	"TEMPLATE_INFO": {
+		NAME": "MammalianToxicology-InVitroViability-LDH",
+		"VERSION": "Oct 2016",
+		"TYPE": 1
+	},
+
+	"DATA_ACCESS": {
+		"ITERATION": "ROW_SINGLE",
+		"SHEET_INDEX": 1,
+		"START_ROW": 6,
+		"START_HEADER_ROW": 1,
+		"END_HEADER_ROW": 5,
+		"ALLOW_EMPTY": true,
+		"RECOGNITION": "BY_INDEX"
+	},
+
+	"SUBSTANCE_RECORD": {
+
+		"PUBLIC_NAME": {
+			"COLUMN_INDEX": "B"
+		},
+
+		"OWNER_NAME": {
+			"COLUMN_INDEX": "F"
+		},
+
+		"SUBSTANCE_TYPE": {
+			"COLUMN_INDEX": "G"
+		},
+
+		"SUBSTANCE_NAME": {
+			"COLUMN_INDEX": "J"
+		},
+
+
+		"EXTERNAL_IDENTIFIERS": [{
+			"TYPE": {
+				"ITERATION": "ABSOLUTE_LOCATION",
+				"COLUMN_INDEX": "B",
+				"ROW_INDEX": 2
+			},
+
+			"ID": {
+				"ITERATION": "ROW_SINGLE",
+				"COLUMN_INDEX": "B"
+			}
+		}],
+
+		"COMPOSITION": [{
+			"STRUCTURE_RELATION": "HAS_CORE",
+			"PROPERTIES": {
+				"NAME": {
+					"COLUMN_INDEX": "C"
+				},
+				"CASRN": {
+					"COLUMN_INDEX": "D"
+				}
+			}
+		}]
+
+	},
+
+	"PROTOCOL_APPLICATIONS": [
+
+		{
+			"PROTOCOL_TOP_CATEGORY": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "TOX"
+			},
+
+			"PROTOCOL_ENDPOINT": {
+				"COLUMN_INDEX": "P"
+			},
+
+			"PROTOCOL_CATEGORY_CODE": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "NPO_1709_SECTION"
+			},
+
+			"PROTOCOL_GUIDELINE": {
+				"guideline1": {
+					"COLUMN_INDEX": "AQ"
+				}
+			},
+
+			"CITATION_TITLE": {
+				"COLUMN_INDEX": "Q"
+			},
+
+			"CITATION_YEAR": {
+				"COLUMN_INDEX": "N"
+			},
+
+			"CITATION_OWNER": {
+				"COLUMN_INDEX": "K"
+			},
+
+			"PARAMETERS": {
+				"Test method": {
+					"COLUMN_INDEX": "Q"
+				},
+				"Replicate number": {
+					"COLUMN_INDEX": "A"
+				},
+
+				"Vial number": {
+					"COLUMN_INDEX": "E"
+				},
+
+				"Use of dispersant": {
+					"COLUMN_INDEX": "H"
+				},
+
+				"Dispersant reference": {
+					"COLUMN_INDEX": "I"
+				},
+
+				"Operator": {
+					"COLUMN_INDEX": "L"
+				},
+
+				"date of preparation": {
+					"COLUMN_INDEX": "M"
+				},
+
+				"date of analysis": {
+					"COLUMN_INDEX": "N"
+				},
+
+				"Cell type": {
+					"COLUMN_INDEX": "AB"
+				},
+
+				"Pass number": {
+					"COLUMN_INDEX": "AC"
+				},
+
+				"Culture medium composition": {
+					"COLUMN_INDEX": "AD"
+				},
+
+				"Plate": {
+					"COLUMN_INDEX": "AE"
+				},
+
+				"volume of incubation medium/well": {
+					"COLUMN_INDEX": "AF"
+				},
+
+				"Seeding": {
+					"COLUMN_INDEX": "AG"
+				},
+
+				"Exposure concentration ": {
+					"COLUMN_INDEX": "AH",
+					"UNIT": "µg/mL"
+				},
+
+				"Calculated NPs exposure concentration": {
+					"COLUMN_INDEX": "AI",
+					"UNIT": "µg/cm²"
+				},
+
+				"Exposure Time": {
+					"COLUMN_INDEX": "AJ",
+					"UNIT": "h"
+				},
+
+				"Positive control": {
+					"COLUMN_INDEX": "AK"
+				},
+
+				"Positive control tested concentrations": {
+					"COLUMN_INDEX": "AL",
+					"UNIT": "µM"
+				},
+
+				"number of samples/experiments": {
+					"COLUMN_INDEX": "AM"
+				},
+
+				"references to SOPs": {
+					"COLUMN_INDEX": "AQ"
+				}
+
+			},
+
+			"EFFECTS": [
+
+				{
+					"ENDPOINT": {
+						"ITERATION": "JSON_VALUE",
+						"JSON_VALUE": "Corresponding dose/surface"
+					},
+
+					"VALUE": {
+						"COLUMN_INDEX": "AN"
+					}
+				},
+
+				{
+					"ENDPOINT": {
+						"ITERATION": "JSON_VALUE",
+						"JSON_VALUE": "Values"
+					},
+
+					"VALUE": {
+						"COLUMN_INDEX": "AO"
+					},
+
+					"UNIT": {
+						"ITERATION": "JSON_VALUE",
+						"JSON_VALUE": "%/control"
+					},
+
+					"ERR_QUALIFIER": {
+						"ITERATION": "ABSOLUTE_LOCATION",
+						"COLUMN_INDEX": "AP",
+						"ROW_INDEX": 2
+					},
+
+					"ERR_VALUE": {
+						"COLUMN_INDEX": "AP"
+					}
+
+				}
+
+			]
+		},
+
+		{
+			"PROTOCOL_TOP_CATEGORY": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "P-CHEM"
+			},
+			"PROTOCOL_CATEGORY_CODE": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "PC_GRANULOMETRY_SECTION"
+			},
+
+
+			"PROTOCOL_ENDPOINT": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "Size Distribution"
+			},
+
+			"PROTOCOL_GUIDELINE": {
+				"guideline1": {
+					"COLUMN_INDEX": "T"
+				}
+			},
+
+			"CITATION_TITLE": {
+				"COLUMN_INDEX": "Q"
+			},
+
+			"CITATION_YEAR": {
+				"COLUMN_INDEX": "N"
+			},
+
+			"CITATION_OWNER": {
+				"COLUMN_INDEX": "K"
+			},
+
+
+			"PARAMETERS": {
+				"Dispersion protocol": {
+					"COLUMN_INDEX": "T"
+				},
+
+				"Dispersion medium": {
+					"COLUMN_INDEX": "U"
+				},
+
+				"Concentration": {
+					"COLUMN_INDEX": "V",
+					"UNIT": "mg/mL"
+				},
+
+				"Incubation time": {
+					"COLUMN_INDEX": "W",
+					"UNIT": "h"
+				}
+			},
+
+			"EFFECTS": [{
+
+					"ENDPOINT": {
+						"ITERATION": "JSON_VALUE",
+						"JSON_VALUE": "Size Distribution"
+					},
+
+					"VALUE": {
+						"COLUMN_INDEX": "S"
+					}
+				},
+
+		{
+					"ENDPOINT": {
+						"ITERATION": "JSON_VALUE",
+						"JSON_VALUE": "mean hydrodynamic diameter"
+						
+					},
+					"UNIT": {
+						"ITERATION": "JSON_VALUE",
+						"JSON_VALUE": "nm"
+						
+					},
+
+					"VALUE": {
+						"COLUMN_INDEX": "X"
+					},
+
+					"ERR_QUALIFIER": {
+						"ITERATION": "ABSOLUTE_LOCATION",
+						"COLUMN_INDEX": "Y",
+						"ROW_INDEX": 3
+					},
+
+					"ERR_VALUE": {
+						"COLUMN_INDEX": "Y"
+					}
+				},
+				{
+					"ENDPOINT": {
+						"ITERATION": "ABSOLUTE_LOCATION",
+						"COLUMN_INDEX": "Z",
+						"ROW_INDEX": 3
+					},
+
+					"VALUE": {
+						"COLUMN_INDEX": "Z"
+					},
+
+					"ERR_QUALIFIER": {
+						"ITERATION": "ABSOLUTE_LOCATION",
+						"COLUMN_INDEX": "AA",
+						"ROW_INDEX": 3
+					},
+
+					"ERR_VALUE": {
+						"COLUMN_INDEX": "AA"
+					}
+				}
+			]
+		}
+	]
+}

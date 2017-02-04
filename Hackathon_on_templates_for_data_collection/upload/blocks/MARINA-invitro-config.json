@@ -1,0 +1,387 @@
+{
+    "TEMPLATE_INFO": {
+        "NAME": "MARINA",
+        "VERSION": "Basic (based on 'Test results')",
+        "TYPE": 1
+    },
+    "DATA_ACCESS": {
+        "ITERATION": "ROW_SINGLE",
+        "SHEET_INDEX": 1,
+        "START_ROW": 2,
+        "END_ROW": 2,
+        "START_HEADER_ROW": 1,
+        "END_HEADER_ROW": 1,
+        "RECOGNITION": "BY_INDEX",
+        "VARIABLES": {
+            "Assay_endpoint": {
+                "ITERATION": "ABSOLUTE_LOCATION",
+                "SHEET_INDEX": 1,
+                "COLUMN_INDEX": "B",
+                "ROW_INDEX": 16
+            },
+            "Outcome_metric": {
+                "ITERATION": "JSON_VALUE",
+                "JSON_VALUE": "%"
+            },
+            "C": {
+                "IS_ARRAY": true,
+                "TRIM_ARRAY": true,
+                "ITERATION": "ABSOLUTE_LOCATION",
+                "SHEET_INDEX": 1,
+                "COLUMN_INDEX": "B",
+                "COLUMN_INDICES": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20
+                ],
+                "ROW_INDEX": 43
+            },
+            "TimeDesignations": {
+                "IS_ARRAY": true,
+                "TRIM_ARRAY": true,
+                "ITERATION": "ABSOLUTE_LOCATION",
+                "SHEET_INDEX": 1,
+                "COLUMN_INDEX": "B",
+                "COLUMN_INDICES": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20
+                ],
+                "ROW_INDEX": 60
+            },
+            "TimePoints": {
+                "IS_ARRAY": true,
+                "TRIM_ARRAY": true,
+                "ITERATION": "ABSOLUTE_LOCATION",
+                "SHEET_INDEX": 1,
+                "COLUMN_INDEX": "B",
+                "COLUMN_INDICES": [
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    13,
+                    14,
+                    15,
+                    16,
+                    17,
+                    18,
+                    19,
+                    20
+                ],
+                "ROW_INDEX": 61
+            },
+            "Replicates": {
+                "ITERATION": "JSON_VALUE",
+                "JSON_VALUE": 3
+            }
+        },
+        "VARIABLE_MAPPINGS": [
+            {
+                "NAME": "Time",
+                "KEYS_VARIABLE": "TimeDesignations",
+                "VALUES_VARIABLE": "TimePoints"
+            }
+        ]
+    },
+    "PARALLEL_SHEETS": [
+        {
+            "ITERATION": "ROW_SINGLE",
+            "SHEET_INDEX": 3,
+            "START_ROW": 2,
+            "START_HEADER_ROW": 1,
+            "END_HEADER_ROW": 1,
+            "ALLOW_EMPTY": true,
+            "RECOGNITION": "BY_INDEX"
+        }
+    ],
+    "SUBSTANCE_RECORD": {
+        "PUBLIC_NAME": {
+            "ITERATION": "ABSOLUTE_LOCATION",
+            "SHEET_INDEX": 1,
+            "COLUMN_INDEX": "B",
+            "ROW_INDEX": 27
+        },
+        "SUBSTANCE_UUID": {
+            "ITERATION": "ABSOLUTE_LOCATION",
+            "SHEET_INDEX": 1,
+            "COLUMN_INDEX": "B",
+            "ROW_INDEX": 29
+        },        
+        "SUBSTANCE_NAME": {
+            "ITERATION": "ABSOLUTE_LOCATION",
+            "SHEET_INDEX": 1,
+            "COLUMN_INDEX": "B",
+            "ROW_INDEX": 29
+        },
+        "OWNER_NAME": {
+            "ITERATION": "JSON_VALUE",
+              "JSON_VALUE": "MARINA"
+        },
+        "SUBSTANCE_TYPE": {
+            "ITERATION": "ABSOLUTE_LOCATION",
+            "SHEET_INDEX": 1,
+            "COLUMN_INDEX": "D",
+            "ROW_INDEX": 29
+        },          
+        "EXTERNAL_IDENTIFIERS": [
+                                 {
+                                     "ID": {
+                                         "ITERATION": "ABSOLUTE_LOCATION",
+                                         "SHEET_INDEX": 1,
+                                         "COLUMN_INDEX": "C",
+                                         "ROW_INDEX": 29
+                                     },
+                                     "TYPE": {
+                                         "ITERATION": "JSON_VALUE",
+                                         "JSON_VALUE": "JRC Representative Manufactured Nanomaterials"
+                                     }
+                                 }
+                             ],
+       
+        "COMPOSITION": [
+            {
+                "STRUCTURE_RELATION": "HAS_CORE",
+                "PROPERTIES": {
+                    "NAME": {
+                        "ITERATION": "ABSOLUTE_LOCATION",
+                        "SHEET_INDEX": 1,
+                        "COLUMN_INDEX": "C",
+                        "ROW_INDEX": 27
+                    },
+                    "CASRN": {
+                        "ITERATION": "ABSOLUTE_LOCATION",
+                        "SHEET_INDEX": 1,
+                        "COLUMN_INDEX": "C",
+                        "ROW_INDEX": 28
+                    }
+                },
+                "PROPORTION": {
+                    "TYPICAL_VALUE": {
+                        "ITERATION": "ABSOLUTE_LOCATION",
+                        "SHEET_INDEX": 1,
+                        "COLUMN_INDEX": "B",
+                        "ROW_INDEX": 31
+                    },
+                    "TYPICAL_UNIT": {
+                        "ITERATION": "ABSOLUTE_LOCATION",
+                        "SHEET_INDEX": 1,
+                        "COLUMN_INDEX": "C",
+                        "ROW_INDEX": 31
+                    }
+                }
+            }
+        ]
+    },
+    "PROTOCOL_APPLICATIONS": [
+        {
+            "PROTOCOL_TOP_CATEGORY": {
+                "ITERATION": "JSON_VALUE",
+                "JSON_VALUE": "TOX"
+            },
+            "PROTOCOL_CATEGORY_CODE": {
+                "ITERATION": "JSON_VALUE",
+                "JSON_VALUE": "NPO_1709_SECTION"
+            },
+            "PROTOCOL_GUIDELINE": {
+                "guideline1": {
+                    "ITERATION": "ABSOLUTE_LOCATION",
+                    "SHEET_INDEX": 1,
+                    "COLUMN_INDEX": "B",
+                    "ROW_INDEX": 13
+                }
+            },
+            "PROTOCOL_ENDPOINT" :{
+                "ITERATION": "ABSOLUTE_LOCATION",
+                "SHEET_INDEX": 1,
+                "COLUMN_INDEX": "B",
+                "ROW_INDEX": 14            	
+            },
+            "RELIABILITY_STUDY_RESULT_TYPE" : {
+				"ITERATION": "JSON_VALUE",
+                "JSON_VALUE": "experimental result"
+            },
+            "CITATION_TITLE": {
+                "ITERATION": "JSON_VALUE",
+                "JSON_VALUE": "http://dx.doi.org/10.1371/journal.pone.0127174"
+            },
+            "CITATION_YEAR": {
+                "ITERATION": "JSON_VALUE",
+                "JSON_VALUE": "2015"
+            },
+            "CITATION_OWNER": {
+                "ITERATION": "ABSOLUTE_LOCATION",
+                "SHEET_INDEX": 1,
+                "COLUMN_INDEX": "B",
+                "ROW_INDEX": 9
+            },
+            "PARAMETERS": {
+            	"NPO_1969 OBI_0000272" : { 
+                    "ITERATION": "ABSOLUTE_LOCATION",
+                    "SHEET_INDEX": 1,
+                    "COLUMN_INDEX": "B",
+                    "ROW_INDEX": 35,
+                    "original" : "Dispersion protocol"
+                },            	   	
+                "Dispersion agent": {
+                    "ITERATION": "ABSOLUTE_LOCATION",
+                    "SHEET_INDEX": 1,
+                    "COLUMN_INDEX": "B",
+                    "ROW_INDEX": 38
+                },
+                "NPO_1961" : {
+                    "ITERATION": "ABSOLUTE_LOCATION",
+                    "SHEET_INDEX": 1,
+                    "COLUMN_INDEX": "C",
+                    "ROW_INDEX": 40,
+                    "original" : "Aids used to disperse/Sonification"
+                },
+                "NPO_1952": {
+                    "ITERATION": "ABSOLUTE_LOCATION",
+                    "SHEET_INDEX": 1,
+                    "COLUMN_INDEX": "E",
+                    "ROW_INDEX": 40,
+                    "original" : "Aids used to disperse/Vortexing"
+                },
+                "CHMO:0002774" : {
+                    "ITERATION": "ABSOLUTE_LOCATION",
+                    "SHEET_INDEX": 1,
+                    "COLUMN_INDEX": "G",
+                    "ROW_INDEX": 40,
+                    "original" : "Aids used to disperse/Stirring"
+                },
+                "CLO_0000031": {
+                    "ITERATION": "ABSOLUTE_LOCATION",
+                    "SHEET_INDEX": 1,
+                    "COLUMN_INDEX": "B",
+                    "ROW_INDEX": 47,
+                    "original" : "Cell line/Type - Short name"
+                },
+                "Cell line/Type - Full name": {
+                    "ITERATION": "ABSOLUTE_LOCATION",
+                    "SHEET_INDEX": 1,
+                    "COLUMN_INDEX": "B",
+                    "ROW_INDEX": 48
+                },
+                "CLO_0000031 EFO_0004443" : {
+                    "ITERATION": "ABSOLUTE_LOCATION",
+                    "SHEET_INDEX": 1,
+                    "COLUMN_INDEX": "B",
+                    "ROW_INDEX": 49,
+                    "original" : "Cell line/Type - Supplier"
+                },
+                "OBI_0001911 BAO_0000114" : {
+                    "ITERATION": "ABSOLUTE_LOCATION",
+                    "SHEET_INDEX": 1,
+                    "COLUMN_INDEX": "B",
+                    "ROW_INDEX": 53,
+                    "original" : "Cell culture conditions - Medium"
+                },
+                "Cell culture conditions - Serum": {
+                    "ITERATION": "ABSOLUTE_LOCATION",
+                    "SHEET_INDEX": 1,
+                    "COLUMN_INDEX": "B",
+                    "ROW_INDEX": 54
+                },
+                "Cell culture conditions - Serum concentration in growth medium": {
+                    "ITERATION": "ABSOLUTE_LOCATION",
+                    "SHEET_INDEX": 1,
+                    "COLUMN_INDEX": "B",
+                    "ROW_INDEX": 55
+                },
+                "Cell culture conditions - Serum concentration in treatment medium": {
+                    "ITERATION": "ABSOLUTE_LOCATION",
+                    "SHEET_INDEX": 1,
+                    "COLUMN_INDEX": "B",
+                    "ROW_INDEX": 56
+                }
+            },
+            "EFFECTS_BLOCK": {
+                "LOCATION": {
+                    "ITERATION": "ABSOLUTE_LOCATION",
+                    "IS_ARRAY": true,
+                    "TRIM_ARRAY": true,
+                    "SHEET_INDEX": 3,
+                    "COLUMN_INDEX": "B",
+                    "ROW_INDEX": 4
+                },
+                "ROW_SUBBLOCKS": "= TimePoints.size()",
+                "COLUMN_SUBBLOCKS": "= Replicates",
+                "SUBBLOCK_SIZE_ROWS": "= C.size() + 4",
+                "SUBBLOCK_SIZE_COLUMNS": 6,
+                "VALUE_GROUPS": [
+                    {
+                        "NAME": "=Assay_endpoint",
+                        "UNIT": "=Outcome_metric",
+                        "START_COLUMN": 5,
+                        "END_COLUMN": 5,
+                        "START_ROW": 3,
+                        "END_ROW": "=3 - 1 + C.size()",
+                        "PARAMETERS": [
+                            {
+                                "NAME": "Time point",
+                                "ASSIGN": "ASSIGN_TO_SUBBLOCK",
+                                "COLUMN_POS": 1,
+                                "ROW_POS": 2,
+                                "MAPPING": "Time",
+                                "UNIT" : "h"
+                            },
+                            {
+                                "NAME": "Replicate",
+                                "ASSIGN": "ASSIGN_TO_SUBBLOCK",
+                                "COLUMN_POS": 1,
+                                "ROW_POS": 1
+                            },
+                            {
+                                "NAME": "Concentration",
+                                "ASSIGN": "ASSIGN_TO_VALUE",
+                                "COLUMN_POS": -3,
+                                "ROW_POS": 0,
+                                "UNIT" : "µg/ml"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
