@@ -23,11 +23,13 @@ The NANoREG templates are organized as one spreadsheet per assay, multiple NM ca
 
 ## The questionnaire
 
+### Description
+
 The questionnaire follows the NANoREG templates structure. There is one questionnaire per template (links below). Each questionnaire consists of several sections, corresponding to the section of the template. Each section consists of questions asking to estimate how much the field listed in the section is relevant for the data entry template.
 
 ![questionnaire](quiz.png)
 
-## Phys-chem characterisation
+### Questionnaires for selected templates for phys-chem characterisation
 
 * [Batch dispersion](https://goo.gl/forms/efOgw8NW4zFKX0tD2)
 
@@ -39,7 +41,7 @@ The questionnaire follows the NANoREG templates structure. There is one question
 
 * [Size by TEM](https://goo.gl/forms/eJ2dX1gaLSBbPqW92)
 
-## In vitro assays
+### Questionnaires for selected templates for in-vitro assays
 
 * [Genotoxicity by COMET assay ](https://goo.gl/forms/Q48apDQKeJGoqGor2)
 
@@ -49,7 +51,7 @@ The questionnaire follows the NANoREG templates structure. There is one question
 
 * [Cytotoxicity by LDH assay] (https://goo.gl/forms/zNugQJTwfgwwZpHI2)
 
-## In vivo assays
+## Questionnaires for selected templates for in-vivo assays
 
 * [Ecotoxicity - Danio rerio](https://goo.gl/forms/bFR4yhHoOkyBgRAj1)
 
