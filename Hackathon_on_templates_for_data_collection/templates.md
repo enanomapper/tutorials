@@ -2,7 +2,7 @@
 
 ## NANoREG templates
 
-The NANoREG templates are developed by JRC with collaboration with FP7 NANoREG project partners and [released](http://www.nanoreg.eu/media-and-downloads/templates) under open license.
+The NANoREG templates are developed by [JRC](https://ec.europa.eu/jrc/en) with collaboration with [FP7 NANoREG](http://www.nanoreg.eu/) project partners and [released](http://www.nanoreg.eu/media-and-downloads/templates) under  [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/)
 
 The NANoREG templates are organized as one spreadsheet per assay, multiple NM can be entered as rows. One Excel file may contain more than one assay, measuring the same endpoint. The metadata is organised in several groups:
 
