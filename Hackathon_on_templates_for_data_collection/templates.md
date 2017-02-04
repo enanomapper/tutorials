@@ -23,7 +23,7 @@ The NANoREG templates are organized as one spreadsheet per assay, multiple NM ca
 
 ## The questionnaire
 
-The questionnaire follows the NANoREG templates structure. There are one questionnaire per template (links below). Each questionnaire consists of several sections, corresponding to the section of the template. Each section consists of questions asking to estimate how much the field listed in the section is relevant for the data entry template.
+The questionnaire follows the NANoREG templates structure. There is one questionnaire per template (links below). Each questionnaire consists of several sections, corresponding to the section of the template. Each section consists of questions asking to estimate how much the field listed in the section is relevant for the data entry template.
 
 ![questionnaire](quiz.png)
 
