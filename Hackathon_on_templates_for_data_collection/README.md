@@ -14,9 +14,11 @@ This exercise consists of querying the eNanoMapper database through  https://sea
 The exercises include data preparation and upload.
 
 ## 3. Ontology 
-This is an exercise of ontology mapping. The number of unique terms in the templates is over 800 and careful ontology mapping is required. 
+This is an exercise of ontology mapping. The number of unique terms in the templates is over 800 and careful ontology mapping is required.
 
 [Determining the appropriateness of the eNanoMapper ontology](https://docs.google.com/forms/d/e/1FAIpQLScYMQWy4ULxmK7tyU4NCNPocnQNEiQw9c62eneAQP7vlI3tSg/formResponse)
+
+You may cosider mapping the the terms from the [Cytotoxicity LDH template](https://docs.google.com/spreadsheets/d/1frsyAzVitx9IHEHshizIGV-CdBBpeGlaUls_OJBNoTs/edit?usp=sharing)
 
 ## 4. Evaluation of the data entry templates
 The [NANoREG templates](http://www.nanoreg.eu/media-and-downloads/templates) are developed by JRC in collaboration with FP7 NANoREG project partners and released under open license, further cleaned and [released by eNanoMapper](https://github.com/enanomapper/tutorials/tree/master/DataTemplates ). The NANoREG templates are organized as one spreadsheet per assay. The goal of this exercise is to estimate the relevance of the template fields for specific assays, according to participant experience and background. Click on the link below to access the set of questionnaires. Each questionnaire is representing fields from one template.
