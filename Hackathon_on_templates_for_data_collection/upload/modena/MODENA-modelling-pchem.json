@@ -1,0 +1,334 @@
+{
+	"TEMPLATE_INFO": {
+		"NAME": "MODENA-Modelling excercise",
+		"VERSION": "MODENA-EC50_EC25.xlsx",
+		"TYPE": 1
+	},
+	"DATA_ACCESS": {
+		"ITERATION": "ROW_SINGLE",
+		"SHEET_INDEX": 1,
+		"START_ROW": 2,
+		"END_ROW": 193,
+		"START_HEADER_ROW": 1,
+		"END_HEADER_ROW": 1,
+		"ALLOW_EMPTY": true,
+		"RECOGNITION": "BY_INDEX"
+	},
+	"SUBSTANCE_RECORD": {
+		"COMPANY_NAME": {
+			"COLUMN_INDEX": "AL"
+		},
+		"OWNER_NAME": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "ENM_WORKSHOP"
+		},
+
+		"PUBLIC_NAME": {
+			"COLUMN_INDEX": "B"
+		},
+		"SUBSTANCE_TYPE": {
+			"COLUMN_INDEX": "AK"
+		},
+		"EXTERNAL_IDENTIFIERS": [{
+			"ID": {
+				"COLUMN_INDEX": "AI",
+				"ITERATION": "ROW_SINGLE"
+			},
+			"TYPE": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "JRC Representative Manufactured Nanomaterials"
+			}
+		}],
+		"COMPOSITION": [{
+			"STRUCTURE_RELATION": "HAS_CORE",
+			"PROPERTIES": {
+				"NAME": {
+					"COLUMN_INDEX": "C"
+				},
+				"CASRN": {
+					"COLUMN_INDEX": "AO"
+				},
+				"SMILES": {
+					"COLUMN_INDEX": "AN"
+				}
+			},
+			"CONTENT": {
+				"COLUMN_INDEX": "AN"
+			},
+			"FORMAT" : {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "INC"
+			}
+		}, {
+			"STRUCTURE_RELATION": "HAS_COATING",
+			"PROPERTIES": {
+				"NAME": {
+					"COLUMN_INDEX": "AP"
+				},
+				"CASRN": {
+					"COLUMN_INDEX": "AQ"
+				}
+			},
+			"PROPORTION_TYPICAL_VALUE": {
+				"COLUMN_INDEX": "AR"
+			}
+		}, {
+			"STRUCTURE_RELATION": "HAS_COATING",
+			"PROPERTIES": {
+				"NAME": {
+					"COLUMN_INDEX": "AS"
+				},
+				"CASRN": {
+					"COLUMN_INDEX": "AT"
+				}
+			}
+		}, {
+			"STRUCTURE_RELATION": "HAS_COATING",
+			"PROPERTIES": {
+				"NAME": {
+					"COLUMN_INDEX": "AU"
+				},
+				"CASRN": {
+					"COLUMN_INDEX": "AV"
+				}
+			}
+		}, {
+			"STRUCTURE_RELATION": "HAS_ADDITIVE",
+			"PROPERTIES": {
+				"NAME": {
+					"COLUMN_INDEX": "AW"
+				},
+				"CASRN": {
+					"COLUMN_INDEX": "AX"
+				}
+			}
+		}]
+	},
+	"PROTOCOL_APPLICATIONS": [{
+		"PROTOCOL_TOP_CATEGORY": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "P-CHEM"
+		},
+		"PROTOCOL_CATEGORY_CODE": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "PC_GRANULOMETRY_SECTION"
+		},
+		"PROTOCOL_ENDPOINT": {
+			"COLUMN_INDEX": "A"
+		},
+		"PROTOCOL_GUIDELINE": {
+			"guideline1": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "TEM"
+			}
+		},
+		"RELIABILITY_STUDY_RESULT_TYPE": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "experimental result"
+		},
+		"CITATION_TITLE": {
+			"COLUMN_INDEX": "A"
+		},
+		"CITATION_YEAR": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "2015"
+		},
+		"CITATION_OWNER": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "ENM_WORKSHOP"
+		},
+		"PARAMETERS": {
+				"Dispersion protocol": {
+					"COLUMN_INDEX": "I"
+				}		
+		},
+		"EFFECTS": [{
+			"ENDPOINT": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "Primary size 1st Dimension",
+				"ANNOTATION": "NPO_1155"
+			},
+			"UNIT": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "nm"
+			},
+			"VALUE": {
+				"COLUMN_INDEX": "M"
+			}
+		}, {
+			"ENDPOINT": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "Primary size 2nd Dimension",
+				"ANNOTATION": "NPO_1155"
+			},
+			"UNIT": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "nm"
+			},
+			"VALUE": {
+				"COLUMN_INDEX": "N"
+			}
+		}, {
+			"ENDPOINT": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "Size in situ",
+				"ANNOTATION": "NPO_1155"
+			},
+			"UNIT": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "nm"
+			},
+			"VALUE": {
+				"COLUMN_INDEX": "X"
+			}
+		}]
+	}, {
+		"PROTOCOL_TOP_CATEGORY": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "P-CHEM"
+		},
+		"PROTOCOL_CATEGORY_CODE": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "ASPECT_RATIO_SHAPE_SECTION"
+		},
+		"PROTOCOL_ENDPOINT": {
+			"COLUMN_INDEX": "A"
+		},
+		"PROTOCOL_GUIDELINE": {
+			"guideline1": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "Shape"
+			}
+		},
+		"RELIABILITY_STUDY_RESULT_TYPE": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "experimental result"
+		},
+		"CITATION_TITLE": {
+			"COLUMN_INDEX": "A"
+		},
+		"CITATION_YEAR": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "2015"
+		},
+		"CITATION_OWNER": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "ENM_WORKSHOP"
+		},
+		"PARAMETERS": {},
+		"INTERPRETATION_RESULT": {
+			"COLUMN_INDEX": "J"
+		},
+		"EFFECTS": [{
+			"ENDPOINT": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "SHAPE",
+				"ANNOTATION": ""
+			},
+			"VALUE": {
+				"COLUMN_INDEX": "J"
+			}
+		}, {
+			"ENDPOINT": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "ASPECT RATIO",
+				"ANNOTATION": ""
+			},
+			"VALUE": {
+				"COLUMN_INDEX": "Q"
+			}
+		}]
+	}, {
+		"PROTOCOL_TOP_CATEGORY": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "P-CHEM"
+		},
+		"PROTOCOL_CATEGORY_CODE": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "ZETA_POTENTIAL_SECTION"
+		},
+		"PROTOCOL_ENDPOINT": {
+			"COLUMN_INDEX": "A"
+		},
+		"PROTOCOL_GUIDELINE": {
+			"guideline1": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "Zeta Potential"
+			}
+		},
+		"RELIABILITY_STUDY_RESULT_TYPE": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "experimental result"
+		},
+		"CITATION_TITLE": {
+			"COLUMN_INDEX": "A"
+		},
+		"CITATION_YEAR": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "2015"
+		},
+		"CITATION_OWNER": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "ENM_WORKSHOP"
+		},
+		"PARAMETERS": {},
+		"EFFECTS": [{
+			"ENDPOINT": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "ZETA POTENTIAL",
+				"ANNOTATION": ""
+			},
+			"VALUE": {
+				"COLUMN_INDEX": "U"
+			},
+			"UNIT": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "mV"
+			}
+		}]
+	}, {
+		"PROTOCOL_TOP_CATEGORY": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "P-CHEM"
+		},
+		"PROTOCOL_CATEGORY_CODE": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "SPECIFIC_SURFACE_AREA_SECTION"
+		},
+		"PROTOCOL_ENDPOINT": {
+			"COLUMN_INDEX": "A"
+		},
+		"PROTOCOL_GUIDELINE": {
+			"guideline1": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "SPECIFIC SURFACE AREA"
+			}
+		},
+		"RELIABILITY_STUDY_RESULT_TYPE": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "experimental result"
+		},
+		"CITATION_TITLE": {
+			"COLUMN_INDEX": "A"
+		},
+		"CITATION_YEAR": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "2015"
+		},
+		"CITATION_OWNER": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "ENM_WORKSHOP"
+		},
+		"PARAMETERS": {},
+		"EFFECTS": [{
+			"ENDPOINT": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "SPECIFIC_SURFACE_AREA",
+				"ANNOTATION": ""
+			},
+			"VALUE": {
+				"COLUMN_INDEX": "R"
+			}
+		}]
+	}]
+}

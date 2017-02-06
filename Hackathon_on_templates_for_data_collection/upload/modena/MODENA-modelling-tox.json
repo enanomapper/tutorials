@@ -1,0 +1,129 @@
+{
+	"TEMPLATE_INFO": {
+		"NAME": "MODENA-Modelling excercise",
+		"VERSION": "MODENA-EC50_EC25.xlsx",
+		"TYPE": 1
+	},
+	"DATA_ACCESS": {
+		"ITERATION": "ROW_SINGLE",
+		"SHEET_INDEX": 1,
+		"START_ROW": 2,
+		"END_ROW": 193,
+		"START_HEADER_ROW": 1,
+		"END_HEADER_ROW": 1,
+		"ALLOW_EMPTY": true,
+		"RECOGNITION": "BY_INDEX"
+	},
+	"SUBSTANCE_RECORD": {
+		"COMPANY_NAME": {
+			"COLUMN_INDEX": "AL"
+		},
+		"OWNER_NAME": {
+			"ITERATION": "JSON_VALUE",
+			"JSON_VALUE": "ENM_WORKSHOP"
+		},
+
+		"PUBLIC_NAME": {
+			"COLUMN_INDEX": "B"
+		},
+		"SUBSTANCE_TYPE": {
+			"COLUMN_INDEX": "AK"
+		},
+		"EXTERNAL_IDENTIFIERS": [{
+			"ID": {
+				"COLUMN_INDEX": "AI",
+				"ITERATION": "ROW_SINGLE"
+			},
+			"TYPE": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "JRC Representative Manufactured Nanomaterials"
+			}
+		}],
+		"COMPOSITION": []
+	},
+	"PROTOCOL_APPLICATIONS": [{
+			"PROTOCOL_TOP_CATEGORY": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "TOX"
+			},
+			"PROTOCOL_CATEGORY_CODE": {
+				"COLUMN_INDEX": "AM"
+			},
+			"PROTOCOL_GUIDELINE": {
+				"guideline1": {
+					"COLUMN_INDEX": "E"
+				}
+			},
+			"PROTOCOL_ENDPOINT": {
+				"COLUMN_INDEX": "A"
+			},
+			"RELIABILITY_STUDY_RESULT_TYPE": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "experimental result"
+			},
+			"CITATION_TITLE": {
+				"COLUMN_INDEX": "A"
+			},
+			"CITATION_YEAR": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "2015"
+			},
+			"CITATION_OWNER": {
+				"ITERATION": "JSON_VALUE",
+				"JSON_VALUE": "ENM_WORKSHOP"
+			},
+			"PARAMETERS": {
+				"Dispersion protocol": {
+					"COLUMN_INDEX": "I"
+				},
+				"Exposure duration,h": {
+					"COLUMN_INDEX": "F"
+				},
+				"Serum concentration,%": {
+					"COLUMN_INDEX": "H"
+				},
+				"Cell line": {
+					"COLUMN_INDEX": "G"
+				}
+			},
+			"EFFECTS": [{
+				"ENDPOINT": {
+					"ITERATION": "JSON_VALUE",
+					"JSON_VALUE": "EC25"
+				},
+				"VALUE": {
+					"COLUMN_INDEX": "Y"
+				},
+				"UNIT": {
+					"ITERATION": "JSON_VALUE",
+					"JSON_VALUE": "ug/ml"
+				}
+			}, {
+				"ENDPOINT": {
+					"ITERATION": "JSON_VALUE",
+					"JSON_VALUE": "EC50"
+				},
+				"VALUE": {
+					"COLUMN_INDEX": "Z"
+				},
+				"UNIT": {
+					"ITERATION": "JSON_VALUE",
+					"JSON_VALUE": "ug/ml"
+				}
+			}, {
+				"ENDPOINT": {
+					"ITERATION": "JSON_VALUE",
+					"JSON_VALUE": "slope EC50"
+				},
+				"VALUE": {
+					"COLUMN_INDEX": "AA"
+				},
+				"UNIT": {
+					"ITERATION": "JSON_VALUE",
+					"JSON_VALUE": "ug/ml"
+				}
+			}]
+		}
+
+	]
+}
