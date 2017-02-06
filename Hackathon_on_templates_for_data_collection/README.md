@@ -6,7 +6,7 @@
 The goal of the hackathon is to make the participants familiar with the eNanoMapper solutions for data management and data access and start evaluation of the data entry templates.
 
 ## Data access
-We will demonstrate how https://search.data.enanomapper.net/  integrates various data set how you can search for materials and how to use the application programming interface (API) to access data. 
+We will demonstrate how https://search.data.enanomapper.net/  integrates various data sets, how you can search for materials and how to use the application programming interface (API) to access data. 
 
 [Guide for the data access excercises](https://github.com/enanomapper/tutorials/blob/master/Entering_and_analysing_nano_safety_data/enm_Tutorial_DataWorkshop_v4.docx)
 
