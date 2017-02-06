@@ -6,9 +6,9 @@
 The goal of the hackathon is to make the participants familiar with the eNanoMapper solutions for data management and data access and start evaluation of the data entry templates.
 
 ## 1. Search and download exercises
-We will demonstrate how https://search.data.enanomapper.net/  integrates various data sets, how you can search for materials and how to use the application programming interface (API) to access data. 
+This exercise consists of querying the eNanoMapper database through  https://search.data.enanomapper.net/ , download in several formats, and optionally, using the application programming interface (API) to access data through R. 
 
-[Guide for the data access excercises](https://github.com/enanomapper/tutorials/blob/master/Entering_and_analysing_nano_safety_data/enm_Tutorial_DataWorkshop_v4.docx)
+[Guide for the search and download excercises](https://github.com/enanomapper/tutorials/blob/master/Entering_and_analysing_nano_safety_data/enm_Tutorial_DataWorkshop_v4.docx)
 
 ## 2. Data upload exercise 
 The exercises include data preparation and upload.
