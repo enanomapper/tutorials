@@ -1,6 +1,9 @@
-#Hackathon on templates for data collection
+#Hackathon on templates for data collection 
 
-The goal of this workshop is to make the participants familiar with the eNanoMapper solutions for data management and data access and . 
+* http://www.enanomapper.net/events/enm-hackathon-2017 
+* at Nanomaterials Safety Assessment conference http://www.nmsaconference.eu/ , Feb 7, 2007
+
+The goal of the hackathon is to make the participants familiar with the eNanoMapper solutions for data management and data access and start evaluation of the data entry templates.
 
 ## Data access
 We will demonstrate how https://search.data.enanomapper.net/  integrates various data set how you can search for materials and how to use the application programming interface (API) to access data. 
