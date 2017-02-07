@@ -3,6 +3,8 @@
 * http://www.enanomapper.net/events/enm-hackathon-2017 
 * at Nanomaterials Safety Assessment conference http://www.nmsaconference.eu/ , Feb 7, 2007
 
+* Facilitated by: [Nina Jeliazkova](http://orcid.org/0000-0002-4322-6179) (Ideaconsult, BG), [Penny Nymark](http://orcid.org/0000-0002-3435-7775) (Karolinska Institutet, SE), [Egon Willighagen](http://orcid.org/0000-0001-7542-0286) (Maastricht University, NL)
+
 The goal of the hackathon is to make the participants familiar with the eNanoMapper solutions for data management and data access and start evaluation of the data entry templates.
 
 ## 1. Search and download exercises
