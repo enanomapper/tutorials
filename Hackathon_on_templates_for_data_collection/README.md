@@ -20,7 +20,7 @@ The exercises include data preparation and upload.
 ## 3. Ontology 
 This is an exercise of ontology mapping. The number of unique terms in the templates is over 800 and careful ontology mapping is required.
 
-[Determining the appropriateness of the eNanoMapper ontology](https://docs.google.com/forms/d/e/1FAIpQLScYMQWy4ULxmK7tyU4NCNPocnQNEiQw9c62eneAQP7vlI3tSg/formResponse)
+[Finding appropriate eNanoMapper ontology terms for harmonized templates](https://docs.google.com/forms/d/e/1FAIpQLSfF-oR_TrOf7w3ghAe33TDMydniy7HtowSxjykjiMzEfFrI-w/viewform)
 
 You may cosider mapping the the terms from the [Cytotoxicity LDH template](https://docs.google.com/spreadsheets/d/1frsyAzVitx9IHEHshizIGV-CdBBpeGlaUls_OJBNoTs/edit?usp=sharing)
 
