@@ -6,3 +6,10 @@ can be a Word document or something else.
 
 For each tutorial, issues and feature requests can be filed
 in the issues tracker of this repository.
+
+Further information can be found in the following reference which can be used as citation:
+
+    Lucian Farcal, Philip Doganis, Egon Willighagen, Rob Reedijk, Spela Predan Hardy, Barry Hardy.
+    (2016). Deliverable Report D6.3 eNanoMapper Tutorials. Zenodo.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.345975.svg)](https://doi.org/10.5281/zenodo.345975)
