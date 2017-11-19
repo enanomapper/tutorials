@@ -55,7 +55,7 @@ schema within the eNM ontology.
 ### eNM ontology with BioPortal
 
 * Go to the ENM ontology within BioPortal.
-⋅⋅* http://bioportal.bioontology.org/ontologies/ENM
+  * http://bioportal.bioontology.org/ontologies/ENM
 * If you click on “classes” you will find the hierarchical ontological tree.
 * By clicking on “entity” all the sub- and head classes will be provided.
 * In the box of “Jump To:” a particular term might be searched within the ontology.
@@ -70,7 +70,7 @@ Figure 1: Browsing the eNM ontology within BioPortal.
 ### eNM ontology in AberOWL
 
 * Go to the ENM ontology within AberOWL.
-⋅⋅* http://aber-owl.net/ontology/ENM/
+  * http://aber-owl.net/ontology/ENM/
 * On the left you will find an interactive view of the hierarchical ontological tree.
 * If you click on “entity” the tree will be unfolded thereby revealing the sub- and head classes of the ontology.
 * Above the “entity” field you will find a search box in which terms may be typed.
@@ -85,7 +85,7 @@ Figure 2: Browsing the eNM ontology using AberOWL.
 ### Open and browse the eNM ontology within Protégé
 
 * Protege can be downloaded from this page:
-⋅⋅* http://protege.stanford.edu/
+  * http://protege.stanford.edu/
 * Download the chosen ontology as .owl file from BioPortal (in this case the eNM ontology → See Figure 3).
 
 ![Screenshot of BioPortal for downloading the OWL file](fig3.png)
@@ -111,5 +111,5 @@ Figure 5: Number of used classes present within the eNM ontology and its respect
 Figure 6: An overview of the upper levels and integration of external ontology content (18 ontologies) together with manually annotated (ENM) content.
 
 * Preferably the term should there be searched in one of these ontology sources.
-⋅⋅* In BioPortal you can do this as follows:
-⋅⋅⋅⋅* Go to “Search” in the toolbar.
+  * In BioPortal you can do this as follows:
+    * Go to “Search” in the toolbar.
