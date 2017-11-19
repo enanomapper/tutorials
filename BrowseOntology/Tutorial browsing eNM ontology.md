@@ -104,3 +104,12 @@ Figure 4: Browsing the eNM ontology in Protégé.
 * If the term is not present within the eNM Ontology it needs to be searched within one of the other existing ontologies.
 * At the moment the following external ontology sources are used within the creation of the eNM ontology (total of 6690 classes) (See Figure 5 and 6).
 
+![Table with counts of terms from various source ontologies](fig5.png)
+Figure 5: Number of used classes present within the eNM ontology and its respective originating external ontologies.
+
+![Diagram with schematic dependency overview](fig6.png)
+Figure 6: An overview of the upper levels and integration of external ontology content (18 ontologies) together with manually annotated (ENM) content.
+
+* Preferably the term should there be searched in one of these ontology sources.
+⋅⋅* In BioPortal you can do this as follows:
+⋅⋅⋅⋅* Go to “Search” in the toolbar.
