@@ -26,17 +26,23 @@ disseminate a comprehensive ontology for the nanosafety domain, encompassing nan
 information relating to their characterization, as well as information describing relevant
 experimental paradigms, biological interactions, safety indications and experimental paradigms.
 
-The current version of the eNanoMapper ontology is based on the re-usage of 18 existing ontologies
+The current version of the eNanoMapper ontology
+[[1](http://dx.doi.org/10.1186/s13326-015-0005-5),[2](http://bioportal.bioontology.org/ontologies/ENM),[3](http://aber-owl.net/ontology/enm)]
+is based on the re-usage of 18 existing ontologies
 (e.g. NanoParticle Ontology, BioAssay Ontology, Experimental Factor Ontology) together with
 specialized engineered nanomaterials and nanotechnology vocabularies and definitions, which have
 been described by several national and international standardization committees (e.g.
 International Organization for Standardization, Joint Research Centre).
 
-The re-used ontologies (OWL file) were made slimmer, if necessary modified using the free,
-open-source ontology editor Protégé5 and new terms were added using the Issue Tracker within GitHub.
+The re-used ontologies (OWL file) were made [slimmer](https://github.com/enanomapper/slimmer),
+if necessary modified using the free,
+open-source ontology editor [Protégé](http://protege.stanford.edu/) and new terms were
+added using the [issue tracker](https://github.com/enanomapper/ontologies/issues) within GitHub.
 
-The eNM ontology might be accessed through three different ways, namely online via BioPortal and
-AberOWL or locally using the open-source Protégé software. This tutorial focusses on browsing
+The eNM ontology might be accessed through three different ways, namely online via
+[BioPortal](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3125807/) and
+[AberOWL](http://link.springer.com/article/10.1186%2Fs12859-015-0456-9)
+ or locally using the open-source Protégé software. This tutorial focusses on browsing
 through the eNM ontology when one would be interested in finding a Unique Resource Identifier (URI)
 for mapping a term originating from for example a database schema. Using URIs for database schemas
 will facilitate the harmonization of data originating from different sources and will make them
