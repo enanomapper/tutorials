@@ -113,3 +113,38 @@ Figure 6: An overview of the upper levels and integration of external ontology c
 * Preferably the term should there be searched in one of these ontology sources.
   * In BioPortal you can do this as follows:
     * Go to “Search” in the toolbar.
+    * Type in your term that you want to find an URI for.
+    * Look at the suggestions given.
+    * Take the URI which is originating from one of the above ontologies.
+    * Also keep in mind the structure and position of the URI in the ontological tree.
+    * Copy the full URI, label and prefix URI to for example an excel File.
+  * In AberOWL this can be done as follows:
+    * Go the home page of AberOWL.
+    * Type in your term that you want to find an URI for.
+    * Look at the suggestions given.
+    * Take the URI which is originating from one of the above ontologies.
+    * Also keep in mind the structure and position of the URI in the ontological tree.
+    * Copy the full URI, label and prefix URI to for example an Excel File.
+* For the follow-up there are two options:
+  * Request an addition of the URI to the eNM ontology via the Issue Tracker available on https://github.com/enanomapper/ontologies (“Issues” on the right side of the screen) (See Figure 7).
+
+![Screenshot of the ENM ontology issue tracker](fig7.png)
+Figure 7: The Issue Tracker of the  eNM ontology within GitHub.
+
+  * Create a patch for the “slimmer” version of the eNM ontology which will be loaded together with the other included slimmed versions of the available ontologies (note: a slimmed version of the ontology includes only those URIs which are included within the eNM ontology; this is done since a full inclusion of all respective ontologies will be create a very extensive and aspecific ontology).  Available at https://github.com/enanomapper/slimmer/tree/master/src/main/resources (see Figure 8).
+
+![Screenshot of the the config folder on GitHub](fig8.png)
+Figure 8: The “slimmed” versions of the used external ontologies for the eNM ontology.
+
+  * If the URI is not present in one of the preferred ontology sources a correct additional ontology source should be chosen.
+  * Once this has been done the follow-up options may be applied.
+
+Acknowledgments
+---------------
+
+We would like to express our gratitude for using the open-access applications of
+BioPortal, AberOWL and Protégé.   
+
+The eNanoMapper project is funded by the European Union's Seventh Framework Program
+for research, echnological development and demonstration (FP7-NMP-2013-SMALL-7) under
+grant agreement no. 604134.
