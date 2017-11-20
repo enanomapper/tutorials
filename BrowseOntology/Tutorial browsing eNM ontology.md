@@ -97,7 +97,8 @@ Figure 2: Browsing the eNM ontology using AberOWL.
 ![Screenshot of BioPortal for downloading the OWL file](fig3.png)
 Figure 3: The OWL file from the eNM ontology on BioPortal.
 
-* Open Protégé and go to “file” “open” and select the downloaded .owl file - alternatively, “open from URL” and enter the URL.
+* Open Protégé and go to “file” “open” and select the downloaded .owl file
+  * Alternatively, “open from URL” and enter the URL: http://purl.enanomapper.net/onto/enanomapper-auto.owl
 * Open the tab “entities” to get to the terms.
 * In this case we are interested in finding “amphiphilic”.
 * In class annotations and class usage you will find the detailed information: label, code, preferred name, synonym which can be edited, deleted or annotated (See Figure 4).
