@@ -154,4 +154,4 @@ BioPortal, AberOWL and Protégé.
 
 The eNanoMapper project is funded by the European Union's Seventh Framework Program
 for research, echnological development and demonstration (FP7-NMP-2013-SMALL-7) under
-grant agreement no. 604134.
+grant agreement no. [604134](http://cordis.europa.eu/projects/604134).
