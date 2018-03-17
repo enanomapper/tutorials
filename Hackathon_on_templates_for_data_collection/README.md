@@ -28,4 +28,3 @@ You may cosider mapping the the terms from the [Cytotoxicity LDH template](https
 The [NANoREG templates](http://www.nanoreg.eu/media-and-downloads/templates) are developed by JRC in collaboration with FP7 NANoREG project partners and released under open license, further cleaned and [released by eNanoMapper](https://github.com/enanomapper/tutorials/tree/master/DataTemplates ). The NANoREG templates are organized as one spreadsheet per assay. The goal of this exercise is to estimate the relevance of the template fields for specific assays, according to participant experience and background. Click on the link below to access the set of questionnaires. Each questionnaire is representing fields from one template.
 
 [Questionnaires for assessing the relevance of the template fields](templates.md)
-
