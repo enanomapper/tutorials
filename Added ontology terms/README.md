@@ -1,4 +1,4 @@
-# Addin ontology terms
+# Adding ontology terms
 
 * Author: Egon Willighagen
 * License: CC-BY 4.0
@@ -22,10 +22,10 @@ documents:
 
 # Adding terms
 
-# Adding a terms from an already used ontology
+## Adding a terms from an already used ontology
 
 
-# Adding a terms from an ontology that is not yet used
+## Adding a terms from an ontology that is not yet used
 
 
 
