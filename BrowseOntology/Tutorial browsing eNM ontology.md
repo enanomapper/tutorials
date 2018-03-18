@@ -61,7 +61,7 @@ schema within the eNM ontology.
 ### eNM ontology with BioPortal
 
 * Go to the ENM ontology within BioPortal.
-  * http://bioportal.bioontology.org/ontologies/ENM
+  * [http://bioportal.bioontology.org/ontologies/ENM](http://bioportal.bioontology.org/ontologies/ENM)
 * If you click on “classes” you will find the hierarchical ontological tree.
 * By clicking on “entity” all the sub- and head classes will be provided.
 * In the box of “Jump To:” a particular term might be searched within the ontology.
@@ -76,7 +76,7 @@ Figure 1: Browsing the eNM ontology within BioPortal.
 ### eNM ontology in AberOWL
 
 * Go to the ENM ontology within AberOWL.
-  * http://aber-owl.net/ontology/ENM/
+  * [http://aber-owl.net/ontology/ENM/](http://aber-owl.net/ontology/ENM/)
 * On the left you will find an interactive view of the hierarchical ontological tree.
 * If you click on “entity” the tree will be unfolded thereby revealing the sub- and head classes of the ontology.
 * Above the “entity” field you will find a search box in which terms may be typed.
@@ -91,7 +91,7 @@ Figure 2: Browsing the eNM ontology using AberOWL.
 ### Open and browse the eNM ontology within Protégé
 
 * Protege can be downloaded from this page:
-  * http://protege.stanford.edu/
+  * [http://protege.stanford.edu/](http://protege.stanford.edu/)
 * Download the chosen ontology as .owl file from BioPortal (in this case the eNM ontology → See Figure 3).
 
 ![Screenshot of BioPortal for downloading the OWL file](fig3.png)
@@ -133,12 +133,12 @@ Figure 6: An overview of the upper levels and integration of external ontology c
     * Also keep in mind the structure and position of the URI in the ontological tree.
     * Copy the full URI, label and prefix URI to for example an Excel File.
 * For the follow-up there are two options:
-  * Request an addition of the URI to the eNM ontology via the Issue Tracker available on https://github.com/enanomapper/ontologies (“Issues” on the right side of the screen) (See Figure 7).
+  * Request an addition of the URI to the eNM ontology via the Issue Tracker available on [https://github.com/enanomapper/ontologies](https://github.com/enanomapper/ontologies) (“Issues” on the right side of the screen) (See Figure 7).
 
 ![Screenshot of the ENM ontology issue tracker](fig7.png)
 Figure 7: The Issue Tracker of the  eNM ontology within GitHub.
 
-  * Create a patch for the “slimmer” version of the eNM ontology which will be loaded together with the other included slimmed versions of the available ontologies (note: a slimmed version of the ontology includes only those URIs which are included within the eNM ontology; this is done since a full inclusion of all respective ontologies will be create a very extensive and aspecific ontology).  Available at https://github.com/enanomapper/slimmer/tree/master/src/main/resources (see Figure 8).
+  * Create a patch for the “slimmer” version of the eNM ontology which will be loaded together with the other included slimmed versions of the available ontologies (note: a slimmed version of the ontology includes only those URIs which are included within the eNM ontology; this is done since a full inclusion of all respective ontologies will be create a very extensive and aspecific ontology).  Available at [https://github.com/enanomapper/slimmer/tree/master/src/main/resources](https://github.com/enanomapper/slimmer/tree/master/src/main/resources) (see Figure 8).
 
 ![Screenshot of the the config folder on GitHub](fig8.png)
 Figure 8: The “slimmed” versions of the used external ontologies for the eNM ontology.
