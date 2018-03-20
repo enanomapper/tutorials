@@ -15,6 +15,23 @@ documents:
 
 # A collection on ontology parts
 
+The eNanoMapper ontology is mostly composed of other ontologies. A list of ontologies it includes includes
+the following:
+
+* BFO
+* IAO
+* NPO
+
+(task: complete)
+
+However, not full ontologies, and there are
+reasons why that is essential:
+
+* most ontologies include bits from other ontologies; and,
+* some ontologies do not just have core concepts, but enumerate hundreds or thousands of instances.
+
+Therefore, we select parts of ontologies. In order to perform this slicing we need a tool that can do this
+slicing and we need to instruct this slices which bits to keep.
 
 # The configuration file
 
