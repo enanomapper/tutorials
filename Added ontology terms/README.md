@@ -18,13 +18,29 @@ documents:
 The eNanoMapper ontology is mostly composed of other ontologies. A list of ontologies it includes includes
 the following:
 
+* AOP
+* BAO
 * BFO
+* CCONT
+* CHEBI
+* CHEMINF
+* CHMO
+* EFO
+* ENVO
+* FABIO
+* GO
+* HUPSON
 * IAO
+* NCIT
 * NPO
+* OAE
+* OBCS
+* OBI
+* PATO
+* SIO
+* UO
 
-(task: complete)
-
-However, not full ontologies, and there are
+However, the eNanoMapper ontology does not use full ontologies, and there are
 reasons why that is essential:
 
 * most ontologies include bits from other ontologies; and,
@@ -35,7 +51,35 @@ slicing and we need to instruct this slices which bits to keep.
 
 # The configuration file
 
+Configuration file are used to define which parts of which ontologies are used. These configuration files
+can be [found on GitHub](https://github.com/enanomapper/ontologies/tree/master/config). For each ontology,
+two files are provided:
 
+1. an .props file
+2. an .iris file
+
+## The *props* file
+
+The first "props" file is the one initially read by the [Slimmer tool]() and looks like:
+
+```
+owl=https://raw.githubusercontent.com/enanomapper/aop-ontology/patch/hpoUpdate/aopo.owl
+iris=aopo.iris
+slimmed=http://purl.enanomapper.org/onto/external/aopo-slim.owl
+```
+
+It has three fields. The *owl* field indicates where the ontology can be downloaded (this is normally an
+upstream location, but a cached version in this particular case). The *iris* field points to the second
+configuration file. The *slimmed* field defines the URL of the slimmed ontology. That URL is used for
+*owl:import* statements in the eNanoMapper ontology, which is the used mechanism to include slimmed
+ontology modules.
+
+## The *iris* file
+
+The second configuration file defined the input to the slimming process and specifies what parts are meant
+to be kept. The format is a custom format specifically developed for our slimming needs.
+
+....
 
 # Adding terms
 
