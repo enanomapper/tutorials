@@ -93,8 +93,10 @@ to be kept. The format is a custom format specifically developed for our slimmin
 
 # Acknowledgments
 
-This tutorial was written as part of the OpenRiskNet and NanoCommons projects. OpenRiskNet (Grant Agreement
-[731075](http://cordis.europa.eu/projects/731075)) and NanoCommons (Grant Agreement 
+This tutorial was written as part of the OpenRiskNet and NanoCommons projects.
+[OpenRiskNet](https://openrisknet.org/) (Grant Agreement
+[731075](http://cordis.europa.eu/projects/731075)) and
+[NanoCommons](https://twitter.com/nanocommons) (Grant Agreement 
 [731032](http://cordis.europa.eu/projects/731032)) are projects
 funded by the European Commission within Horizon2020 Programme
 
