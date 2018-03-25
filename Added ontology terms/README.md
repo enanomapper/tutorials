@@ -19,8 +19,8 @@ documents:
 The eNanoMapper ontology is mostly composed of other ontologies. A list of ontologies it includes includes
 the following:
 
-* AOP
-* BAO
+* [Adverse Outcome Pathways Ontology](https://github.com/DataSciBurgoon/aop-ontology) (AOP)
+* [BioAssay Ontology](http://bioassayontology.org/) (BAO)
 * BFO
 * CCONT
 * CHEBI
