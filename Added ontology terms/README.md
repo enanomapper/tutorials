@@ -84,13 +84,52 @@ to be kept. The format is a custom format specifically developed for our slimmin
 
 # Adding terms
 
+Adding terms to the eNanoMapper ontology is basically equivalent to making changes or adding such configuration files.
+If the ontology already exists, then you basically change the content of the *iris* file. If you need a new ontology
+from which you want to include terms, then you need to create a new combination of a *props* and an *iris* file. This
+is explained in the next sections.
+
 ## Adding a terms from an already used ontology
+
 
 
 ## Adding a terms from an ontology that is not yet used
 
 
+# Monitoring the building
 
+## Checking the building
+
+We use [Jenkins](https://jenkins.io/) as continuous build server, hosted at https://jenm.bigcat.maastrichtuniversity.nl/
+(by [Maastricht University](https://www.maastrichtuniversity.nl/)). Here, jobs run for each included ontology:
+
+* [AOP](https://jenm.bigcat.maastrichtuniversity.nl/job/AOP/)
+* [BAO[(https://jenm.bigcat.maastrichtuniversity.nl/job/BAO/)
+* [BFO](https://jenm.bigcat.maastrichtuniversity.nl/job/BFO/)
+* [CCONT](https://jenm.bigcat.maastrichtuniversity.nl/job/CCONT/)
+* [CHEBI](https://jenm.bigcat.maastrichtuniversity.nl/job/CHEBI/)
+* [CHEMINF](https://jenm.bigcat.maastrichtuniversity.nl/job/CHEMINF/)
+* [CHMO](https://jenm.bigcat.maastrichtuniversity.nl/job/CHMO/)
+* [EFO](https://jenm.bigcat.maastrichtuniversity.nl/job/EFO/)
+* [ENVO](https://jenm.bigcat.maastrichtuniversity.nl/job/ENVO/)
+* [FABIO](https://jenm.bigcat.maastrichtuniversity.nl/job/FABIO/)
+* [GO](https://jenm.bigcat.maastrichtuniversity.nl/job/GO/)
+* HUPSON
+* IAO
+* NCIT
+* NPO
+* OAE
+* OBCS
+* OBI
+* PATO
+* SIO
+* UO
+
+## Checking the outcome
+
+The final check to be performed, is to see if the term actually shows up on the ontology browsers (BioPortal,
+Ontology Lookup Service, AberOWL, etc). For that, please check
+[Browsing the eNM ontology with BioPortal, AberOWL and Protégé](BrowseOntology/Tutorial%20browsing%20eNM%20ontology.md) tutorial.
 
 # Acknowledgments
 
