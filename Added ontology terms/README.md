@@ -91,7 +91,21 @@ is explained in the next sections.
 
 ## Adding a terms from an already used ontology
 
+When you identified the term you want to add in an ontology that already is used by the eNanoMapper
+ontology (see [this list](#A collection on ontology parts)), you basically need to identify
+the following information:
 
+1. what is the IRI of the term?
+2. is it just that single term, or also also parent or child terms?
+3. where in the eNanoMapper ontology should your selection show up?
+
+### An example of adding a term and all children
+
+The following screenshot shows a
+[commit](https://github.com/enanomapper/ontologies/commit/e5f2d4812ce5f207792ffa22291705fbe44c6aad)
+that adds a terms (*protein part*) from an ontology that already is used (SIO):
+
+![Example commit that adds a term from an already used ontology.](Screenshot_20180325_165352.png)
 
 ## Adding a terms from an ontology that is not yet used
 
