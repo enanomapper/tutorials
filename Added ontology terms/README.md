@@ -104,7 +104,7 @@ We use [Jenkins](https://jenkins.io/) as continuous build server, hosted at http
 (by [Maastricht University](https://www.maastrichtuniversity.nl/)). Here, jobs run for each included ontology:
 
 * [AOP](https://jenm.bigcat.maastrichtuniversity.nl/job/AOP/)
-* [BAO[(https://jenm.bigcat.maastrichtuniversity.nl/job/BAO/)
+* [BAO](https://jenm.bigcat.maastrichtuniversity.nl/job/BAO/)
 * [BFO](https://jenm.bigcat.maastrichtuniversity.nl/job/BFO/)
 * [CCONT](https://jenm.bigcat.maastrichtuniversity.nl/job/CCONT/)
 * [CHEBI](https://jenm.bigcat.maastrichtuniversity.nl/job/CHEBI/)
@@ -114,16 +114,16 @@ We use [Jenkins](https://jenkins.io/) as continuous build server, hosted at http
 * [ENVO](https://jenm.bigcat.maastrichtuniversity.nl/job/ENVO/)
 * [FABIO](https://jenm.bigcat.maastrichtuniversity.nl/job/FABIO/)
 * [GO](https://jenm.bigcat.maastrichtuniversity.nl/job/GO/)
-* HUPSON
-* IAO
-* NCIT
-* NPO
-* OAE
-* OBCS
-* OBI
-* PATO
-* SIO
-* UO
+* [HUPSON](https://jenm.bigcat.maastrichtuniversity.nl/job/HUPSON/)
+* [IAO](https://jenm.bigcat.maastrichtuniversity.nl/job/IAO/)
+* [NCIT](https://jenm.bigcat.maastrichtuniversity.nl/job/NCIT/)
+* [NPO](https://jenm.bigcat.maastrichtuniversity.nl/job/NPO/)
+* [OAE](https://jenm.bigcat.maastrichtuniversity.nl/job/OAE/)
+* [OBCS](https://jenm.bigcat.maastrichtuniversity.nl/job/OBCS/)
+* [OBI](https://jenm.bigcat.maastrichtuniversity.nl/job/OBI/)
+* [PATO](https://jenm.bigcat.maastrichtuniversity.nl/job/PATO/)
+* [SIO](https://jenm.bigcat.maastrichtuniversity.nl/job/SIO/)
+* [UO](https://jenm.bigcat.maastrichtuniversity.nl/job/UO/)
 
 ## Checking the outcome
 
