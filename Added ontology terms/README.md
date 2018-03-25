@@ -2,7 +2,7 @@
 
 * Author: Egon Willighagen (orcid:[0000-0001-7542-0286](https://orcid.org/0000-0001-7542-0286))
 * License: [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-* Source: https://github.com/enanomapper/tutorials/tree/master/Added%20ontology%20terms
+* Source: [https://github.com/enanomapper/tutorials/tree/master/Added%20ontology%20terms](https://github.com/enanomapper/tutorials/tree/master/Added%20ontology%20terms)
 
 This ontology describes how terms can be added to the eNanoMapper ontology.
 Before walking through this tutorial, it is recommended to read the following
