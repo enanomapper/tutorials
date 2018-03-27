@@ -21,10 +21,10 @@ the following:
 
 * [Adverse Outcome Pathways Ontology](https://github.com/DataSciBurgoon/aop-ontology) (AOP)
 * [BioAssay Ontology](http://bioassayontology.org/) (BAO)
-* BFO
+* [Basic Formal Ontology](http://basic-formal-ontology.org/) (BFO)
 * CCONT
-* CHEBI
-* CHEMINF
+* [Chemical Entities of Biological Interest](https://www.ebi.ac.uk/chebi/) (CHEBI)
+* [Chemical Information Ontology](https://github.com/semanticchemistry/semanticchemistry/) (CHEMINF)
 * CHMO
 * EFO
 * ENVO
@@ -61,7 +61,7 @@ two files are provided:
 
 ## The *props* file
 
-The first "props" file is the one initially read by the [Slimmer tool]() and looks like:
+The first "props" file is the one initially read by the [Slimmer tool](https://github.com/enanomapper/slimmer) and looks like:
 
 ```
 owl=https://raw.githubusercontent.com/enanomapper/aop-ontology/patch/hpoUpdate/aopo.owl
@@ -69,9 +69,21 @@ iris=aopo.iris
 slimmed=http://purl.enanomapper.org/onto/external/aopo-slim.owl
 ```
 
-It has three fields. The *owl* field indicates where the ontology can be downloaded (this is normally an
-upstream location, but a cached version in this particular case). The *iris* field points to the second
-configuration file. The *slimmed* field defines the URL of the slimmed ontology. That URL is used for
+It has three fields as explained in the following subsections
+
+### Source ontology file
+
+The `owl=` line indicates where the OWL file of the ontology to be slimmed can be downloaded (this is normally an
+upstream location, but a cached version in this particular case). It is exactly this OWL file that is loaded by the OWLAPI-based Slimmer utility, and slimmed.
+
+### Specifying the configuration
+
+The `iris=` line indicates the configuration file is found locally which defines which IRIs are to be included and excluded in the slimmed version of the ontology. The syntax of the `.iris` file is discussed below.
+
+### The slimmed ontology file
+
+The `slimmer=` line specifies the file name under which the resulting slimmed ontology is saved. It is this
+file that is to be imported by the main eNanoMapper OWL file. That is, this URL is used for
 *owl:import* statements in the eNanoMapper ontology, which is the used mechanism to include slimmed
 ontology modules.
 
@@ -80,7 +92,18 @@ ontology modules.
 The second configuration file defined the input to the slimming process and specifies what parts are meant
 to be kept. The format is a custom format specifically developed for our slimming needs.
 
-....
+The `.iris` file configures the slicing of the ontology. It specifies which classes or class tress to include and which parts to exclude. For each included class it can also specify a new classes it subclasses. Each line in this file defines one instruction: one addition or one removal.
+
+For example:
+```
++D(http://purl.bioontology.org/ontology/npo#NPO_1436):http://www.bioassayontology.org/bao#BAO_0000697 detection instrument
++D(http://purl.obolibrary.org/obo/IAO_0000030):http://www.bioassayontology.org/bao#BAO_0000179 endpoint
++D(http://purl.obolibrary.org/obo/OBI_0000070):http://www.bioassayontology.org/bao#BAO_0000015 bioassay
+````
+
+This configuration file uses a custom syntax which is briefly explained here. By default it removes all content. The first character indicates if the something needs to be included (+) or excluded from a previously defined inclusion (-). The second character indicates whether a whole upper (U) or down (D) tree should be included or excluded. After the colon the URI of the resource is given to be in- or excluded, followed by a user-oriented comment. Finally, before the colon and in brackets an optional superclass of this resource can be specified, possibly from other ontologies.
+
+Thus, the first line in the above example shows that the term detection instrument is imported (from the BAO ontology) and made a subclass of the NPO_1436 class from the NPO ontoloy.
 
 # Adding terms
 
