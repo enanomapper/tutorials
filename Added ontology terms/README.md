@@ -26,20 +26,20 @@ the following:
 * [Chemical Entities of Biological Interest](https://www.ebi.ac.uk/chebi/) (CHEBI)
 * [Chemical Information Ontology](https://github.com/semanticchemistry/semanticchemistry/) (CHEMINF)
 * CHMO
-* EFO
-* ENVO
+* [Experimental Factor Ontology](https://www.ebi.ac.uk/efo/) (EFO)
+* [Environment Ontology](http://environmentontology.org/) (ENVO)
 * FABIO
-* GO
+* Gene Ontology (GO)
 * HUPSON
-* IAO
+* Information Artifact Ontology (IAO)
 * NCIT
-* NPO
+* NanoParticle Ontology (NPO)
 * OAE
 * OBCS
 * OBI
 * PATO
 * SIO
-* UO
+* Unit Ontology (UO)
 
 However, the eNanoMapper ontology does not use full ontologies, and there are
 reasons why that is essential:
