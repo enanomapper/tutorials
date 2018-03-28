@@ -101,9 +101,24 @@ For example:
 +D(http://purl.obolibrary.org/obo/OBI_0000070):http://www.bioassayontology.org/bao#BAO_0000015 bioassay
 ````
 
-This configuration file uses a custom syntax which is briefly explained here. By default it removes all content. The first character indicates if the something needs to be included (+) or excluded from a previously defined inclusion (-). The second character indicates whether a whole upper (U) or down (D) tree should be included or excluded. After the colon the URI of the resource is given to be in- or excluded, followed by a user-oriented comment. Finally, before the colon and in brackets an optional superclass of this resource can be specified, possibly from other ontologies.
+This configuration file uses a custom syntax which is briefly explained here.
+Here, the first line in the above example shows that the term detection instrument is imported (from the BAO ontology) and made a subclass of the NPO_1436 class from the NPO ontoloy.
 
-Thus, the first line in the above example shows that the term detection instrument is imported (from the BAO ontology) and made a subclass of the NPO_1436 class from the NPO ontoloy.
+### The Syntax
+
+Each instruction has the same structure, the same syntax, organized in layers:
+
+![Syntax of a Slimmer instruction.](syntax.png)
+
+We can see here basically the five layers (red, yellow, green, purple, and blue) and in semi-colon (light blue) to
+separate two layers. Each layer is introduced below.
+
+### Adding and removing (red layer)
+
+ By default it removes all content. The first character indicates if the something needs to be included (+) or excluded from a previously defined inclusion (-). The second character indicates whether a whole upper (U) or down (D) tree should be included or excluded. After the colon the URI of the resource is given to be in- or excluded, followed by a user-oriented comment. Finally, before the colon and in brackets an optional superclass of this resource can be specified, possibly from other ontologies.
+
+
+The
 
 # Adding terms
 
