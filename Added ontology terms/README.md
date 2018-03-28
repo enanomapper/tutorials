@@ -111,7 +111,13 @@ Each instruction has the same structure, the same syntax, organized in layers:
 ![Syntax of a Slimmer instruction.](syntax.png)
 
 We can see here basically the five layers (red, yellow, green, purple, and blue) and in semi-colon (light blue) to
-separate two layers. Each layer is introduced below.
+separate two layers. If you consider that an ontology is often a hierarchical tree
+of terms, with one root node, spreading down, ending in leave nodes, the above instruction could be visualized as
+this:
+
+![Visualisation of the just given Slimmer instruction.](coloredExample.png)
+
+A more detailed description of each layer is introduced below.
 
 ### Adding and removing (red layer)
 
