@@ -121,10 +121,25 @@ A more detailed description of each layer is introduced below.
 
 ### Adding and removing (red layer)
 
- By default it removes all content. The first character indicates if the something needs to be included (+) or excluded from a previously defined inclusion (-). The second character indicates whether a whole upper (U) or down (D) tree should be included or excluded. After the colon the URI of the resource is given to be in- or excluded, followed by a user-oriented comment. Finally, before the colon and in brackets an optional superclass of this resource can be specified, possibly from other ontologies.
+By default it removes all content. The first character indicates if the something needs to be
+included (+) or excluded from a previously defined inclusion (-).
+ 
+### Selections up and down (yellow layer)
 
+The second layer indicates with a single character (U or D) whether a whole upper (U) or down (D) tree should be included
+or excluded (as defined by the first layer). 
 
-The
+### Which term to include (purple layer) and a label or reason (blue layer)
+
+After the colon the URI of the resource is given to be in- or excluded,
+followed by a user-oriented comment. This comment can be the label of the item,
+a general comment, or the reason for adding it. It is not used in the slimming
+process.
+
+### Where to add it in the eNanoMapper ontology (green layer)
+
+Finally, before the colon and in brackets an optional superclass of this resource can be specified,
+possibly from other ontologies.
 
 # Adding terms
 
