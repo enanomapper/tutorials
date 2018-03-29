@@ -127,7 +127,16 @@ included (+) or excluded from a previously defined inclusion (-).
 ### Selections up and down (yellow layer)
 
 The second layer indicates with a single character (U or D) whether a whole upper (U) or down (D) tree should be included
-or excluded (as defined by the first layer). 
+or excluded (as defined by the first layer). This layer is optional and if not given then a single term is added.
+Second, the U operation is not currently used by eNanoMapper.
+
+An example of a command without the U or D operator that adds a single term:
+
+```
++(http://www.bioassayontology.org/bao#BAO_0003009):http://purl.bioontology.org/ontology/npo#NPO_1709 LDH assay
+```
+
+This example reorganizes an existing term of the NPO into a location under a BAO term.
 
 ### Which term to include (purple layer) and a label or reason (blue layer)
 
@@ -139,7 +148,14 @@ process.
 ### Where to add it in the eNanoMapper ontology (green layer)
 
 Finally, before the colon and in brackets an optional superclass of this resource can be specified,
-possibly from other ontologies.
+possibly from other ontologies. The instruction indicating where in an ontology a term is to be added
+is used a lot. As the comment in this instruction shows, it can be used to move terms in different
+places in the ontology. For example, we can move a nanoparticle term from the ChEBI ontology to
+a place in a selected (slimmed) subtree of the NPO:
+
+```
++(http://purl.bioontology.org/ontology/npo#NPO_1384):http://purl.obolibrary.org/obo/CHEBI_50831      relocate platinum nanoparticle
+```
 
 # Adding terms
 
