@@ -174,16 +174,70 @@ the following information:
 2. is it just that single term, or also also parent or child terms?
 3. where in the eNanoMapper ontology should your selection show up?
 
+### An example of adding a single term
+
+The simplest addition one can make to the ontology, is adding a single term. One basically then only
+needs to know which term to add, and the parent of the term in the eNanoMapper ontology. We then do
+not have to worry about pulling in a full subtree, which may introduce a large set of terms and bloat
+the ontology.
+
+The following screenshot shows a
+[commit](https://github.com/enanomapper/ontologies/commit/3ad43420f2dda9429cdb2fb68952e9be22fa583f)
+that adds a terms (*cuprous oxide nanoparticle*) from an ontology that already is used (CHEBI)
+and puts it in as a child of term another already used ontology (NPO):
+
+![Example commit that adds a single term from an already used ontology.](Screenshot_20180402_091150.png)
+
+
 ### An example of adding a term and all children
 
 The following screenshot shows a
 [commit](https://github.com/enanomapper/ontologies/commit/e5f2d4812ce5f207792ffa22291705fbe44c6aad)
 that adds a terms (*protein part*) from an ontology that already is used (SIO):
 
-![Example commit that adds a term from an already used ontology.](Screenshot_20180325_165352.png)
+![Example commit that adds a subtree from an already used ontology.](Screenshot_20180325_165352.png)
+
+### An example of a new term, unavailable from any ontology
+
+The last example given here is adding a term that does not exist in any ontology. In this situation
+we can just create a new term. The hardest part is to select a new term identifier (IRI) for the term
+that is not used already.
+
+New terms are defined as Web Ontology Language (OWL) classes, and should have an identifier (already said),
+label, and superclass. It may look like (actual example, see commit below):
+
+For example:
+
+```xml
+<owl:Class rdf:about="http://purl.enanomapper.org/onto/ENM_9000238">
+  <rdfs:subClassOf rdf:resource="http://purl.bioontology.org/ontology/npo#NPO_354"/>
+  <rdfs:label xml:lang="en">Mitsui MWCNT-7</rdfs:label>
+</owl>
+```
+
+The above example adds a term with the IRI `http://purl.enanomapper.org/onto/ENM_9000238`. The local part
+`ENM_9000238` must be unique. When creating a new IRI, it is important to ensure it is.
+
+Some people may prefer adding this term with [Protégé](https://protege.stanford.edu/) (which has the advantage
+that it will figure out an unused identifier) but it can be just as well added with a plain text editor.
+Ideally, the editor understands XML Schema, allowing you to be warned of the XML/OWL syntax is not correct, e.g.
+the [Kate editor](https://kate-editor.org/).
+
+These additions are put in files in the [internal folder](https://github.com/enanomapper/ontologies/tree/master/internal).
+Several ontologies already have terms that should, ultimately, be incorporated in that upstream ontology.
+
+The following screenshot shows an example existing
+[commit](https://github.com/enanomapper/ontologies/commit/8eb1ade82677086808e0f775fc27ae1197f51ea4)
+that adds a term (*Mitsui MWCNT-7*) as child to a term from an ontology that already is used (NPO):
+
+![Example commit that adds a new term an already used ontology term.](Screenshot_20180402_093106.png)
+
+
+#### 
 
 ## Adding a terms from an ontology that is not yet used
 
+To be written...
 
 # Monitoring the building
 
