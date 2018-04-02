@@ -28,18 +28,18 @@ the following:
 * CHMO
 * [Experimental Factor Ontology](https://www.ebi.ac.uk/efo/) (EFO)
 * [Environment Ontology](http://environmentontology.org/) (ENVO)
-* FABIO
+* [FRBR-aligned Bibliographic Ontology](https://sparontologies.github.io/fabio/current/fabio.html) (FABIO)
 * Gene Ontology (GO)
 * HUPSON
-* Information Artifact Ontology (IAO)
+* [Information Artifact Ontology](https://github.com/information-artifact-ontology/IAO/) (IAO)
 * NCIT
-* NanoParticle Ontology (NPO)
+* [NanoParticle Ontology](http://www.nano-ontology.org/) (NPO)
 * OAE
 * OBCS
-* OBI
+* [Ontology for Biomedical Investigations](http://obi-ontology.org/) (OBI)
 * PATO
-* SIO
-* Unit Ontology (UO)
+* [Semanticscience Integrated Ontology](https://github.com/micheldumontier/semanticscience) (SIO)
+* [Unit Ontology](https://github.com/bio-ontology-research-group/unit-ontology) (UO)
 
 However, the eNanoMapper ontology does not use full ontologies, and there are
 reasons why that is essential:
