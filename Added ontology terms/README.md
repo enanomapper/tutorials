@@ -241,10 +241,17 @@ To be written...
 
 # Monitoring the building
 
+The building of the eNanoMapper ontology is monitored by a Jenkins server hosted by the BiGCaT group,
+part of the NUTRIM research school at [Maastricht University](https://www.maastrichtuniversity.nl/).
+Login access to this server is set up by
+In Silico Toxicology Gmbh and uses the OpenTox Authentication and Authorisation framework. This
+section gives some pointers how this build server allows you to monitor
+
 ## Checking the building
 
-We use [Jenkins](https://jenkins.io/) as continuous build server, hosted at https://jenm.bigcat.maastrichtuniversity.nl/
-(by [Maastricht University](https://www.maastrichtuniversity.nl/)). Here, jobs run for each included ontology:
+[Jenkins](https://jenkins.io/) is a continuous build server, hosted at
+[https://jenm.bigcat.maastrichtuniversity.nl/](https://jenm.bigcat.maastrichtuniversity.nl/).
+Here, jobs run for each included ontology:
 
 * [AOP](https://jenm.bigcat.maastrichtuniversity.nl/job/AOP/)
 * [BAO](https://jenm.bigcat.maastrichtuniversity.nl/job/BAO/)
@@ -273,6 +280,31 @@ We use [Jenkins](https://jenkins.io/) as continuous build server, hosted at http
 The final check to be performed, is to see if the term actually shows up on the ontology browsers (BioPortal,
 Ontology Lookup Service, AberOWL, etc). For that, please check
 [Browsing the eNM ontology with BioPortal, AberOWL and Protégé](BrowseOntology/Tutorial%20browsing%20eNM%20ontology.md) tutorial.
+
+## How a Slimming job is set up
+
+As indicated earlier, each ontology is slimmed by a separate Jenkins job. Basically, for each ontology
+the following steps are taken, here for the AOP ontology. The first step is to delete old files and
+download the OWL file of the ontology (which it really should get from the .props file, but
+currently still is hard coded):
+
+```shell
+rm -f *.owl
+rm -f *.owl.*
+wget -O aopo.owl https://raw.githubusercontent.com/enanomapper/aop-ontology/patch/hpoUpdate/aopo.owl
+```
+
+The next step makes sure to get the latest copies from the ontologies repository of the .prop and .iris files,
+followed by calling the Slimmer tool, which automatically detects the .props file in the current (`.`)
+directory:
+
+```shell
+rm -f aopo.props*
+rm -f aopo.iris*
+wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/aopo.props
+wget https://raw.githubusercontent.com/enanomapper/ontologies/master/config/aopo.iris
+java -cp ../Slimmer/target/slimmer-0.0.1-SNAPSHOT-jar-with-dependencies.jar com.github.enanomapper.Slimmer .
+```
 
 # Acknowledgments
 
