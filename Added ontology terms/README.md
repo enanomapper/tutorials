@@ -232,12 +232,42 @@ that adds a term (*Mitsui MWCNT-7*) as child to a term from an ontology that alr
 
 ![Example commit that adds a new term an already used ontology term.](Screenshot_20180402_093106.png)
 
-
-#### 
-
 ## Adding a terms from an ontology that is not yet used
 
-To be written...
+Adding a term from an ontology that is not yet used is not that different from the adding the terms
+from an already used ontology: we just have to make sure that the ontology is "used". That means,
+we have to ensure the following:
+
+1. create a .props and .iris file (as described earlier)
+2. set up a Jenkins job for the slimming
+3. include the new ontology in the eNanoMapper ontology
+
+The first step is to create the .props and .iris file. The latter can even be empty at the start, or
+contain a single term to be added. The combination of the following
+[two](https://github.com/enanomapper/ontologies/commit/839a41b030e132a25722fefb868699ef532f5905)
+[commits](https://github.com/enanomapper/ontologies/commit/c9d0044672e856ce2a4c8284bd8747f3f7660aac)
+show how the FABIO ontology was recently added:
+
+![Commit that added the .props file for the FABIO.](Screenshot_20180403_084549.png)
+
+and
+
+![Commit that added the initial .iris file for the FABIO.](Screenshot_20180403_084557.png)
+
+Setting up Jenkins can be done by everyone from the eNanoMapper project, but the reader
+can also [file an issue here](https://github.com/enanomapper/ontologies/issues) to request adding
+an ontology, or do that as part of the pull request that adds the above two files. In fact,
+do not worry too much about this step, as this is a responsibility of the ontology release
+manager (currently Egon Willighagen).
+
+The final step is to ensure the ontology is listed (`owl:include`) in the ontology, which is
+done by adding a line to the
+[enanomapper-auto-dev.owl](https://github.com/enanomapper/ontologies/blob/master/enanomapper-auto-dev.owl)
+file, which looks like:
+
+```xml
+<owl:imports rdf:resource="http://purl.enanomapper.net/onto-dev/AOP/ws/aopo-slim.owl"/>
+```
 
 # Monitoring the building
 
