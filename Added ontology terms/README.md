@@ -82,7 +82,7 @@ The `iris=` line indicates the configuration file is found locally which defines
 
 ### The slimmed ontology file
 
-The `slimmer=` line specifies the file name under which the resulting slimmed ontology is saved. It is this
+The `slimmed=` line specifies the file name under which the resulting slimmed ontology is saved. It is this
 file that is to be imported by the main eNanoMapper OWL file. That is, this URL is used for
 *owl:import* statements in the eNanoMapper ontology, which is the used mechanism to include slimmed
 ontology modules.
