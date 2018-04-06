@@ -22,22 +22,22 @@ the following:
 * [Adverse Outcome Pathways Ontology](https://github.com/DataSciBurgoon/aop-ontology) (AOP)
 * [BioAssay Ontology](http://bioassayontology.org/) (BAO)
 * [Basic Formal Ontology](http://basic-formal-ontology.org/) (BFO)
-* CCONT
+* [Cell Culture Ontology](http://bioportal.bioontology.org/ontologies/CCONT?p=summary) (CCONT)
 * [Chemical Entities of Biological Interest](https://www.ebi.ac.uk/chebi/) (CHEBI)
 * [Chemical Information Ontology](https://github.com/semanticchemistry/semanticchemistry/) (CHEMINF)
-* CHMO
+* [Chemical Methods Ontology](https://github.com/rsc-ontologies/rsc-cmo) (CHMO)
 * [Experimental Factor Ontology](https://www.ebi.ac.uk/efo/) (EFO)
 * [Environment Ontology](http://environmentontology.org/) (ENVO)
 * [FRBR-aligned Bibliographic Ontology](https://sparontologies.github.io/fabio/current/fabio.html) (FABIO)
-* Gene Ontology (GO)
-* HUPSON
+* [Gene Ontology](http://www.geneontology.org/) (GO)
+* [Human Physiology Simulation Ontology](https://www.scai.fraunhofer.de/en/business-research-areas/bioinformatics/downloads.html) (HUPSON)
 * [Information Artifact Ontology](https://github.com/information-artifact-ontology/IAO/) (IAO)
-* NCIT
+* [National Cancer Institute Thesaurus](https://nciterms.nci.nih.gov/) (NCIT)
 * [NanoParticle Ontology](http://www.nano-ontology.org/) (NPO)
-* OAE
-* OBCS
+* [Ontology of Adverse Events](http://www.oae-ontology.org/) (OAE)
+* [Ontology of Biological and Clinical Statistics](https://github.com/obcs/obcs) (OBCS)
 * [Ontology for Biomedical Investigations](http://obi-ontology.org/) (OBI)
-* PATO
+* [Phenotype And Trait Ontology](https://github.com/pato-ontology/pato) (PATO)
 * [Semanticscience Integrated Ontology](https://github.com/micheldumontier/semanticscience) (SIO)
 * [Unit Ontology](https://github.com/bio-ontology-research-group/unit-ontology) (UO)
 
