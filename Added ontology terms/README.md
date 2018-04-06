@@ -16,8 +16,7 @@ documents:
 
 # A collection on ontology parts
 
-The eNanoMapper ontology is mostly composed of other ontologies. A list of ontologies it includes includes
-the following:
+The eNanoMapper ontology is mostly composed of other ontologies. A list of ontologies it includes the following:
 
 * [Adverse Outcome Pathways Ontology](https://github.com/DataSciBurgoon/aop-ontology) (AOP)
 * [BioAssay Ontology](http://bioassayontology.org/) (BAO)
@@ -44,8 +43,8 @@ the following:
 However, the eNanoMapper ontology does not use full ontologies, and there are
 reasons why that is essential:
 
-* most ontologies include bits from other ontologies; and,
-* some ontologies do not just have core concepts, but enumerate hundreds or thousands of instances.
+* Most ontologies include bits from other ontologies; and,
+* Some ontologies do not just have core concepts, but enumerate hundreds or thousands of instances.
 
 Therefore, we select parts of ontologies. In order to perform this slicing we need a tool that can do this
 slicing and we need to instruct this slices which bits to keep.
@@ -53,11 +52,11 @@ slicing and we need to instruct this slices which bits to keep.
 # The configuration file
 
 Configuration file are used to define which parts of which ontologies are used. These configuration files
-can be [found on GitHub](https://github.com/enanomapper/ontologies/tree/master/config). For each ontology,
+can be [found on GitHub](https://github.com/enanomapper/ontologies/tree/master/config). For each of the ontologies,
 two files are provided:
 
-1. an .props file
-2. an .iris file
+1. A .props file
+2. A .iris file
 
 ## The *props* file
 
@@ -102,7 +101,7 @@ For example:
 ````
 
 This configuration file uses a custom syntax which is briefly explained here.
-Here, the first line in the above example shows that the term detection instrument is imported (from the BAO ontology) and made a subclass of the NPO_1436 class from the NPO ontoloy.
+Here, the first line in the above example shows that the term detection instrument is imported (from the BAO ontology) and made a subclass of the NPO_1436 class from the NPO ontology.
 
 ### The Syntax
 
@@ -164,15 +163,15 @@ If the ontology already exists, then you basically change the content of the *ir
 from which you want to include terms, then you need to create a new combination of a *props* and an *iris* file. This
 is explained in the next sections.
 
-## Adding a terms from an already used ontology
+## Adding a term from an already used ontology
 
 When you identified the term you want to add in an ontology that already is used by the eNanoMapper
 ontology (see [this list](#A collection on ontology parts)), you basically need to identify
 the following information:
 
-1. what is the IRI of the term?
-2. is it just that single term, or also also parent or child terms?
-3. where in the eNanoMapper ontology should your selection show up?
+1. What is the IRI of the term?
+2. Is it just that single term, or also parent or child terms?
+3. Where in the eNanoMapper ontology should your selection show up?
 
 ### An example of adding a single term
 
@@ -193,7 +192,7 @@ and puts it in as a child of term another already used ontology (NPO):
 
 The following screenshot shows a
 [commit](https://github.com/enanomapper/ontologies/commit/e5f2d4812ce5f207792ffa22291705fbe44c6aad)
-that adds a terms (*protein part*) from an ontology that already is used (SIO):
+that adds a term (*protein part*) from an ontology that already is used (SIO):
 
 ![Example commit that adds a subtree from an already used ontology.](Screenshot_20180325_165352.png)
 
@@ -232,15 +231,15 @@ that adds a term (*Mitsui MWCNT-7*) as child to a term from an ontology that alr
 
 ![Example commit that adds a new term an already used ontology term.](Screenshot_20180402_093106.png)
 
-## Adding a terms from an ontology that is not yet used
+## Adding a term from an ontology that is not yet used
 
 Adding a term from an ontology that is not yet used is not that different from the adding the terms
 from an already used ontology: we just have to make sure that the ontology is "used". That means,
 we have to ensure the following:
 
-1. create a .props and .iris file (as described earlier)
-2. set up a Jenkins job for the slimming
-3. include the new ontology in the eNanoMapper ontology
+1. Create a .props and .iris file (as described earlier)
+2. Set up a Jenkins job for the slimming
+3. Include the new ontology in the eNanoMapper ontology
 
 The first step is to create the .props and .iris file. The latter can even be empty at the start, or
 contain a single term to be added. The combination of the following
@@ -281,7 +280,7 @@ section gives some pointers how this build server allows you to monitor
 
 [Jenkins](https://jenkins.io/) is a continuous build server, hosted at
 [https://jenm.bigcat.maastrichtuniversity.nl/](https://jenm.bigcat.maastrichtuniversity.nl/).
-Here, jobs run for each included ontology:
+Here, jobs run for each of the included ontologies:
 
 * [AOP](https://jenm.bigcat.maastrichtuniversity.nl/job/AOP/)
 * [BAO](https://jenm.bigcat.maastrichtuniversity.nl/job/BAO/)
@@ -307,13 +306,13 @@ Here, jobs run for each included ontology:
 
 ## Checking the outcome
 
-The final check to be performed, is to see if the term actually shows up on the ontology browsers (BioPortal,
+The final check to be performed is to see if the term actually shows up on the ontology browsers (BioPortal,
 Ontology Lookup Service, AberOWL, etc). For that, please check
 [Browsing the eNM ontology with BioPortal, AberOWL and Protégé](BrowseOntology/Tutorial%20browsing%20eNM%20ontology.md) tutorial.
 
 ## How a Slimming job is set up
 
-As indicated earlier, each ontology is slimmed by a separate Jenkins job. Basically, for each ontology
+As indicated earlier, each of the ontologies is slimmed by a separate Jenkins job. Basically, for each of the ontologies
 the following steps are taken, here for the AOP ontology. The first step is to delete old files and
 download the OWL file of the ontology (which it really should get from the .props file, but
 currently still is hard coded):
