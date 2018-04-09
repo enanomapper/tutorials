@@ -16,7 +16,8 @@ documents:
 
 # A collection on ontology parts
 
-The eNanoMapper ontology is mostly composed of other ontologies. A list of ontologies it includes the following:
+The eNanoMapper ontology is mostly composed of other ontologies, with extensions here and there.
+The full list of ontologies it includes is:
 
 * [Adverse Outcome Pathways Ontology](https://github.com/DataSciBurgoon/aop-ontology) (AOP)
 * [BioAssay Ontology](http://bioassayontology.org/) (BAO)
