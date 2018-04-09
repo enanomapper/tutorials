@@ -166,7 +166,7 @@ is explained in the next sections.
 ## Adding a term from an already used ontology
 
 When you identified the term you want to add in an ontology that already is used by the eNanoMapper
-ontology (see [this list](#A collection on ontology parts)), you basically need to identify
+ontology (see [this list](README.md#a-collection-on-ontology-parts)), you basically need to identify
 the following information:
 
 1. What is the IRI of the term?
