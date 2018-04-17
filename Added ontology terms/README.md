@@ -185,6 +185,10 @@ the following information:
 2. Is it just that single term, or also parent or child terms?
 3. Where in the eNanoMapper ontology should your selection show up?
 
+That last question should be carefully considered, taking the hierarchy of the ontology into account.
+For example, moving a term below some concept from the BFO under a different concept from the BFO
+only works out well if one of the BFO concepts is a subclass of the other.
+
 ### An example of adding a single term
 
 The simplest addition one can make to the ontology, is adding a single term. One basically then only
