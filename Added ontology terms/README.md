@@ -47,7 +47,18 @@ reasons why that is essential:
 * Most ontologies include bits from other ontologies; and,
 * Some ontologies do not just have core concepts, but enumerate hundreds or thousands of instances.
 
-Therefore, we select parts of ontologies. In order to perform this slicing we need a tool that can do this
+The first reason has to do with maintainability. For example, what happens if two ontologies we import
+both import a third ontology, which import do we then take? eNanoMapper has chosen to always take the upstream
+version of the ontology. Besides resolving multiple imports of that third ontology, we now also have
+more control over which version we use. The situation is comparible to dependency resolution in software
+development.
+
+The second reason has to do with controlling the FAIR-ness of the eNanoMapper ontology. For example, we
+want to ensure that terms important to the nanosafety field are not too hard to find. Therefore, the size
+of the ontology matters.
+
+For these reasons, we select parts of ontologies (a full description of the design decision can be found
+in the eNanoMapper ontology publication). In order to perform this slicing we need a tool that can do this
 slicing and we need to instruct this slices which bits to keep.
 
 # The configuration file
