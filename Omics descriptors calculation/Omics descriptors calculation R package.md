@@ -1,6 +1,11 @@
+---
+layout: default
+---
+
 # Omics descriptors calculation R package
 
-* RELEASE DATE: 31.1.2016                                                                                                                    * VERSION: V.0.9                                                                                               
+* RELEASE DATE: 31.1.2016
+* VERSION: V.0.9
 * MAIN AUTHOR: Georgia Tsiliki                                                                        
 * AUTHORS: Georgia Tsiliki, Haralambos Sarimveis
 * LICENSE: Creative Commons Attribution (CC-BY) 4.0
@@ -632,12 +637,15 @@ Georgia Tsiliki
 No references for this function.
 
 ### Examples
+
+```
 predF<- list()
 
 required.param<- list(key=¹UNIPROT¹,onto=c(¹GO¹,¹MF¹),pvalCutoff=0.05,nclust=c(3,2),FUN=¹mean¹)
 
 read.in.json.for.pred	11
 params1<- generate.param.model(dat1,predF,required.param)
+```
 
 ## read.in.json.for.pred-	Read in function for json files for prediction
 
@@ -645,7 +653,9 @@ params1<- generate.param.model(dat1,predF,required.param)
 This function reads in a json data file and produces a list with independent features, parameters list for GO clustering saved as raw model
 
 ### Usage
+```
 read.in.json.for.pred(dataset, rawModel, additionalInfo)
+```
 
 ### Arguments
 dataset	Data for prediction. A list of two objects: datasetURI (a character string ), dataEntry (a data frame) which should include an omics data set (e.g. pro- teomics/genomics/etc).
@@ -668,7 +678,8 @@ Georgia Tsiliki
 jsonlite
 
 ### Examples
+```
 data("dat1p") data("dat1m1") data("dat1i1")
 
-
 res1<- read.in.json.for.pred(dat1p, dat1m1, dat1i1)
+```
