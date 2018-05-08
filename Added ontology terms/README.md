@@ -1,3 +1,7 @@
+---
+layout: default 
+---
+
 # Adding ontology terms
 
 * Author: Egon Willighagen (orcid:[0000-0001-7542-0286](https://orcid.org/0000-0001-7542-0286))
@@ -178,7 +182,7 @@ is explained in the next sections.
 ## Adding a term from an already used ontology
 
 When you identified the term you want to add in an ontology that already is used by the eNanoMapper
-ontology (see [this list](README.md#a-collection-on-ontology-parts)), you basically need to identify
+ontology (see [this list](README.html#a-collection-on-ontology-parts)), you basically need to identify
 the following information:
 
 1. What is the IRI of the term?
@@ -324,7 +328,7 @@ Here, jobs run for each of the included ontologies:
 
 The final check to be performed is to see if the term actually shows up on the ontology browsers (BioPortal,
 Ontology Lookup Service, AberOWL, etc). For that, please check
-[Browsing the eNM ontology with BioPortal, AberOWL and Protégé](BrowseOntology/Tutorial%20browsing%20eNM%20ontology.md) tutorial.
+[Browsing the eNM ontology with BioPortal, AberOWL and Protégé](BrowseOntology/Tutorial%20browsing%20eNM%20ontology.html) tutorial.
 
 ## How a Slimming job is set up
 

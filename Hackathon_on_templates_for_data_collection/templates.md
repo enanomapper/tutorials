@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # JRC/NANoREG templates fields relevance questionnaire
 
 ## NANoREG templates

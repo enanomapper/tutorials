@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Entering and analysing nano safety data
 
 * Author: Nina Jeliazkova, Egon Willighagen
@@ -12,7 +16,7 @@ application programming interface (API) to access data. This document provides i
 run the exercises. For detailed description of the eNanoMapper data solutions, please consider
 the publication doi:[10.3762/bjnano.6.165](https://doi.org/10.3762/bjnano.6.165) and resources at http://enanomapper.net/.
 
-* [Searching](searching.md) (HTML; being migrated)
-* [Download data from within R](downloading.md) (HTML)
-* [Data preparation & Upload](uploading.md) (HTML; being migrated)
-* [Data visualization](visualisation.md) (HTML)
+* [Searching](searching.html) (HTML; being migrated)
+* [Download data from within R](downloading.html) (HTML)
+* [Data preparation & Upload](uploading.html) (HTML; being migrated)
+* [Data visualization](visualisation.html) (HTML)

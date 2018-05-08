@@ -1,3 +1,25 @@
+---
+layout: default
+
+trainingMaterial:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+#- about: 
+#- audience:
+#- genre:
+  name: Browsing the eNM ontology with BioPortal, AberOWL and Protégé
+  author: [Linda Rieswijk, Friederike Ehrhart, Egon Willighagen]
+#- contributor: 
+#- description: 
+#- difficultyLeveL:
+#- keywords:
+  license: CC-BY 4.0
+#- url:
+  version: 1.1
+
+# Available metadata fields can be found here:
+# http://bioschemas.org/specifications/TrainingMaterial/specification/
+---
 
 Browsing the eNM ontology with BioPortal, AberOWL and Protégé
 =============================================================

@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Omics descriptors calculation
 
 Author: Georgia Tsiliki, Haralambos Sarimveis

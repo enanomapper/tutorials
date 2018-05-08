@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Browsing the eNM ontology with BioPortal, AberOWL and Protégé
 
 * Author: Linda Rieswijk, Friederike Ehrhart, Egon Willighagen
@@ -5,5 +9,5 @@
 
 ## Versions
 
-* [HTML](Tutorial browsing eNM ontology.md)
+* [HTML](Tutorial browsing eNM ontology.html)
 * [ODT](Tutorial browsing eNM ontology.odt) (original version)
