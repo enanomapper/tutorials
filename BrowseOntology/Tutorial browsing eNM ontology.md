@@ -36,11 +36,10 @@ trainingMaterial:
 # http://bioschemas.org/specifications/TrainingMaterial/specification/
 ---
 
-Browsing the eNM ontology with BioPortal, AberOWL and Protégé
-=============================================================
+# Browsing the eNanoMapper ontology with BioPortal, AberOWL and Protégé
 
-* Release: 2017-11-19
-* Version: v1.1
+* Release: 2018-05-08
+* Version: v1.1.1
 * Main Author: Linda Rieswijk (ORCID:[0000-0002-6106-1347](https://orcid.org/0000-0002-6106-1347))
 * Authors: Linda Rieswijk, Friederike Ehrhart (ORCID:[0000-0002-7770-620X](https://orcid.org/0000-0002-7770-620X)), and Egon Willighagen (ORCID:[0000-0001-7542-0286](https://orcid.org/0000-0001-7542-0286))
 * License: [Creative Commons Attribution (CC-BY) 4.0](https://creativecommons.org/licenses/by/4.0/)
