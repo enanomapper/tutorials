@@ -46,14 +46,23 @@ GOdescrCalculus includes the following functions:
 
 ## R topics documented:
 [GOdescrPred-package](#godescrpred-package-generate-go-descriptors-given-an-omics-data)
-[dat1](#dat1- a sample data object)
+
+[dat1](#dat1-a-sample-data-object)
+
 [dat1i](#dat1i-additional-information-needed-for-go-descriptors-model)
+
 [dat1m](#dat1m-serialized-go-descriptors-model-file)	
+
 [dat1p](#dat1p-a-sample-data-object)
+
 [dat4h](#dat4h-sample-data-object)
+
 [generate.biclust.model](#generate-biclust-model-go-descriptors-model-using-bi-clustering-algorithm)
+
 [generate.hierar.model](#generate-hierar-model-go-descriptors-model-using-hierarchical-clustering-algorithm)
+
 [pred.descr](#pred-descr-predict-go-descriptors)
+
 [read.in.json.for.pred](#read-in-json-for-pred-read-in-function-for-json-files-for-prediction)
 
 # godescrpred-package-generate-go-descriptors-given-an-omics-data
@@ -83,7 +92,7 @@ data("dat1m")
 
 data.file<- read.in.json.for.pred(dat1p, dat1m, dat1i)
 
-# dat1- a sample data object
+# dat1 a sample data object
 
 ### Description
 The dataset for this test is a data frame
@@ -150,7 +159,7 @@ There are no references
 data(dat1m)
 maybe str(dat1m) ; plot(dat1m) ...
 
-# dat1p	a sample data object
+# dat1p a sample data object
 
 ### Description
 The dataset for this test is a data frame
