@@ -1,8 +1,7 @@
 ---
-title: my Page
+title: home
 layout: default
 ---
-
 
 # Collection of eNanoMapper Tutorials
 
@@ -12,15 +11,15 @@ can be a Word document or something else.
 ## Tutorials in HTML
 
 * [Browsing the eNM ontology with BioPortal, AberOWL and Protégé](BrowseOntology/readme.html)
-* [Entering and analysing nano safety data](Entering_and_analysing_nano_safety_data/readme.md)
-* [Adding ontology terms](Added%20ontology%20terms/README.md)
+* [Entering and analysing nano safety data](Entering_and_analysing_nano_safety_data/readme.html)
+* [Adding ontology terms](Added%20ontology%20terms/README.html)
 
 ## Tutorials in Word
 
-* [How to make a pathway](Pathway/readme.md)
-* [How to use the statistics module of ArrayAnalysis.org for statistics analysis of microarray data](Statistics/readme.md)
-* [Omics descriptors calculation](Omics%20descriptors%20calculation/README.md)
-* [Pathway analysis](Pathway_analysis/readme.md)
+* [How to make a pathway](Pathway/readme.html)
+* [How to use the statistics module of ArrayAnalysis.org for statistics analysis of microarray data](Statistics/readme.html)
+* [Omics descriptors calculation](Omics%20descriptors%20calculation/README.html)
+* [Pathway analysis](Pathway_analysis/readme.html)
 
 ## Feedback
 
