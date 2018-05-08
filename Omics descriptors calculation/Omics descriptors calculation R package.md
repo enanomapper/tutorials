@@ -45,19 +45,18 @@ GOdescrCalculus includes the following functions:
 * LICENSE: GPL-2
 
 ## R topics documented:
-* GOdescrPred-package
-* dat1	
-* dat1i	
-* dat1m	
-* dat1p	
-* dat4h	
-* generate.biclust.model	
-* generate.hierar.model	
-* pred.descr	
-* read.in.json.for.pred	
-* Index	
+[GOdescrPred-package](#godescrpred-package-generate-go-descriptors-given-an-omics-data)
+[dat1](#dat1- a sample data object)
+[dat1i](#dat1i-additional-information-needed-for-go-descriptors-model)
+[dat1m](#dat1m-serialized-go-descriptors-model-file)	
+[dat1p](#dat1p-a-sample-data-object)
+[dat4h](#dat4h-sample-data-object)
+[generate.biclust.model](#generate-biclust-model-go-descriptors-model-using-bi-clustering-algorithm)
+[generate.hierar.model](#generate-hierar-model-go-descriptors-model-using-hierarchical-clustering-algorithm)
+[pred.descr](#pred-descr-predict-go-descriptors)
+[read.in.json.for.pred](#read-in-json-for-pred-read-in-function-for-json-files-for-prediction)
 
-## GOdescrPred-package: Generate GO descriptors given an omics data
+# godescrpred-package-generate-go-descriptors-given-an-omics-data
 
 ### Description
 This package expects an omics data (e.g. proteomics/genomics), creates an R raw model to store the cluster memberships based on the data and the algorirthm selected; bi-clustering and hierarchical clustering algorithms are currently implemented. The cluster memberships can be stored as an R raw model and used for ’prediction’, i.e. to construct new decsriptors for similar data. By similar, we mean that the new data needs to include the genes/proteins/etc used for the initial clustering.
@@ -84,7 +83,7 @@ data("dat1m")
 
 data.file<- read.in.json.for.pred(dat1p, dat1m, dat1i)
 
-## dat1- A sample data object
+# dat1- a sample data object
 
 ### Description
 The dataset for this test is a data frame
@@ -108,7 +107,7 @@ data(dat1)
 maybe str(dat1) ; plot(dat1) ...
 
 
-## dat1i- Additional information needed for GO descriptors model.
+# dat1i additional information needed for go descriptors model
 
 ### Description
 Here we specify the function with which we summarize GO descriptor cluster memberships from dat1m given dat1 data set. For example, mean, sd, var are some typical functions that can be provided.
@@ -130,7 +129,7 @@ There are no references
 data(dat1i)
 maybe str(dat1i) ; plot(dat1i) ...
 
-## dat1m- Serialized GO descriptors model file
+# dat1m serialized go descriptors model file
 
 ### Description
 A character string for a serialized GO descriptors model, i.e. provides clustering memberships for all proteins in proteomics data dat1.
@@ -151,7 +150,7 @@ There are no references
 data(dat1m)
 maybe str(dat1m) ; plot(dat1m) ...
 
-## dat1p	A sample data object
+# dat1p	a sample data object
 
 ### Description
 The dataset for this test is a data frame
@@ -174,7 +173,7 @@ Walkey et al., 2014
 data(dat1p)
 maybe str(dat1p) ; plot(dat1p) ...
 
-## dat4h	A sample data object
+# dat4h sample data object
 
 ### Description
 The dataset for this test is a data frame
@@ -197,7 +196,7 @@ Walkey et al., 2014
 data(dat4h)
 maybe str(dat4h) ; plot(dat4h) ...
 
-## generate.biclust.model- GO descriptors model using bi-clustering algorithm
+# generate.biclust.model go descriptors model using bi clustering algorithm
 
 ### Description
 This function is used to estimate the cluster memberships for omics data, based on GO ontology. Data are clustered based on bi-clustering algorithm from the blockcluster R package using default values. The user needs to specify the number of clusters for both axes.
@@ -238,7 +237,7 @@ predF<- list()
 
 required.param<- list(key=¹UNIPROT¹,onto=c(¹GO¹,¹MF¹),pvalCutoff=0.05,nclust=c(3,2),FUN=¹mean¹) clust.memb<- generate.biclust.model(dat1,predF,required.param)
 
-## generate.hierar.model- GO descriptors model using hierarchical clustering algorithm
+# generate.hierar.model go descriptors model using hierarchical clustering algorithm
 
 ### Description
 This function is used to estimate the cluster memberships for omics data, based on GO ontology. Data are clustered based on hierarchical clustering algorithm from the vegan R package using de- fault values. The user needs to specify the number of clusters or the height of the dendrogram.
@@ -281,7 +280,7 @@ required.param<-  list(key=¹UNIPROT¹,onto=c(¹GO¹,¹MF¹),pvalCutoff=0.05, di
 
 clust.memb<- generate.hierar.model(dat4h,predF,required.param)
 
-## pred.descr- Predict GO descriptors
+# pred.descr predict go descriptors
 
 ### Description
 Produces GO descriptors based on the data and model supplied. Also a summary statistic needs to be specified.
@@ -314,7 +313,7 @@ data("dat1m")
 
 pred.res<- pred.descr(dat1p, dat1m, dat1i)
 
-## read.in.json.for.pred- Read in function for json files for prediction
+# read.in.json.for.pred read in function for json files for prediction
 
 ### Description
 This function reads in a json data file and produces a list with independent features, GO clustering memberships raw model.
