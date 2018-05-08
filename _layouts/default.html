@@ -24,7 +24,7 @@
 
 	{% if page.trainingMaterial %}
 		<script type=\"application/ld+json\">
-			{{ page.trainingMaterial }}
+			{{ page.trainingMaterial | jsonify }}
 		</script>
 	{% endif %}
   </head>
