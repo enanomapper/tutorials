@@ -1,3 +1,5 @@
+---
+---
 
 <!DOCTYPE html>
 <html>
@@ -21,7 +23,9 @@
 	</style>
 
 	{% if page.trainingMaterial %}
-	{{ page.trainingMaterial | json_ld_filter }}
+		<script type=\"application/ld+json\">
+			{{ page.trainingMaterial }}
+		</script>
 	{% endif %}
   </head>
 
