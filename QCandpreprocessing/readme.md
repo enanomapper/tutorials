@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 QC and pre-processing
 =====================
 

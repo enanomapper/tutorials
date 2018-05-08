@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Download data from within R
 
 This tasks introduces you the the R packages for accessing data in an eNanoMapper instance and

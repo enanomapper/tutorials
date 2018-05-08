@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Data visualization
 
 The last task of this tutorial shows you another advantage of Application Programming Interfaces: it is easy to reuse in different frameworks. Here, we show visualization of data with many HTML and JavaScript, using various libraries.
