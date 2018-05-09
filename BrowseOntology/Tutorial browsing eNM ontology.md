@@ -7,15 +7,14 @@ trainingMaterial:
 #- about: 
   audience:
     - "@type": Audience
-      name: Biology
+      name: Biologists
     - "@type": Audience
-      name: Chemistry
+      name: Chemists
     - "@type": Audience
-      name: Computational Biology
-  genre: http://edamontology.org/topic_0089
+      name: Bioinformaticians
+#  genre: http://edamontology.org/topic_0089
   name: Browsing the eNanoMapper ontology with BioPortal, AberOWL and Protégé
-  author: [Linda Rieswijk, Friederike Ehrhart, Egon Willighagen]
-  contributor:
+  author:
     - "@type": Person
       name: Linda Rieswijk
       identifier: 0000-0002-6106-1347
@@ -25,12 +24,13 @@ trainingMaterial:
     - "@type": Person
       name: Egon Willighagen
       identifier: 0000-0001-7542-0286
+#- contributor:
 #- description: 
-#- difficultyLeveL:
-  keywords: nanotoxicology, ontology, BioPortal, AberOWL, Protégé
+  difficultyLevel: [Beginner]
+  keywords: nanotoxicology, Ontologies, BioPortal, AberOWL, Protégé
   license: CC-BY 4.0
 #- url:
-  version: 1.1
+  version: 1.1.1
 
 # Available metadata fields can be found here:
 # http://bioschemas.org/specifications/TrainingMaterial/specification/
