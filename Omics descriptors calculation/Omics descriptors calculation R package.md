@@ -19,6 +19,7 @@ trainingMaterial:
   license: CC-BY 4.0
 #- url:
   version: 1.1
+  dateCreated: 2016-01-31
 
 # Available metadata fields can be found here:
 # http://bioschemas.org/specifications/TrainingMaterial/specification/
