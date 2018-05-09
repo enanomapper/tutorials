@@ -50,25 +50,25 @@ GOdescrCalculus includes the following functions:
 * LICENSE: GPL-2
 
 ## R topics documented:
-[GOdescrPred-package](#godescrpred-package-generate-go-descriptors-given-an-omics-data)
+[GOdescrPred-package](#godescrpred-package)
 
-[dat1](#dat1-a-sample-data-object)
+[dat1](#dat1)
 
-[dat1i](#dat1i-additional-information-needed-for-go-descriptors-model)
+[dat1i](#dat1i)
 
-[dat1m](#dat1m-serialized-go-descriptors-model-file)	
+[dat1m](#dat1m)	
 
-[dat1p](#dat1p-a-sample-data-object)
+[dat1p](#dat1p)
 
-[dat4h](#dat4h-sample-data-object)
+[dat4h](#dat4h)
 
-[generate.biclust.model](#generate-biclust-model-go-descriptors-model-using-bi-clustering-algorithm)
+[generate.biclust.model](#generate-biclust-model)
 
-[generate.hierar.model](#generate-hierar-model-go-descriptors-model-using-hierarchical-clustering-algorithm)
+[generate.hierar.model](#generate-hierar-model)
 
-[pred.descr](#pred-descr-predict-go-descriptors)
+[pred.descr](#pred-descr)
 
-[read.in.json.for.pred](#read-in-json-for-pred-read-in-function-for-json-files-for-prediction)
+[read.in.json.for.pred](#read-in-json-for-pred)
 
 # godescrpred-package-generate-go-descriptors-given-an-omics-data
 
@@ -91,19 +91,24 @@ Maintainer: Georgia Tsiliki <gtsiliki@central.ntua.gr>
 1.blockcluster 2.vegan 3.GSEABase 4.GOstats
 
 ### Examples
+```
 data("dat1p")
 data("dat1i")
 data("dat1m")
 
 data.file<- read.in.json.for.pred(dat1p, dat1m, dat1i)
+```
 
-# dat1 a sample data object
+# dat1
+## a sample data object
 
 ### Description
 The dataset for this test is a data frame
 
 ### Usage
+```
 data("dat1")
+```
 
 ### Format
 A list of two objects
@@ -117,17 +122,21 @@ Please find more about the data set in $dataEntry at http://pubs.acs.org/doi/abs
 Walkey et al., 2014
 
 ### Examples
+```
 data(dat1)
 maybe str(dat1) ; plot(dat1) ...
+```
 
-
-# dat1i additional information needed for go descriptors model
+# dat1i 
+## additional information needed for GO descriptors model
 
 ### Description
 Here we specify the function with which we summarize GO descriptor cluster memberships from dat1m given dat1 data set. For example, mean, sd, var are some typical functions that can be provided.
 
 ### Usage
+```
 data("dat1i")
+```
 
 ### Format
 A data frame with one observation.
@@ -140,16 +149,21 @@ Example function to summarize dat1 using dat1m cluster memberships
 There are no references
 
 ### Examples
+```
 data(dat1i)
 maybe str(dat1i) ; plot(dat1i) ...
+```
 
-# dat1m serialized go descriptors model file
+# dat1m
+## serialized GO descriptors model file
 
 ### Description
 A character string for a serialized GO descriptors model, i.e. provides clustering memberships for all proteins in proteomics data dat1.
 
 ### Usage
+```
 data("dat1m")
+```
 
 ### Format
 A character string
@@ -161,16 +175,21 @@ Example GO descriptors model based on dat1
 There are no references
 
 ### Examples
+```
 data(dat1m)
 maybe str(dat1m) ; plot(dat1m) ...
+```
 
-# dat1p a sample data object
+# dat1p 
+## a sample data object
 
 ### Description
 The dataset for this test is a data frame
 
 ### Usage
+```
 data("dat1p")
+```
 
 ### Format
 A list of two objects
@@ -184,16 +203,21 @@ Data set for prediction with dat1m
 Walkey et al., 2014
 
 ### Examples
+```
 data(dat1p)
 maybe str(dat1p) ; plot(dat1p) ...
+```
 
-# dat4h sample data object
+# dat4h 
+## sample data object
 
 ### Description
 The dataset for this test is a data frame
 
 ### Usage
+```
 data("dat1p")
+```
 
 ### Format
 A list of two objects
@@ -207,16 +231,21 @@ Data set for prediction with dat1m
 Walkey et al., 2014
 
 ### Examples
+```
 data(dat4h)
 maybe str(dat4h) ; plot(dat4h) ...
+```
 
-# generate.biclust.model go descriptors model using bi clustering algorithm
+# generate biclust model
+## go descriptors model using bi clustering algorithm
 
 ### Description
 This function is used to estimate the cluster memberships for omics data, based on GO ontology. Data are clustered based on bi-clustering algorithm from the blockcluster R package using default values. The user needs to specify the number of clusters for both axes.
 
 ### Usage
+```
 generate.biclust.model(dataset, predictionFeature, parameters)
+```
 
 ### Arguments
 dataset	list of 2 objects, datasetURI:= character sring, code name of dataset, dataEntry:= data frame with 2 columns
@@ -247,17 +276,22 @@ Georgia Tsiliki
 generate.hierar.model
 
 ### Examples
+```
 predF<- list()
 
 required.param<- list(key=¹UNIPROT¹,onto=c(¹GO¹,¹MF¹),pvalCutoff=0.05,nclust=c(3,2),FUN=¹mean¹) clust.memb<- generate.biclust.model(dat1,predF,required.param)
+```
 
-# generate.hierar.model go descriptors model using hierarchical clustering algorithm
+# generate hierar model
+## GO descriptors model using hierarchical clustering algorithm
 
 ### Description
 This function is used to estimate the cluster memberships for omics data, based on GO ontology. Data are clustered based on hierarchical clustering algorithm from the vegan R package using de- fault values. The user needs to specify the number of clusters or the height of the dendrogram.
 
 ### Usage
+```
 generate.hierar.model(dataset, predictionFeature, parameters)
+```
 
 ### Arguments
 dataset	list of 2 objects, datasetURI:= character sring, code name of dataset, dataEntry:= data frame with 2 columns
@@ -288,19 +322,24 @@ Georgia Tsiliki
 generate.biclust.model
 
 ### Examples
+```
 predF<- list()
 
 required.param<-  list(key=¹UNIPROT¹,onto=c(¹GO¹,¹MF¹),pvalCutoff=0.05, distMethod=¹euclidean¹,hclustMethod=¹ward.D2¹,nORh=¹mean¹,FUN=¹mean¹)
 
 clust.memb<- generate.hierar.model(dat4h,predF,required.param)
+```
 
-# pred.descr predict go descriptors
+# pred descr 
+## predict go descriptors
 
 ### Description
 Produces GO descriptors based on the data and model supplied. Also a summary statistic needs to be specified.
 
 ### Usage
+```
 pred.descr(dataset, rawModel, additionalInfo)
+```
 
 ### Arguments
 dataset	Data for prediction. A list of two objects: datasetURI (a character string ), dataEntry (a data frame).
@@ -320,14 +359,15 @@ Georgia Tsiliki
 jsonlite
 
 ### Examples
-
+```
 data("dat1p")
 data("dat1i")
 data("dat1m")
 
 pred.res<- pred.descr(dat1p, dat1m, dat1i)
-
-# read.in.json.for.pred read in function for json files for prediction
+```
+# read in json for pred
+## read in function for json files for prediction
 
 ### Description
 This function reads in a json data file and produces a list with independent features, GO clustering memberships raw model.
@@ -335,7 +375,9 @@ This function reads in a json data file and produces a list with independent fea
 read.in.json.for.pred	11
 
 ### Usage
+```
 read.in.json.for.pred(dataset, rawModel, additionalInfo)
+```
 
 ### Arguments
 dataset	Data for prediction. A list of two objects: datasetURI (a character string ), dataEntry (a data frame).
@@ -358,11 +400,13 @@ Georgia Tsiliki
 jsonlite
 
 ### Examples
+```
 data("dat1p")
 data("dat1i")
 data("dat1m")
 
 data.file<- read.in.json.for.pred(dat1p, dat1m, dat1i)
+```
 
 # Package ‘GOdescrCalculus’
 ### January 28, 2016
@@ -378,19 +422,20 @@ data.file<- read.in.json.for.pred(dat1p, dat1m, dat1i)
 * LICENSE: GPL-2
 
 ## R topics documented:
-GOdescrCalculus-package	
-dat1	
-dat1i1	
-dat1i2	
-dat1m1	
-dat1m2	
-dat1p	
-generate.descr.biclust	
-generate.descr.hierar	
-generate.param.model	
-read.in.json.for.pred
+[GOdescrCalculus-package](#godescrcalculus-package)
+[dat1](#dat1)
+[dat1i1](#dat1i1)
+[dat1i2](#dat1i2)	
+[dat1m1](#dat1m1)
+[dat1m2](#dat1m2)
+[dat1p](#dat1p)	
+[generate.descr.biclust](#generate.descr.biclust)	
+[generate.descr.hierar](#generate-descr-hierar)	
+[generate.param.model](#generate-param-model)	
+[read.in.json.for.pred](#read-in-json-for-pred)
 
-## GOdescrCalculus-package: Produce GO descriptors given an omics data
+# godescrcalculus package
+## produce go descriptors given an omics data
 ### Description
 This package expects an omics data (e.g. proteomics/genomics), and produces a set of GO de- scriptors given the data and the parameters supplied based on the data and the algorirthm selected; bi-clustering and hierarchical clustering algorithms are currently implemented. The clustering al- gorithm parameters can be stored as an R raw model and used for ’prediction’, i.e. to construct GO decsriptors for the same data.
 
@@ -411,18 +456,22 @@ Maintainer: Georgia Tsiliki <gtsiliki@central.ntua.gr>
 1.blockcluster 2.vegan 3.GSEABase 4.GOstats
 
 ### Examples
+```
 data("dat1p") data("dat1m1") data("dat1i1")
 
 res1<- read.in.json.for.pred(dat1p, dat1m1, dat1i1)
+```
 
-dat1	3
-dat1	A sample data object
+# dat1 
+## a sample data object
 
 ### Description
 The dataset for this test is a data frame
 
 ### Usage
+```
 data("dat1")
+```
 
 ### Format
 A list of two objects
@@ -439,13 +488,16 @@ Walkey et al., 2014
 data(dat1)
 maybe str(dat1) ; plot(dat1) ...
 
-## dat1i1- Additional Information needed for biclustering algorithm
+# dat1i1 
+### additional information needed for biclustering algorithm
 
 ### Description
 Additionali information, i.e. the names of the predicted new features as generated by biclustering algorithm
 
 ### Usage
+```
 data("dat1i1")
+```
 
 ### Format
 A list with one object ’predictedFeatures’including the names of the new descriptors
@@ -457,16 +509,21 @@ Example of new descriptor names as generated by generate.param.model
 There are no references
 
 ### Examples
+```
 data(dat1i1)
 maybe str(dat1i1) ; plot(dat1i1) ...
+```
 
-## dat1i2- Additional Information needed for hierarchical clustering algorithm
+# dat1i2
+## additional information needed for hierarchical clustering algorithm
 
 ### Description
 Additionali information, i.e. the names of the predicted new features as generated by hierarchical clustering algorithm
 
 ### Usage
+```
 data("dat1i2")
+```
 
 ### Format
 A list with one object ’predictedFeatures’including the names of the new descriptors
@@ -478,16 +535,21 @@ Example of new descriptor names as generated by generate.param.model
 There are no references
 
 ### Examples
+```
 data(dat1i2)
 maybe str(dat1i2) ; plot(dat1i2) ...
+```
 
-## dat1m1- Serialized list of parameters for biclustering algorithm
+# dat1m1 
+## serialized list of parameters for biclustering algorithm
 
 ### Description
 A character string for a serialized parameters list, i.e. a set of values needed from the biclusteruing algorithm in order to produce the GO descriptors. The list includes ’key’ (e.g. ’UNIPROT’), ’onto’ (e.g. c(’GO’,’MF’)), ’pvalCutoff’ for hypergeometric test (e.g. 0.05), ’nclust’ for the number of clusters in the x and y axis respectively (e.g c(4,2)), and ’FUN’ to specify the function used to summarize the omics data (e.g. ’mean’).
 
 ### Usage
+```
 data("dat1m1")
+```
 
 ### Format
 A character string
@@ -499,16 +561,21 @@ Example set of parameters needed for generate.descr.biclust function
 There are no references
 
 ### Examples
+```
 data(dat1m1)
 maybe str(dat1m1) ; plot(dat1m1) ...
+```
 
-## dat1m2- Serialized list of parameters for hierarchical clustering algorithm
+# dat1m2
+## serialized list of parameters for hierarchical clustering algorithm
 
 ### Description
 A character string for a serialized parameters list, i.e. a set of values needed from the biclusteruing algorithm in order to produce the GO descriptors. The list includes ’key’ (e.g. ’UNIPROT’), ’onto’ (e.g. c(’GO’,’MF’)), ’pvalCutoff’ for hypergeometric test (e.g. 0.05), ’distMethod’ (e.g. ’euclidean’ or other alternatives from the vegan package), ’hclustMethod’ (e.g. ’ward.D2’ or other alternatives from the vegan package), ’nORh’ th enumber of clusters in the data (e.g. 10), and ’FUN’ to specify the function used to summarize the omics data (e.g. ’mean’).
 
 ### Usage
+```
 data("dat1m2")
+```
 
 ### Format
 A character string
@@ -520,16 +587,21 @@ Example set of parameters needed for generate.descr.hierar function
 There are no references
 
 ### Examples
+```
 data(dat1m2)
 maybe str(dat1m2) ; plot(dat1m2) ...
+```
 
-## dat1p- A sample data object
+# dat1p
+## a sample data object
 
 ### Description
 The dataset for this test is a data frame
 
 ### Usage
+```
 data("dat1p")
+```
 
 ### Format
 A list of two objects
@@ -543,16 +615,21 @@ Data set for prediction with dat1m
 Walkey et al., 2014
 
 ### Examples
+```
 data(dat1p)
 maybe str(dat1p) ; plot(dat1p) ...
+```
 
-## generate.descr.biclust- Produce GO descriptors using bi-clustering algorithm
+# generate descr biclust
+## produce GO descriptors using bi-clustering algorithm
 
 ### Description
 This function is used to estimate GO descriptors for omics data, based on GO ontology. Data are clustered based on bi-clustering algorithm from the blockcluster R package using default values. The user needs to specify the number of clusters for each axes.
 
 ### Usage
+```
 generate.descr.biclust(dataset, rawModel, additionalInfo)
+```
 
 ### Arguments
 dataset	Data for prediction. A list of two objects: datasetURI (a character string ), dataEntry (a data frame).
@@ -572,17 +649,22 @@ Georgia Tsiliki
 1.blockcluster 2.GSEABase 3.GOstats
 
 ### Examples
+```
 data("dat1p") data("dat1m1") data("dat1i1")
 
 pred.res<- generate.descr.biclust(dat1p, dat1m1, dat1i1)
+```
 
-## generate.descr.hierar- Produce GO descriptors using hierarchical clustering algorithm
+# generate descr hierar
+## produce GO descriptors using hierarchical clustering algorithm
 
 ### Description
 This function is used to estimate GO descriptors for omics data, based on GO ontology. Data are clustered based on hierarchical clustering algorithm from vegan R package using default values. The user needs to specify the number of clusters, the distance matrix method, and the hierarchical clust method.
 
 ### Usage
+```
 generate.descr.hierar(dataset, rawModel, additionalInfo)
+``` 
 
 ### Arguments
 dataset	Data for prediction. A list of two objects: datasetURI (a character string ), dataEntry (a data frame).
@@ -602,17 +684,22 @@ Georgia Tsiliki
 1.vegan 2.GSEABase 3.GOstats
 
 ### Examples
+```
 data("dat1p") data("dat1m2") data("dat1i2")
 
 pred.res<- generate.descr.hierar(dat1p, dat1m2, dat1i2)
+```
 
-## generate.param.model- A  ’training’  function  to  produce  a  serialized  list  for  the  parameters needed to produce GO descriptors
+# generate param model
+## a ’training’  function  to  produce  a  serialized  list  for  the  parameters needed to produce GO descriptors
 
 ### Description
 This function is used to pass on all the neccessary information to generate.descr.biclust and gener- ate.descr.hierar functions.
 
 ### Usage
+```
 generate.param.model(dataset, predictionFeature, parameters)
+```
 
 ### Arguments
 dataset	list of 2 objects, datasetURI:= character sring, code name of dataset, dataEntry:= data frame with 2 columns
@@ -647,7 +734,8 @@ read.in.json.for.pred	11
 params1<- generate.param.model(dat1,predF,required.param)
 ```
 
-## read.in.json.for.pred-	Read in function for json files for prediction
+# read in json for pred
+## read in function for json files for prediction
 
 ### Description
 This function reads in a json data file and produces a list with independent features, parameters list for GO clustering saved as raw model
