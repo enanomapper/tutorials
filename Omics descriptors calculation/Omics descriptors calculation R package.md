@@ -237,7 +237,7 @@ maybe str(dat4h) ; plot(dat4h) ...
 ```
 
 # generate biclust model
-## go descriptors model using bi clustering algorithm
+## GO descriptors model using bi clustering algorithm
 
 ### Description
 This function is used to estimate the cluster memberships for omics data, based on GO ontology. Data are clustered based on bi-clustering algorithm from the blockcluster R package using default values. The user needs to specify the number of clusters for both axes.
@@ -435,7 +435,7 @@ data.file<- read.in.json.for.pred(dat1p, dat1m, dat1i)
 [read.in.json.for.pred](#read-in-json-for-pred)
 
 # godescrcalculus package
-## produce go descriptors given an omics data
+## produce GO descriptors given an omics data
 ### Description
 This package expects an omics data (e.g. proteomics/genomics), and produces a set of GO de- scriptors given the data and the parameters supplied based on the data and the algorirthm selected; bi-clustering and hierarchical clustering algorithms are currently implemented. The clustering al- gorithm parameters can be stored as an R raw model and used for ’prediction’, i.e. to construct GO decsriptors for the same data.
 
