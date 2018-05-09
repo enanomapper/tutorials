@@ -18,7 +18,7 @@ trainingMaterial:
   keywords: Gene Ontology
   license: CC-BY 4.0
 #- url:
-  version: 1.1
+  version: 0.9
   dateCreated: 2016-01-31
 
 # Available metadata fields can be found here:
