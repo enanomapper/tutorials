@@ -1,5 +1,27 @@
 ---
 layout: default
+
+trainingMaterial:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+#- about: 
+#- audience:
+# genre: http://edamontology.org/topic_0089
+  name: Omics descriptors calculation R package
+  contributor:
+    - "@type": Person
+      name: Georgia Tsiliki, 
+    - "@type": Person
+      name: Haralambos Sarimveis
+#- description: 
+#- difficultyLeveL:
+  keywords: Gene Ontology
+  license: CC-BY 4.0
+#- url:
+  version: 1.1
+
+# Available metadata fields can be found here:
+# http://bioschemas.org/specifications/TrainingMaterial/specification/
 ---
 
 # Omics descriptors calculation R package
