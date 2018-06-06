@@ -1,11 +1,42 @@
 ---
-layout: default 
+layout: default
+
+trainingMaterial:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  audience:
+    - "@type": Audience
+      name: post-docs
+  genre:
+    - "@type": URL
+      url: http://edamontology.org/topic_0089
+    - "@type": URL
+      url: http://edamontology.org/topic_3070
+    - "@type": URL
+      url: http://edamontology.org/topic_3314
+    - "@type": URL
+      url: http://edamontology.org/topic_0091
+    - "@type": URL
+      url: http://edamontology.org/topic_2258
+  name: Adding ontology terms
+  author:
+    - "@type": Person
+      name: Egon Willighagen
+      identifier: 0000-0001-7542-0286
+  difficultyLevel: [Advanced]
+  keywords: ontologies, enanomapper
+  license: CC-BY 4.0
+  url:
+    - "@type": URL
+      url: https://enanomapper.github.io/tutorials/Added%20ontology%20terms/README.html
+  version: 1.0
 ---
 
 # Adding ontology terms
 
 * Author: Egon Willighagen (orcid:[0000-0001-7542-0286](https://orcid.org/0000-0001-7542-0286))
 * License: [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+* Version: 1.0
 * Source: [https://github.com/enanomapper/tutorials/tree/master/Added%20ontology%20terms](https://github.com/enanomapper/tutorials/tree/master/Added%20ontology%20terms)
 
 This ontology describes how terms can be added to the eNanoMapper ontology.
