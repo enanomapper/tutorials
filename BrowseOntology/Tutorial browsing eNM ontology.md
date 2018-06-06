@@ -9,11 +9,17 @@ trainingMaterial:
       name: PhD students
     - "@type": Audience
       name: post-docs
-- genre: http://edamontology.org/topic_0089
-- genre: http://edamontology.org/topic_3070
-- genre: http://edamontology.org/topic_3314
-- genre: http://edamontology.org/topic_0091
-- genre: http://edamontology.org/topic_2258
+  genre:
+    - "@type": URL
+      url: http://edamontology.org/topic_0089
+    - "@type": URL
+      url: http://edamontology.org/topic_3070
+    - "@type": URL
+      url: http://edamontology.org/topic_3314
+    - "@type": URL
+      url: http://edamontology.org/topic_0091
+    - "@type": URL
+      url: http://edamontology.org/topic_2258
   name: Browsing the eNanoMapper ontology with BioPortal, AberOWL and Protégé
   author:
     - "@type": Person
@@ -28,7 +34,9 @@ trainingMaterial:
   difficultyLevel: [Beginner]
   keywords: nanotoxicology, Ontologies, BioPortal, AberOWL, Protégé
   license: CC-BY 4.0
-- url: https://enanomapper.github.io/tutorials/BrowseOntology/Tutorial%20browsing%20eNM%20ontology.html
+  url:
+    - "@type": URL
+      url: https://enanomapper.github.io/tutorials/BrowseOntology/Tutorial%20browsing%20eNM%20ontology.html
   version: 1.1.1
 ---
 
