@@ -4,15 +4,16 @@ layout: default
 trainingMaterial:
   "@context": http://schema.org/
   "@type": CreativeWork
-#- about: 
   audience:
     - "@type": Audience
-      name: Biologists
+      name: PhD students
     - "@type": Audience
-      name: Chemists
-    - "@type": Audience
-      name: Bioinformaticians
-#  genre: http://edamontology.org/topic_0089
+      name: post-docs
+- genre: http://edamontology.org/topic_0089
+- genre: http://edamontology.org/topic_3070
+- genre: http://edamontology.org/topic_3314
+- genre: http://edamontology.org/topic_0091
+- genre: http://edamontology.org/topic_2258
   name: Browsing the eNanoMapper ontology with BioPortal, AberOWL and Protégé
   author:
     - "@type": Person
@@ -24,16 +25,11 @@ trainingMaterial:
     - "@type": Person
       name: Egon Willighagen
       identifier: 0000-0001-7542-0286
-#- contributor:
-#- description: 
   difficultyLevel: [Beginner]
   keywords: nanotoxicology, Ontologies, BioPortal, AberOWL, Protégé
   license: CC-BY 4.0
-#- url:
+- url: https://enanomapper.github.io/tutorials/BrowseOntology/Tutorial%20browsing%20eNM%20ontology.html
   version: 1.1.1
-
-# Available metadata fields can be found here:
-# http://bioschemas.org/specifications/TrainingMaterial/specification/
 ---
 
 # Browsing the eNanoMapper ontology with BioPortal, AberOWL and Protégé
