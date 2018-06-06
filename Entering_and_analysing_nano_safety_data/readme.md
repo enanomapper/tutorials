@@ -1,11 +1,49 @@
 ---
 layout: default
+
+trainingMaterial:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  audience:
+    - "@type": Audience
+      name: PhD students
+    - "@type": Audience
+      name: post-docs
+    - "@type": Audience
+      name: Bioinformatician
+  genre:
+    - "@type": URL
+      url: http://edamontology.org/topic_0089
+    - "@type": URL
+      url: http://edamontology.org/topic_3070
+    - "@type": URL
+      url: http://edamontology.org/topic_3314
+    - "@type": URL
+      url: http://edamontology.org/topic_0091
+    - "@type": URL
+      url: http://edamontology.org/topic_2258
+  name: Entering and analysing nano safety data
+  author:
+    - "@type": Person
+      name: Egon Willighagen
+      identifier: 0000-0001-7542-0286
+    - "@type": Person
+      name: Nina Jeliazkova
+      identifier: 0000-0002-4322-6179
+  difficultyLevel: [Intermediate]
+  keywords: ontologies, enanomapper
+  license: CC-BY 4.0
+  url:
+    - "@type": URL
+      url: https://enanomapper.github.io/tutorials/Entering_and_analysing_nano_safety_data/readme.html
+  version: 1.0
 ---
 
 # Entering and analysing nano safety data
 
 * Author: Nina Jeliazkova, Egon Willighagen
 * License: CC-BY 4.0
+* Version 1.0
 
 ## Introduction
 
