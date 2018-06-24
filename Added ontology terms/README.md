@@ -29,14 +29,14 @@ trainingMaterial:
   url:
     - "@type": URL
       url: https://enanomapper.github.io/tutorials/Added%20ontology%20terms/README.html
-  version: 1.0
+  version: 1.0.1
 ---
 
 # Adding ontology terms
 
 * Author: Egon Willighagen (orcid:[0000-0001-7542-0286](https://orcid.org/0000-0001-7542-0286))
 * License: [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-* Version: 1.0
+* Version: 1.0.1
 * Source: [https://github.com/enanomapper/tutorials/tree/master/Added%20ontology%20terms](https://github.com/enanomapper/tutorials/tree/master/Added%20ontology%20terms)
 
 This ontology describes how terms can be added to the eNanoMapper ontology.
