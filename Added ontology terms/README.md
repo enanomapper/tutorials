@@ -158,7 +158,7 @@ Each instruction has the same structure, the same syntax, organized in layers:
 
 We can see here basically the five layers (red, yellow, green, purple, and blue) and in semi-colon (light blue) to
 separate two layers. If you consider that an ontology is often a hierarchical tree
-of terms, with one root node, spreading down, ending in leave nodes, the above instruction could be visualized as
+of terms, with one root node, spreading down, ending in leaf nodes, the above instruction could be visualized as
 this:
 
 ![Visualisation of the just given Slimmer instruction.](coloredExample.png)
