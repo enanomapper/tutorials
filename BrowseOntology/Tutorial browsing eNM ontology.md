@@ -4,6 +4,7 @@ layout: default
 trainingMaterial:
   "@context": http://schema.org/
   "@type": CreativeWork
+  about: "This tutorial explains how the eNanoMapper ontology can be browsed with three tools, of which two are online."
   audience:
     - "@type": Audience
       name: PhD students
