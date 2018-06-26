@@ -4,6 +4,7 @@ layout: default
 trainingMaterial:
   "@context": http://schema.org/
   "@type": CreativeWork
+  about: "This ontology describes how terms can be added to the eNanoMapper ontology."
   audience:
     - "@type": Audience
       name: post-docs
