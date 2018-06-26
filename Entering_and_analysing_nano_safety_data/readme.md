@@ -4,6 +4,7 @@ layout: default
 trainingMaterial:
   "@context": http://schema.org/
   "@type": CreativeWork
+  about: "Tutorial that covers various aspects of working with the eNanoMapper database. It discussed searching, adding, and downloading data from an eNanoMapper database."
   audience:
     - "@type": Audience
       name: PhD students
