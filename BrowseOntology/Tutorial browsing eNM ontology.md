@@ -35,9 +35,7 @@ trainingMaterial:
   difficultyLevel: [Beginner]
   keywords: nanotoxicology, Ontologies, BioPortal, AberOWL, Protégé
   license: CC-BY 4.0
-  url:
-    - "@type": URL
-      url: https://enanomapper.github.io/tutorials/BrowseOntology/Tutorial%20browsing%20eNM%20ontology.html
+  url: https://enanomapper.github.io/tutorials/BrowseOntology/Tutorial%20browsing%20eNM%20ontology.html
   version: 1.1.1
 ---
 

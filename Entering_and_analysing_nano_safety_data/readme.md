@@ -34,9 +34,7 @@ trainingMaterial:
   difficultyLevel: [Intermediate]
   keywords: ontologies, enanomapper
   license: CC-BY 4.0
-  url:
-    - "@type": URL
-      url: https://enanomapper.github.io/tutorials/Entering_and_analysing_nano_safety_data/readme.html
+  url: https://enanomapper.github.io/tutorials/Entering_and_analysing_nano_safety_data/readme.html
   version: 1.0
 ---
 
