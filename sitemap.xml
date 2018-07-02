@@ -19,4 +19,9 @@
   <priority>1.00</priority>
   <changefreq>monthly</changefreq>
 </url>
+<url>
+  <loc>https://enanomapper.github.io/tutorials/Omics%20descriptors%20calculation/Omics%20descriptors%20calculation%20R%20package.html</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
 </urlset>
