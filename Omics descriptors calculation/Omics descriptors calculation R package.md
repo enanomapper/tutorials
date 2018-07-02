@@ -20,7 +20,7 @@ trainingMaterial:
     - "@type": Person
       name: Haralambos Sarimveis
 #- description: 
-difficultyLevel: [Beginner]
+  difficultyLevel: [Beginner]
   keywords: Gene Ontology
   license: CC-BY 4.0
 #- url: https://enanomapper.github.io/tutorials/Omics%20descriptors%20calculation/Omics%20descriptors%20calculation%20R%20package.html
