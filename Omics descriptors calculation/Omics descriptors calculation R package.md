@@ -4,9 +4,15 @@ layout: default
 trainingMaterial:
   "@context": http://schema.org/
   "@type": CreativeWork
-#- about: 
-#- audience:
-# genre: http://edamontology.org/topic_0089
+  about: "This tutorial explains how to generate a new set of GO descriptors using two novel created R packages."
+  audience:
+    - "@type": Audience
+      name: PhD students
+    - "@type": Audience
+      name: post-docs
+  genre:
+    - "@type": URL
+      url: http://edamontology.org/topic_0089
   name: Omics descriptors calculation R package
   contributor:
     - "@type": Person
@@ -14,10 +20,10 @@ trainingMaterial:
     - "@type": Person
       name: Haralambos Sarimveis
 #- description: 
-#- difficultyLeveL:
+difficultyLevel: [Beginner]
   keywords: Gene Ontology
   license: CC-BY 4.0
-#- url:
+#- url: https://enanomapper.github.io/tutorials/Omics%20descriptors%20calculation/Omics%20descriptors%20calculation%20R%20package.html
   version: 0.9
   dateCreated: 2016-01-31
 
