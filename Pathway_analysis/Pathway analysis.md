@@ -49,6 +49,7 @@ Then:
 ### First step: load the data file and select species
 
 The following picture shows the screen for the first step:
+
 ![A test image](Picture1.png)
 
 This dialog allows you to upload a tab-delimited text file with (gene level statistics) data and choose the relevant species. Alternatively, the module can be run with an example data set, by ticking the checkbox presented. The interrogation mark button will give you contextual help.
