@@ -35,7 +35,7 @@ Bug tracking system: If you encounter an issue by using the code, you can report
 Example gene level statistics file: An example dataset is available. When running the module, you can check a box to use this data set (Example1) in order the explore the functionality of the module.
 
 ## Application Details
-You can access the on-line module on [arrayanalysis.org](arrayanalysis.org) webportal: (follow "Get started" and choose "Statistical analysis"). You don't need to log in; you just need to prepare a gene level statistics file containing the statistical contrasts between the different groups of your Affymetrix .CEL files (you may also obtain the file by running the statistical analysis module).
+You can access the on-line module on [http://www.arrayanalysis.org](http://www.arrayanalysis.org) webportal: (follow "Get started" and choose "Statistical analysis"). You don't need to log in; you just need to prepare a gene level statistics file containing the statistical contrasts between the different groups of your Affymetrix .CEL files (you may also obtain the file by running the statistical analysis module).
 
 The on-line module contains four steps before the launch of the analysis:
 * Step1: First you load the gene level statistics file and select species. Alternatively, you might select the Example dataset for exploring the module. In that case you do not need to select the species. The dataset used is for Human. Click on Run Path, to proceed.
