@@ -24,4 +24,9 @@
   <priority>1.00</priority>
   <changefreq>monthly</changefreq>
 </url>      
+<url>
+  <loc>https://enanomapper.github.io/tutorials/Pathway_analysis/Pathway%20analysis.html</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>   
 </urlset>
