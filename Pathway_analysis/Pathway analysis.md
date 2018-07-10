@@ -12,7 +12,7 @@ trainingMaterial:
       name: post-docs
   genre:
     - "@type": URL
-      url: ...
+      #url: ...
   name: Pathway module of ArrayAnalysis.org
   contributor:
     - "@type": Person
@@ -38,7 +38,6 @@ trainingMaterial:
 # Available metadata fields can be found here:
 # http://bioschemas.org/specifications/TrainingMaterial/specification/
 ---
-
 
 # How to use the Pathway module of ArrayAnalysis.org for pathway analysis of microarray data
 
