@@ -10,9 +10,9 @@ trainingMaterial:
       name: PhD students
     - "@type": Audience
       name: post-docs
-  genre:
+  # genre:
     - "@type": URL
-      #url: ...
+      url: ...
   name: Pathway module of ArrayAnalysis.org
   contributor:
     - "@type": Person
