@@ -30,7 +30,7 @@ How to use the documentation: As shown in the Table Of Contents, you will find t
 * Using the on-line Path module
 * Interpreting the results provided.
 
-Bug tracking system: If you encounter an issue by using the code, you can report it at any moment on our internal tracking system : [http://trac.bigcat.unimaas.nl/arrayanalysis/newticket](http://trac.bigcat.unimaas.nl/arrayanalysis/newticket). You can also use this system to post comments or feature suggestions.
+Bug tracking system: If you encounter an issue by using the code, you can report it at any moment on our internal tracking system: [http://trac.bigcat.unimaas.nl/arrayanalysis/newticket](http://trac.bigcat.unimaas.nl/arrayanalysis/newticket). You can also use this system to post comments or feature suggestions.
 
 Example gene level statistics file: An example dataset is available. When running the module, you can check a box to use this data set (Example1) in order the explore the functionality of the module.
 
