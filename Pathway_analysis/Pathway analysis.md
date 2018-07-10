@@ -38,7 +38,7 @@ Example gene level statistics file: An example dataset is available. When runnin
 You can access the on-line module on [http://www.arrayanalysis.org](http://www.arrayanalysis.org) webportal: (follow "Get started" and choose "Statistical analysis"). You don't need to log in; you just need to prepare a gene level statistics file containing the statistical contrasts between the different groups of your Affymetrix .CEL files (you may also obtain the file by running the statistical analysis module).
 
 The on-line module contains four steps before the launch of the analysis:
-* Step1: First you load the gene level statistics file and select species. Alternatively, you might select the Example dataset for exploring the module. In that case you do not need to select the species. The dataset used is for Human. Click on Run Path, to proceed.
+* [Step1](http://www.arrayanalysis.org/Path/doc_Path.php): First you load the gene level statistics file and select species. Alternatively, you might select the Example dataset for exploring the module. In that case you do not need to select the species. The dataset used is for Human. Click on Run Path, to proceed.
 * Step2: Choose the column in the data file containing the identifiers and the database used for annotation if all the idenitifers are from the same database. If different identifier systems are used for annotating the dataset, the system code column has to be chosen. The system code specifies which database each idenitifier belongs to.
 * Step3: Specify a criterion for calculating the z-scores.
 * Step4: Select color criteria for visualization of the uploaded data on the pathways.
