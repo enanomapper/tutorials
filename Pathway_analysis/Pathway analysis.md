@@ -31,7 +31,7 @@ trainingMaterial:
   difficultyLevel: [Beginner]
   keywords: Gene Ontology
   license: CC-BY 4.0
-#- url: https://enanomapper.github.io/tutorials/......html
+#- url: https://enanomapper.github.io/tutorials/Pathway_analysis/Pathway%20analysis.html
   version:V.1.0.
   dateCreated: 2016-05-31
 
