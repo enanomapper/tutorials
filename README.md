@@ -8,13 +8,13 @@ can be a Word document or something else.
 * [Browsing the eNM ontology with BioPortal, AberOWL and Protégé](BrowseOntology/readme.md)
 * [Entering and analysing nano safety data](Entering_and_analysing_nano_safety_data/readme.md)
 * [Adding ontology terms](Added%20ontology%20terms/README.md)
+* [Pathway analysis](Pathway_analysis/readme.md)
 
 ## Tutorials in Word
 
 * [How to make a pathway](Pathway/readme.md)
 * [How to use the statistics module of ArrayAnalysis.org for statistics analysis of microarray data](Statistics/readme.md)
 * [Omics descriptors calculation](Omics%20descriptors%20calculation/README.md)
-* [Pathway analysis](Pathway_analysis/readme.md)
 
 ## Feedback
 
