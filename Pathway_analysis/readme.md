@@ -10,4 +10,5 @@ Pathway analysis
 
 ## Versions
 
+* [HTML](Pathway%20analysis.html)
 * [DOCX](Tutorialpathwayanalysis.docx) (original version)
