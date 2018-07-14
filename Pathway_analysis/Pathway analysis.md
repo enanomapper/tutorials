@@ -157,7 +157,7 @@ An index file in html format, which contains:
 A contents folder: contains the backpages for all the pathways containing gene expression information, the legend file, the statistics file and all the colour coded pathway images.
 
 WikiPathways provides a portal for nanomaterial relevant pathway information:
-[http://www.wikipathways.org/index.php/Portal:Nanomaterials](http://www.wikipathways.org/index.php/Portal:Nanomaterials)  
+[http://http://nanomaterials.wikipathways.org](http://http://nanomaterials.wikipathways.org)  
 
 
 
