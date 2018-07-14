@@ -1,6 +1,6 @@
 ---
 layout: default
-
+  
 trainingMaterial:
   "@context": http://schema.org/
   "@type": CreativeWork
@@ -10,9 +10,6 @@ trainingMaterial:
       name: PhD students
     - "@type": Audience
       name: post-docs
-  # genre:
-#    - "@type": URL
-#      url: ...
   name: Pathway module of ArrayAnalysis.org
   contributor:
     - "@type": Person
@@ -34,9 +31,6 @@ trainingMaterial:
   url: https://enanomapper.github.io/tutorials/Pathway_analysis/Pathway%20analysis.html
   version:V.1.0.
   dateCreated: 2016-05-31
-
-# Available metadata fields can be found here:
-# http://bioschemas.org/specifications/TrainingMaterial/specification/
 ---
 
 # How to use the Pathway module of ArrayAnalysis.org for pathway analysis of microarray data
