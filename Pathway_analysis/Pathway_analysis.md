@@ -1,6 +1,6 @@
 ---
 layout: default
-  
+
 trainingMaterial:
   "@context": http://schema.org/
   "@type": CreativeWork
@@ -13,24 +13,22 @@ trainingMaterial:
   name: Pathway module of ArrayAnalysis.org
   contributor:
     - "@type": Person
-      name: Friederike Ehrhart, 
+      name: Friederike Ehrhart
     - "@type": Person
-      name: Lars Eijssen,
+      name: Lars Eijssen
     - "@type": Person
-      name: Anwesha Bohler, 
+      name: Anwesha Bohler
     - "@type": Person
-      name: Linda Rieswijk,
+      name: Linda Rieswijk
     - "@type": Person
-      name:  Egon Willighagen,
+      name:  Egon Willighagen
     - "@type": Person
       name: Penny Nymark
-  description: PathVisio and ArrayAnalysis.org are open source, free to use online platforms for analysis of microarray data - and an alternative program for Chipster. This tutorial shows how to use the Path module (Pathway module, PathVisio webtool) of ArrayAnalysis which is designed for doing pathway analysis on microarray data.
   difficultyLevel: [Beginner]
   keywords: Gene Ontology
   license: CC-BY 4.0
   url: https://enanomapper.github.io/tutorials/Pathway_analysis/Pathway%20analysis.html
-  version:V.1.0.
-  dateCreated: 2016-05-31
+  version: V.1.1
 ---
 
 # How to use the Pathway module of ArrayAnalysis.org for pathway analysis of microarray data
