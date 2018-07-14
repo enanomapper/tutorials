@@ -325,32 +325,32 @@ Grouped objects and complexes can be selected as a group, or as individual objec
 
 Connecting line objects with gene and metabolite objects on pathways are important for properly storing the biological interactions that the pathway represents. To connect the end of a line to a gene or metabolite, select the endpoint of the line and drag it close to the object you wish to connect it to. A set of anchor points will appear on the outline of the object. Drag the end of the line over any of these anchor points until the anchor point turns green, then let go of the line end. This will connect the end of the line to the anchor point on the object.
 
-![A test image](Picture36.png)
+![A test image](Picture37.png)
 
 Objects that have anchor points that can be connected to lines are data nodes, metabolites, labels and graphical objects. Anchor points can also be added to lines (from the right-click menu), after which other lines can be connected to it.
 
 For layout reasons and to properly represent biological interactions, non-straight lines are sometimes ideal. To create a curved, elbowed or segmented line, first create a new line by selecting the line object from the tool bar and dropping it on the canvas. Right-click on the line and under Line Type, select either Curved, Elbow or Segmented. The Curved option will produce a curved line with smooth edges, whereas the Elbow option will create a curved line with 90 degree edges. The Segmented option will let you define a line with one or more waypoints. To position the line, attach the end points to the desired objects as described above. The shape of the curved line will automatically adjust to fit the layout of the objects you are connecting. You can also change the shape of the line manually by dragging the way points (blue diamonds) on the line.
 
-![A test image](Picture37.png)
+![A test image](Picture38.png)
 
 To create a line which is a composite of two or more lines, add an anchor point to one of the lines by using the right-click menu. Connect the end point of the other line to the anchor point as described above. Anchor points on lines can be moved by clicking and dragging to a desired position on the line.
 
-![A test image](Picture38.png)
+![A test image](Picture39.png)
 
 ### Example pathways
 The content of WikiPathways is diverse in both style and content. In addition to the above graphical style guidelines, we have identified a list of example pathways that are considered well-formed in terms of annotation, representing interactions and overall layout.
 Apoptosis (Homo sapiens)
 
 
-![A test image](Picture39.png)
+![A test image](Picture40.png)
 
 Nanoparticle-mediated activation of receptor signalling (Homo sapiens)
 
-![A test image](Picture40.png)
+![A test image](Picture41.png)
 
 Lung fibrosis (Homo sapiens)
 
-![A test image](Picture41.png)
+![A test image](Picture42.png)
 
 You can find a list of all featured pathways here.
 You can find nanomaterial specific pathways and discussions in the nanomaterials portal of WikiPathways.
