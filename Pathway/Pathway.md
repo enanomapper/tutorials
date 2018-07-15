@@ -207,7 +207,7 @@ The solid line and arrow are used to denote a variety of processes, including co
 ### Dashed line / dashed arrow
 The dashed line and arrow are used to denote an uncertain process or a process that involves additional steps not outlined in the diagram.
 
-![A test image](Picture15.png)
+![A test image](tab12.png)
 
 T-bar
 The T-bar is used to denote inhibition.
