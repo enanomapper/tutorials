@@ -202,7 +202,7 @@ All items in the Properties will be displayed as a list (list of comments, list 
 ### Line / Arrow
 The solid line and arrow are used to denote a variety of processes, including conversion, translocation, activation, binding and modification.
 
-![A test image](Picture14.png)
+![A test image](tab2.png)
 
 ### Dashed line / dashed arrow
 The dashed line and arrow are used to denote an uncertain process or a process that involves additional steps not outlined in the diagram.
@@ -218,24 +218,24 @@ Line types
 
 Any interaction can have a line style of either straight, curved, elbow or segmented. The default style is straight, and is shown in the examples above. The other three line styles are used to increase readability or to allow for a specific layout.
 
-![A test image](Picture17.png)
+![A test image](tab3.png)
 
 ### MIM Interactions - Molecular Interaction Maps
 The WikiPathways editor includes a set of MIM interaction types, based on the Molecular Interaction Maps notation. Refer to the formal MIM specification for details on recommended usage.
 
-![A test image](Picture18.png)
+![A test image](tab4.png)
 Graphical elements
 
 Graphical elements are purely graphical, meaning they do not have a meaning in the network graph that defines nodes and interactions.
 Label
 Labels are used to describe locations, entities, processes or context:
 
-![A test image](Picture19.png)
+![A test image](tab5.png)
   
 Line
 Lines can be used to create more complicated graphical objects representing biological structures, or to create a pathway legend.
 
-![A test image](Picture20.png)
+![A test image](tab6.png)
 
 Arc
 The arc is typically used to denote a cellular or molecular structure.
@@ -250,7 +250,7 @@ The rectangle is typically used for headers, to create an outline for a legend o
 Cellular compartments
 Cellular compartment shapes are used to specify the cellular location of processes. Using the defined cellular compartment shapes instead of simple graphical shapes ensures that the cellular location information is encoded in the GPML.
 
-![A test image](Picture23.png)
+![A test image](tab7.png)
 
 Representing complexes
 Representing molecular complexes can be done in a variety of styles. We recommend using a “create complex” (or Ctrl + P) whenever possible. In the example below, the human RNA Polymerase I subunits are represented as a stack.
@@ -259,7 +259,7 @@ Representing molecular complexes can be done in a variety of styles. We recommen
 
 Sometimes, you might also likely want to "group" a set of  stacked genes. Once selected, genes can be grouped by pressing CTRL + G, or choosing 'group' in the right-click menu. 
 
-![A test image](Picture25.png)
+![A test image](tab8.png)
 
 Representing reactions
 When two reaction steps follow each other in a pathway (i.e. the product of reaction A is the substrate for reaction B), it is best to use a single element for this entity.
@@ -280,7 +280,7 @@ The stoichiometry of reactions is not usually modeled in WikiPathways. If you wi
 Representing multiple similar reactions
 Representing multiple similar reactions so that they are properly stored in the underlying data model can sometimes present a challenge. Below is an example of using a connector hub (a line anchor) to display this. Right-click on any line to add a line anchor, then connect multiple lines for different reactions to this hub.
 
-![A test image](Picture28.png)
+![A test image](tab9.png)
 
 Using labels
 To enter text for a label, double-click on the label (or choose 'Properties' in the right-click menu) and use the Label Text area to type the label, including line returns. The label can consist of multiple lines of text. You can also outline a label by choosing 'Rectangle' or 'RoundedRectangle' from the 'Outline' field in the properties panel
@@ -304,7 +304,7 @@ Replace arc/arrowhead combinations with curved or elbowed connectors.
 These options should help you style your pathway so that it is easy to "read" and has a layout that is familiar to any biologist or biochemist.
 To make sure you've connected all your lines, press CTRL-L to reveal all unlinked line ends and highlight them in green.
 
-![A test image](Picture33.png)
+![A test image](tab11.png)
 
 Representing cellular compartments
 Representing cellular compartments as graphics is a useful way to illustrate location spatial relationships between objects and where processes take place. While cellular compartments can be illustrated in a number of ways, we recommend using an oval or line (or double line) with line thickness of 5 and colored light grey. In the example below, the nucleus is depicted in this way.
