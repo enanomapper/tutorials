@@ -186,7 +186,7 @@ For the recommended use of the most commonly used elements of the WikiPathways e
 
 ### Data nodes
 
-![A test image](Picture12.png)
+![A test image](Tab1.png)
 
 ### Adding comments and annotations
 
