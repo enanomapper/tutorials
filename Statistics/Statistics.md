@@ -39,6 +39,7 @@ Then:
 * [Results](http://www.arrayanalysis.org/Stat/doc_Stat.php#res): You get the results after the execution step, at the website or by e-mail.
 
 First step: load the data file
+
 The following picture shows the screen for the first step:
 
 ![A test image](Picture51.png)
@@ -47,6 +48,7 @@ This dialog allows you to upload a tab-delimited text file with (cleaned) data. 
 The interrogation mark button on all dialog forms will help you by giving you a contextual help.
 
 Second step: describe the dataset
+
 The following picture shows the screen obtained after completing the first step:
 
 ![A test image](Picture52.png)
@@ -62,7 +64,9 @@ You may also prefer to enter directly this information from a file you have prep
 Note that in case you reach the module directly from the AffyAnalysisQC module, you will find this table already filled with the array names and groups you entered in that module. You can modify the groups here if you wish.
 
 Clicking on the "Next" button will direct to the last input form.
+
 Third step: define your analysis
+
 The input form is divided into three main sections: the first part allows a quick launch using direct group comparisons, the second part gives you a chance of defining advanced contrasts to be computed. The third part allows customisation of the required output options.
 
 First part of the input form
@@ -92,11 +96,13 @@ You can obtain histograms for the comparisons you have chosen to perform by tick
 Significant genes summary tables can be obtained by entering a list of p value, adjusted p.value, and fold change cut-offs. For each of these cut-offs the number of genes meeting them will be computed and presented in a table.
 
 Execution
+
 After clicking 'Run' the module is executed.
 
 ![A test image](Picture56.png) 
 
 Results
+
 Upon completion a page of results is displayed on your screen.
 
 ![A test image](Picture57.png)
