@@ -90,6 +90,7 @@ The following image presents the part of the input form concerning the plotting 
 In significant genes list, you can define filters to select the genes to be added to a table of significantly changed genes and their statistical results. A table with p values and (log) fold changes for all genes is computed by default, and requires no ticking of a checkbox.
 You can obtain histograms for the comparisons you have chosen to perform by ticking the checkboxes in the input form.
 Significant genes summary tables can be obtained by entering a list of p value, adjusted p.value, and fold change cut-offs. For each of these cut-offs the number of genes meeting them will be computed and presented in a table.
+
 Execution
 After clicking 'Run' the module is executed.
 
