@@ -93,7 +93,7 @@ Significant genes summary tables can be obtained by entering a list of p value, 
 Execution
 After clicking 'Run' the module is executed.
 
-![A test image](Picture56.png)
+![A test image](Picture56.png) 
 
 Results
 Upon completion a page of results is displayed on your screen.
