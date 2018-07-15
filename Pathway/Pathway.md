@@ -210,6 +210,7 @@ The dashed line and arrow are used to denote an uncertain process or a process t
 ![A test image](tab12.png)
 
 T-bar
+
 The T-bar is used to denote inhibition.
 
 ![A test image](Picture16.png)
@@ -224,35 +225,43 @@ Any interaction can have a line style of either straight, curved, elbow or segme
 The WikiPathways editor includes a set of MIM interaction types, based on the Molecular Interaction Maps notation. Refer to the formal MIM specification for details on recommended usage.
 
 ![A test image](tab4.png)
+
 Graphical elements
 
 Graphical elements are purely graphical, meaning they do not have a meaning in the network graph that defines nodes and interactions.
+
 Label
+
 Labels are used to describe locations, entities, processes or context:
 
 ![A test image](tab5.png)
   
 Line
+
 Lines can be used to create more complicated graphical objects representing biological structures, or to create a pathway legend.
 
 ![A test image](tab6.png)
 
 Arc
+
 The arc is typically used to denote a cellular or molecular structure.
 
 ![A test image](Picture21.png)
 
 Rectangle
+
 The rectangle is typically used for headers, to create an outline for a legend or as a purely graphical object:
 
 ![A test image](Picture22.png)
 
 Cellular compartments
+
 Cellular compartment shapes are used to specify the cellular location of processes. Using the defined cellular compartment shapes instead of simple graphical shapes ensures that the cellular location information is encoded in the GPML.
 
 ![A test image](tab7.png)
 
 Representing complexes
+
 Representing molecular complexes can be done in a variety of styles. We recommend using a “create complex” (or Ctrl + P) whenever possible. In the example below, the human RNA Polymerase I subunits are represented as a stack.
 
 ![A test image](Picture24.png)
@@ -262,37 +271,44 @@ Sometimes, you might also likely want to "group" a set of  stacked genes. Once s
 ![A test image](tab8.png)
 
 Representing reactions
+
 When two reaction steps follow each other in a pathway (i.e. the product of reaction A is the substrate for reaction B), it is best to use a single element for this entity.
 On the other hand, common entities that are involved in many reactions may be drawn as multiple entities for clarity, so you do not get a large messy hairball. Common metabolites include H2O, H+, ATP, NADH.
 
 Certain common metabolites that are unimportant for understanding of the pathway as a whole, such as H2O and H+ may even be left out altogether.
 
 Representing enzymatic reactions
+
 In order to properly store enzymatic reactions in the WikiPathways data model, place a line anchor on the line connecting the two reactants, then use a second connector from the enzyme to the anchor to denote the enzymatic interaction. To add an anchor to a line, right-click on the line and select 'Add Anchor'.
 
 ![A test image](Picture26.png)
 
 Stoichiometry
+
 The stoichiometry of reactions is not usually modeled in WikiPathways. If you wish you can add this information as a comment attached to a reaction or you can use the label for a metabolite to indicate stoichiometry, as suggested below.
 
 ![A test image](Picture27.png)
 
 Representing multiple similar reactions
+
 Representing multiple similar reactions so that they are properly stored in the underlying data model can sometimes present a challenge. Below is an example of using a connector hub (a line anchor) to display this. Right-click on any line to add a line anchor, then connect multiple lines for different reactions to this hub.
 
 ![A test image](tab13.png)
 
 Using labels
+
 To enter text for a label, double-click on the label (or choose 'Properties' in the right-click menu) and use the Label Text area to type the label, including line returns. The label can consist of multiple lines of text. You can also outline a label by choosing 'Rectangle' or 'RoundedRectangle' from the 'Outline' field in the properties panel
 
 ![A test image](Picture29.png)
 
 Representing metabolites
+
 Metabolites and other small molecules should be represented as a data object connected to a database entry (like genes and proteins). Use the 'Met' button in the editor to create a metabolite object. Double-click the object to fill in the textlabel, identifier and database, or simply search by name or identifier.
 
 ![A test image](Picture30.png)
 
 Representing interactions
+
 Complicated connections involving curves or corners can easily be managed using "smart connectors". Any line or arrow can be made to curve or bend by choosing 'Curved','Elbow' or 'Segmented' for 'Line type' in the right-click menu. Connect the ends of the line to their targets and the connector will bend where necessary. You can select the line again to adjust the way points of the path (blue diamond handles).
 
 ![A test image](Picture31.png)
@@ -307,6 +323,7 @@ To make sure you've connected all your lines, press CTRL-L to reveal all unlinke
 ![A test image](tab11.png)
 
 Representing cellular compartments
+
 Representing cellular compartments as graphics is a useful way to illustrate location spatial relationships between objects and where processes take place. While cellular compartments can be illustrated in a number of ways, we recommend using an oval or line (or double line) with line thickness of 5 and colored light grey. In the example below, the nucleus is depicted in this way.
 
 ![A test image](Picture34.png)
