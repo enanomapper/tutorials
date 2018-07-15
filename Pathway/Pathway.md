@@ -305,7 +305,7 @@ Representing metabolites
 
 Metabolites and other small molecules should be represented as a data object connected to a database entry (like genes and proteins). Use the 'Met' button in the editor to create a metabolite object. Double-click the object to fill in the textlabel, identifier and database, or simply search by name or identifier.
 
-![A test image](Picture30.png)
+![A test image](tab10.png)
 
 Representing interactions
 
