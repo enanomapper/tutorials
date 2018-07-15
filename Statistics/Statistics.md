@@ -28,7 +28,7 @@ Example data input file: An example dataset is available. When running the modul
 
 ## Application Details
 
-You can access the on-line module on the [http://www.arrayanalysis.org webportal](http://www.arrayanalysis.org webportal) (follow "Get started" and choose "Statistical analysis"). You don't need to log in; you just need to have a tab delimited data file containing the (cleaned) data of your raw data files (you may also obtain such a file by running the affyAnalysisQC workflow) and possibly a file describing your dataset, called the description file. A presentation of this description file is available in the fourth section, subsection [TO BE WRITTEN](http://www.arrayanalysis.org/Stat/doc_Stat.php).
+You can access the on-line module on the [http://www.arrayanalysis.org](http://www.arrayanalysis.org) webportal (follow "Get started" and choose "Statistical analysis"). You don't need to log in; you just need to have a tab delimited data file containing the (cleaned) data of your raw data files (you may also obtain such a file by running the affyAnalysisQC workflow) and possibly a file describing your dataset, called the description file. A presentation of this description file is available in the fourth section, subsection [TO BE WRITTEN](http://www.arrayanalysis.org/Stat/doc_Stat.php).
 
 The on-line module contains three steps before the launch of the analysis:
 * [Step1](http://www.arrayanalysis.org/Stat/doc_Stat.php#step1): First you load the tab delimited text file containing the (cleaned) data;
