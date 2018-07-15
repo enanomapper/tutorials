@@ -231,7 +231,7 @@ Label
 Labels are used to describe locations, entities, processes or context:
 
 ![A test image](Picture19.png)
-
+  
 Line
 Lines can be used to create more complicated graphical objects representing biological structures, or to create a pathway legend.
 
