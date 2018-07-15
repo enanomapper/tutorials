@@ -29,7 +29,7 @@ trainingMaterial:
       name:  Penny Nymark
 #- description: 
   difficultyLevel: [Beginner]
-  keywords: Gene Ontology
+  keywords: Microarray Data Analysis
   license: CC-BY 4.0
 #- url: https://enanomapper.github.io/tutorials/Statistics/Statistics.html
   version: 1.0
