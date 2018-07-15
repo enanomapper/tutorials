@@ -280,7 +280,7 @@ The stoichiometry of reactions is not usually modeled in WikiPathways. If you wi
 Representing multiple similar reactions
 Representing multiple similar reactions so that they are properly stored in the underlying data model can sometimes present a challenge. Below is an example of using a connector hub (a line anchor) to display this. Right-click on any line to add a line anchor, then connect multiple lines for different reactions to this hub.
 
-![A test image](tab9.png)
+![A test image](tab13.png)
 
 Using labels
 To enter text for a label, double-click on the label (or choose 'Properties' in the right-click menu) and use the Label Text area to type the label, including line returns. The label can consist of multiple lines of text. You can also outline a label by choosing 'Rectangle' or 'RoundedRectangle' from the 'Outline' field in the properties panel
