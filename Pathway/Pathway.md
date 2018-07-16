@@ -223,7 +223,7 @@ The solid line and arrow are used to denote a variety of processes, including co
 Dashed line / dashed arrow
 The dashed line and arrow are used to denote an uncertain process or a process that involves additional steps not outlined in the diagram.
 
-![A test image](tab12.png)
+![A test image](tab-q.png)
 
 T-bar
 
