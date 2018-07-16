@@ -71,7 +71,7 @@ WikiPathways: Create a pathway, part 3](https://www.youtube.com/watch?v=5qaWMwRh
 ### Create a new pathway
 Open a new browser window or tab, go to the WikiPathways main page and click the image under the header Create in the Contributing New Pathways section. You can also click the Create link in the left-hand side panel. Enter Demo_yourname under the Pathway name field and select Homo sapiens in the species menu. Now click the Create pathway button.
 After clicking the button, a new page will open and the pathway editor will be loaded.
-Open the editor in a separate window by clicking the Switch to fullscreen mode button . This allows you to resize the editor and edit fullscreen. You can return to the original editor in your browser by clicking the Switch to embedded mode button .
+Open the editor in a separate window by clicking the Switch to fullscreen mode button ![A test image](a.png). This allows you to resize the editor and edit fullscreen. You can return to the original editor in your browser by clicking the Switch to embedded mode button .
 You can now start drawing your pathway on the drawing area.
 Adding initial gene products and metabolites
 For the purposes of this tutorial, we will use the Statin pathway as our example. We will start by adding a data node to the pathway. On a WikiPathways pathway, all biological entities with an annotation are stored as a data node. A data node can have different types, in this case, we will use the type Metabolite.
