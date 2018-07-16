@@ -1,3 +1,43 @@
+---
+layout: default
+
+trainingMaterial:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  about: "This tutorial explains how to use the AffyQC web tool of ArrayAnalysis.org for quality control and pre-processing of Affymetrix microarray data."
+  audience:
+    - "@type": Audience
+      name: PhD students
+    - "@type": Audience
+      name: post-docs
+  genre:
+    - "@type": URL
+    #url:
+  name: How to use the AffyQC web tool of ArrayAnalysis.org for quality control and pre-processing of Affymetrix microarray data
+  contributor:
+    - "@type": Person
+      name: Friederike Ehrhart, 
+    - "@type": Person
+      name: Lars Eijssen, 
+    - "@type": Person
+      name: Anwesha Bohler,
+    - "@type": Person
+      name:  Linda Rieswijk,  
+    - "@type": Person
+      name: Egon Willighagen, 
+    - "@type": Person
+      name: Penny Nymark, 
+#- description: 
+  difficultyLevel: [Beginner]
+  keywords: Microarray data analysis, Quality control and data pre-processing, Affymetrix microarrays, Systems biology, Pathway and network analyis
+  license: CC-BY 4.0
+#- url: https://enanomapper.github.io/tutorials/QCandpreprocessing/QCandpreprocessing.html
+  version: 1.0
+  dateCreated: 2016-05-23
+
+# Available metadata fields can be found here:
+# http://bioschemas.org/specifications/TrainingMaterial/specification/
+---
 
 # How to use the AffyQC web tool of ArrayAnalysis.org for quality control and pre-processing of Affymetrix microarray data
 
