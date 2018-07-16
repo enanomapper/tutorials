@@ -70,6 +70,7 @@ Adding gene and metabolite bridge.db files
 
 ### How to make a basic pathway - example of statin pathway
 Videos:
+
 [WikiPathways: Create a pathway, part 1](https://www.youtube.com/watch?v=N7cGHJ6HdGU)
 
 [WikiPathways: Create a pathway, part 2](https://www.youtube.com/watch?v=A_ZWFXjtpNQ)
@@ -188,7 +189,7 @@ Adding curation tags
 Curation tags are short messages that can be added to notify the community about the state of the pathway. See the help page for more information.
 In this step, you are going to add a curation tag that tells other users this pathway is a tutorial pathway. This will also exclude this pathway from the download archive. Pathways marked with the tutorial pathway tag are also cleaned up periodically by the WikiPathways administrators.
 To add the "Tutorial pathway" tag to your pathway, press the new button ![A test image](l.png) in the Curation tags section. Choose Tutorial pathway in the dropdown list and press the Apply button ![A test image](k.png). You will now see the following message below the pathway image:
-![A test image](m.png)This is a tutorial, demo or test pathway.
+![A test image](m.png) This is a tutorial, demo or test pathway.
 
 ### Curator guidelines
 Below are our recommendations on specific aspects of editing that best utilize the tools and data model. In terms of graphical style, it is up to the individual author of a pathway to create a style that best displays the relevant information. WikiPathways does not enforce a particular graphical style.
