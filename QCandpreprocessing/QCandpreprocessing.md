@@ -9,17 +9,19 @@
 
 ## 1. INTRODUCTION
 
-ArrayAnalysis.org is an open source, free to use online platform for analysis of microarray data - and an alternative program for Chipster (tutorial also available). ArrayAnalysis is a webtool, so there is no need for download or access code, and it provides more extensive quality control than Chipster but it is limited to two microarray formats: Affymetrix and Illumina. The exact microarray type (e.g. Affy-1) is automatically recognised. This tutorial shows how to use the Affymetrix quality control (affyQC) module which is designed for doing quality control and preprocessing of microarray data from Affymetrix microchips. All source code has been written in R and is open-source, available under the Apache License version 2.0. It is available on our Download page.
+[ArrayAnalysis.org](http://www.arrayanalysis.org/) is an open source, free to use online platform for analysis of microarray data - and an alternative program for [Chipster](https://chipster.csc.fi/manual/supported-chips.html) (tutorial also available). ArrayAnalysis is a webtool, so there is no need for download or access code, and it provides more extensive quality control than Chipster but it is limited to two microarray formats: Affymetrix and Illumina. The exact microarray type (e.g. Affy-1) is automatically recognised. This tutorial shows how to use the Affymetrix quality control (affyQC) module which is designed for doing quality control and preprocessing of microarray data from Affymetrix microchips. All source code has been written in R and is open-source, available under the [Apache License version 2.0](http://www.apache.org/licenses/LICENSE-2.0). It is available on our [Download](http://www.arrayanalysis.org/download.php) page.
+
 affyQC can be run :
-* on-line via the  arrayanalysis.org webportal (follow"Get started").
+
+* on-line via the [arrayanalysis.org webportal](http://www.arrayanalysis.org/) (follow ["Get started"](http://www.arrayanalysis.org/getStarted.php)).
 * locally as an automated R workflow provided via a wrapper function
 The main functions of affyQC are:
 * to compute array quality information;
 * to plot images that allow identifying any aberrations present in the dataset;
 * to return pre-processed data and QC reports.
-Bug tracking system: If you encounter an issue by using the code, you can report it at any moment by email or, once you have your own account, using our internal tracking system. You can also use this system to post comments or suggest features.
+Bug tracking system: If you encounter an issue by using the code, you can report it at any moment by [email](http://www.arrayanalysis.org/affyQC/doc_affyQC_web.php) or, once you have your own account, using our [internal tracking system](http://trac.bigcat.unimaas.nl/arrayanalysis/report). You can also use this system to post comments or suggest features.
 
-Example datasets: Note that three example datasets has been made available on our Download page. They include:
+Example datasets: Note that three example datasets has been made available on our [Download page](http://www.arrayanalysis.org/download.php). They include:
 * dataset raw .CEL files,
 * description file,
 * affyQC ouput files:
@@ -27,10 +29,10 @@ Example datasets: Note that three example datasets has been made available on ou
   * report file (PDF),
   * zip archive with images and tables and
   * normalised data (text file)
-You can access the on-line module on arrayanalysis.org webportal: follow "Get started" .
-JavaScript has to be enabled (activated) in your web browser. You will be warned if it is not the case. You can activate it at any time in the browser options (see activatejavascript.org if needed)
+You can access the on-line module on [arrayanalysis.org](http://www.arrayanalysis.org/) webportal: follow ["Get started"](http://www.arrayanalysis.org/getStarted.php) .
+JavaScript has to be enabled (activated) in your web browser. You will be warned if it is not the case. You can activate it at any time in the browser options (see [activatejavascript.org](http://activatejavascript.org/en/instructions) if needed)
 
-You don't need to log in; you just need to prepare a zipped file containing all your Affymetrix .CEL files and possibly a file describing your dataset, called the description file. A presentation of this description file is available in the fourth section, subsection "Parameter description". The on-line module contains three steps before the launch of the analysis:
+You don't need to log in; you just need to prepare a zipped file containing all your Affymetrix .CEL files and possibly a file describing your dataset, called the description file. A presentation of this description file is available in the fourth section, subsection ["Parameter description"](http://www.arrayanalysis.org/documentation.php). The on-line module contains three steps before the launch of the analysis:
 * Step1: First you load the archive of .CEL files
 * Step2: Then you complete the description of the dataset
 * Step3: And finally you choose the plots to be computed and their parameters.
@@ -64,9 +66,11 @@ You may launch the analysis with the "Run" button right after this first section
 Note that if the species was not deduced from the previous step, you will need to fill this field first, or to untick the "Custom annotation" checkbox.
 Second part of the input form
 This part contains four frames representing the four families of analysis applied to your raw data: 1) Sample quality, 2) Hybridization and overall signal quality 3) Signal comparability and bias diagnostic and 4) Array correlation.
-Most of the parameters are checkboxes that you would tick or untick to indicate whether a certain plot or table has to be computed or not. The analyses and plots are described in the module description page, which is reachable also from the left vertical menu (we recommend you to open the pages in a new tab to not lose the information entered in the input form you are filling).
+Most of the parameters are checkboxes that you would tick or untick to indicate whether a certain plot or table has to be computed or not. The analyses and plots are described in the [module description](http://www.arrayanalysis.org/affyQC/moduleDesc_affyQC.php) page, which is reachable also from the left vertical menu (we recommend you to open the pages in a new tab to not lose the information entered in the input form you are filling).
 Some analyses or plot contruction, such as the MA-plot and the hierachical clustering, need paraticular parameters. You may modify the default values.
 The following picture presents you this part of the input form, which defines the graphs built from the raw data:
+
+HERE I SHOULD CONTINUE!
 
 You may note that all the plots are not selected by default; you may select all of them with the first checkbox: [toogle select all].
 You may also note that some plots cannot be selected, such as the "Sample prep controls", the "Background intensity" or the "Scale factors". This is because the dataset used for this example (public dataset available on ArrayExpress: E-GEOD-13278), was built with PM-only arrays and the construction of these particular graphs uses the MAS5 algorithm which cannot be applied to PM-only arrays.
