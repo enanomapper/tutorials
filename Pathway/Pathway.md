@@ -284,7 +284,7 @@ Representing molecular complexes can be done in a variety of styles. We recommen
 
 Sometimes, you might also likely want to "group" a set of  stacked genes. Once selected, genes can be grouped by pressing CTRL + G, or choosing 'group' in the right-click menu. 
 
-![A test image](tab8.png)
+![A test image](tab-w.png)
 
 Representing reactions
 
