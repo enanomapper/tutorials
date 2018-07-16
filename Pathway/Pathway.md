@@ -71,8 +71,10 @@ Adding gene and metabolite bridge.db files
 ### How to make a basic pathway - example of statin pathway
 Videos:
 [WikiPathways: Create a pathway, part 1](https://www.youtube.com/watch?v=N7cGHJ6HdGU)
+
 [WikiPathways: Create a pathway, part 2](https://www.youtube.com/watch?v=A_ZWFXjtpNQ)
-WikiPathways: Create a pathway, part 3](https://www.youtube.com/watch?v=5qaWMwRh0Lk)
+
+[WikiPathways: Create a pathway, part 3](https://www.youtube.com/watch?v=5qaWMwRh0Lk)
 
 Create a new pathway
 Open a new browser window or tab, go to the WikiPathways main page and click the image under the header Create in the Contributing New Pathways section. You can also click the Create link in the left-hand side panel. Enter Demo_yourname under the Pathway name field and select Homo sapiens in the species menu. Now click the Create pathway button.
