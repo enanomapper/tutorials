@@ -1,3 +1,46 @@
+---
+layout: default
+
+trainingMaterial:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  about: "This tutorial explains how to a new pathway for WikiPathways using PathVisio."
+  audience:
+    - "@type": Audience
+      name: PhD students
+    - "@type": Audience
+      name: post-docs
+  genre:
+    - "@type": URL
+    #url:
+  name: How to make a new pathway for WikiPathways using PathVisio
+  contributor:
+    - "@type": Person
+      name: Friederike Ehrhart, 
+    - "@type": Person
+      name: Martina Summer-Kutmon, 
+    - "@type": Person
+      name: Egon Willighagen, 
+    - "@type": Person
+      name: Kristina Hanspers, 
+    - "@type": Person
+      name: Alexander Pico, 
+    - "@type": Person
+      name: Penny Nymark, 
+    - "@type": Person
+      name: Linda Rieswijk
+#- description: 
+  difficultyLevel: [Beginner]
+  keywords: Systems biology, Pathway analysis, Network analysis, Microarray data analysis, Nanomaterials
+  license: CC-BY 4.0
+#- url: https://enanomapper.github.io/tutorials/Pathway/Pathway.html
+  version: 1.0
+  dateCreated: 2016-05-31
+
+# Available metadata fields can be found here:
+# http://bioschemas.org/specifications/TrainingMaterial/specification/
+---
+
 # How to make a new pathway for WikiPathways using PathVisio
 
 * RELEASE DATE: 31.5.2016
