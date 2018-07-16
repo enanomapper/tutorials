@@ -336,7 +336,7 @@ Replace arc/arrowhead combinations with curved or elbowed connectors.
 These options should help you style your pathway so that it is easy to "read" and has a layout that is familiar to any biologist or biochemist.
 To make sure you've connected all your lines, press CTRL-L to reveal all unlinked line ends and highlight them in green.
 
-![A test image](tab-r.png)
+![A test image](tab-t.png)
 
 Representing cellular compartments
 
