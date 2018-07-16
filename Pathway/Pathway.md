@@ -59,8 +59,8 @@ Installation
 Adding gene and metabolite bridge.db files
 * Download and unpack the BridgeDb identifier mapping databases for the species you would like to use: [http://www.pathvisio.org/downloads/download-bridgedbs/](http://www.pathvisio.org/downloads/download-bridgedbs/)  
 * In PathVisio, you can load the identifier mapping databases:
-** Data -> Select Gene database -> add the link to the BridgeDb file (species specific!)
-** Data -> Select Metabolite database -> add the link to metabolite BridgeDb file (not species specific)
+  * Data -> Select Gene database -> add the link to the BridgeDb file (species specific!)
+  * Data -> Select Metabolite database -> add the link to metabolite BridgeDb file (not species specific)
 
 ### How to make a basic pathway - example of statin pathway
 Videos:
