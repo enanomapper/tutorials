@@ -33,5 +33,10 @@
   <loc>https://enanomapper.github.io/tutorials/Pathway/Pathway.html</loc>
   <priority>1.00</priority>
   <changefreq>monthly</changefreq>
-</url>       
+</url> 
+<url>      
+  <loc>https://enanomapper.github.io/tutorials/Statistics/Statistics.html</loc>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url> 
 </urlset>
