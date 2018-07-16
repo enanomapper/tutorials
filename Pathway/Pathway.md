@@ -321,7 +321,7 @@ Representing metabolites
 
 Metabolites and other small molecules should be represented as a data object connected to a database entry (like genes and proteins). Use the 'Met' button in the editor to create a metabolite object. Double-click the object to fill in the textlabel, identifier and database, or simply search by name or identifier.
 
-![A test image](tab10.png)
+![A test image](tab-e.png)
 
 Representing interactions
 
@@ -336,7 +336,7 @@ Replace arc/arrowhead combinations with curved or elbowed connectors.
 These options should help you style your pathway so that it is easy to "read" and has a layout that is familiar to any biologist or biochemist.
 To make sure you've connected all your lines, press CTRL-L to reveal all unlinked line ends and highlight them in green.
 
-![A test image](tab11.png)
+![A test image](tab-r.png)
 
 Representing cellular compartments
 
