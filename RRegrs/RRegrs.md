@@ -26,7 +26,7 @@ The prerequisite libraries needed are data.table, corrplot, caret, kernlab, pls,
 
 RSNNS, doSNOW, foreach, doMC. The minimal call for the RRegrs() function could be:
 
-'> library(RRegrs)'
+''> library(RRegrs)''
 
 '> #Run RRegrs with all default parameters
  > #(use default data set file and working folder,
