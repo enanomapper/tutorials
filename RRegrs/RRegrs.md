@@ -49,7 +49,7 @@ RSNNS, doSNOW, foreach, doMC. The minimal call for the RRegrs() function could b
 >RRegrs Results= RRegrs()
 ```
 
-![A test image](R2.png)
+![A test image](R3.png)
 
 
 > #Run RRegrs for a specific data set file and the rest > #default parameters
