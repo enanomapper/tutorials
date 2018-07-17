@@ -1,30 +1,21 @@
-RRegrs Package Tutorial
-1	Introduction
+# RRegrs Package Tutorial
+
+## 1	Introduction
 
 RRegrs is a collection of R regression tools based on the caret package. It is used to find the best regression models for any numerical dataset. The initial use of the script is aimed at finding QSAR models for chemoinformatics / nanotoxicology for eNanoMapper European project.
 
-2	Concepts
+## 2	Concepts
 
-RRegrs represents a simple tool to screen any dataset for the best regression model using ten implemented regression methods:
-
-1.Linear Multi-regression (LM)
-
-2.Generalized Linear Model with Stepwise Feature Selection (GLM)
-
-3.Partial Least Squares Regression (PLS)
-
-4.Lasso regression
-
-5.Elastic Net regression (ENET)
-
-6.Support vector machine using radial functions (SVM radial)
-
-7.Neural Networks regression (NN)
-
-8.Random Forest (RF)
-
-9.Random Forest-Recursive Feature Elimination (RF-RFE)
-
+RRegrs represents a simple tool to screen any dataset for the best regression model using ten implemented regression method
+1.Linear Multi-regression (L
+2.Generalized Linear Model with Stepwise Feature Selection (GL
+3.Partial Least Squares Regression (PL
+4.Lasso regressi
+5.Elastic Net regression (ENE
+6.Support vector machine using radial functions (SVM radia
+7.Neural Networks regression (NN
+8.Random Forest (RF
+9.Random Forest-Recursive Feature Elimination (RF-RFE
 10.Support Vector Machines Recursive Feature Elimination (SVM-RFE)
 
 RRegrs permits you to run all the methods by using only one function call. The main func-tion of the package (RRegrs) contains several sections: loading parameters and dataset, remove near zero variance features, scaling dataset, remove correlated features, dataset splitting, run the 10 regression methods, summary of statistics for all methods and splittings, averages for each method and cross-validation type for all splittings, automatic best model statistics, best model Y-randomization. Assessment of Applicability Domain was included in each method.
@@ -67,9 +58,9 @@ CPU c o r e )
 
 >
 
-> # Run RRegrs f o r a s p e c i f i c d a t a s e t f i l e and t h e r e s t > # d e f a u l t p a r a m e t e r s
+> # Run RRegrs fo r a s p e c i f i c d a t a s e t f i l e and t h e r e s t > # d e f a u l t p a r a m e t e r s
 
->RR eg r s Res u l t s = RRegrs ( DataFileName=”MyDataSet . c s v ” )
+>R eg r s Res u l t s = RRegrs ( DataFileName=”MyDataSet . c s v ” )
 
 >
 > #Run RRegrs  f o r  a  s p e c i f i c  d a t a s e t  f i l e ,
@@ -85,26 +76,19 @@ CPU c o r e )
 The default values could be found into the RRegrs definition:
 
 >RRegrs <− function ( DataFileName=” ds . House . c s v ” ,
->
 PathDataSet=” D a t a R e s u l t s ” ,
 
->
 noCores =1,
 
->
-ResAvgs=”RRegsResAvgs . c s v ” ,
+>ResAvgs=”RRegsResAvgs . c s v ” ,
 
->
-R e s B y S p l i t s=” R R e g r s R e s A l l S p l i t s . c s v ” ,
+>R e s B y S p l i t s=” R R e g r s R e s A l l S p l i t s . c s v ” ,
 
->
-ResBest=” RRegrsResBest . c s v ” ,
+>ResBest=” RRegrsResBest . c s v ” ,
 
->
-fD et=”T” , f F i l t e r s=”F” , f S c a l i n g=”T” ,
+>fD et=”T” , f F i l t e r s=”F” , f S c a l i n g=”T” ,
 
->
-fRemNear0Var=”T” , fRemCorr=”T” ,
+>fRemNear0Var=”T” , fRemCorr=”T” ,
 
 >
 fLM=”T” ,fGLM=”T” , fPLS=”T” , fLASSO=”T” ,
@@ -129,339 +113,175 @@ SVM
 
 e p s i l o n=” 0 . 0 1 ; 0 . 1 ; 0 . 3 ” ,
 
->
-c u t o f f =0.9 , i S c a l i n g =1, i S c a l C o l =1,
-
->
-t r a i n F r a c =0.75 , i S p l i t T i m e s =10 , noYrand =100 ,
-
->
-CVtypes=” r e p e a t e d c v ;LOOCV” ,
-
->
-No0NearVarFile=” ds . No0Var . c s v ” ,
-
->
-S c a l e d F i l e=” ds . s c a l e d . c s v ” ,
-
->
-NoCorrF ile=” ds . s c a l e d . NoCorrs . c s v ” ,
-
->
-l m F i l e=”LM. d e t a i l s . c s v ” ,
-
->
-g l m F i l e=”GLM. d e t a i l s . c s v ” ,
-
->
-p l s F i l e=”PLS . d e t a i l s . c s v ” ,
-
->
-l a s s o F i l e=” Lasso . d e t a i l s . c s v ” ,
-
->
-s v r m F i l e=”SVMRadial . d e t a i l s . c s v ” ,
-
->
-n n F i l e=”NN. d e t a i l s . c s v ” ,
-
->
-r f F i l e=”RF. d e t a i l s . c s v ” ,
-
->
-r f r e f F i l e =”RFREF. d e t a i l s . c s v ” ,
-
->
-s v m r f e F i l e=”SVMRFE. d e t a i l s . c s v ” ,
-
->
-e n e t F i l e=”ENET. d e t a i l s . c s v ” ,
-
->
-f R 2 r u l e=”T” )
-
-
-The calculations need to be done using a specific folder where all the input, output files can be found. RRegrs main function is using an extended set of parameters:
-
-
-
-2
-
-
-
-
-•DataFileName: Input dataset file name (default)
-
-•PathDataSet: Working folder for all input and output files
-
-•noCores: number of CPU cores to be used for calculation - 0=all available, 1=no parallel, n = specific number of cores; depending on operating system, di↵erent R package will be needed: doMC for Linux or Mac, doSNOW and foreach for Windows; on Windows, using RStudio, several processes will be created and if all the available cores will be used, the computer will become very slow (it is indicated the use of available cores-1 and the restart of RStudio to free the RAM between calculations)
-
-•ResAvgs: Output file name for averaged statistics (by splittings) for each regression method
-
-•ResBySplits: Output file name statistics for each splitting and each regression method (main statistics for all calculations)
-
-•ResBest: Output file name statistics for the best model
-
-•fDet: If print details for all the functions (default = TRUE)
-
-•fScaling: If Scalling dataset
-
-•fFilters: if run custom filter (not implemented yet!)
-
-•fRemNear0Var: If run Removal of near zero variance columns
-
-•fRemCorr: If run Removal of correlated columns
-
-•fLM : If run LM
-
-•fGLM : If run GLM
-
-•fPLS : If run PLS
-
-•fLASSO: If run Lasso
-
-•fENET : If run ENET
-
-•fSVRM : If run SVM radial
-
-•fNN : If run NN
-
-•fRF : If run RF
-
-•fSVMRFE : If run SVM-RFE
-
-•RFE SVM C : Values of C for SVM-RFE
-
-•RFE SVM epsilon: Values of epsilon for SVM-RFE
-
-•cutoff : Cutoff for correlated features (default = 0 .9)
-
-•iScalCol: Type of scaling: 1 = normalization; 2 = standardization; 3 = other; any other: no scaling
-
-•iScalCol: Scaling columns : 1 = including dependent variable; 2: only all the features
-
-•trainFrac: Fraction of training set from the entire dataset (default = 0.75); the rest of dataset is the test set
-
-•iSplitTimes: Number of splittings the dataset into train and test (default = 10)
-
-•noYrand: Number of Y-Randomization (default = 100)
-
-
-
-3
-
-
-
-
-•CVtypes: Cross-validation types: 10-CV (repeatedcv), LOOCV, etc. form caret package (see note below)
-
-•No0NearVarFile: Dataset file name without zero near features (if details is chosen)
-
-•ScaledFile: Scaled dataset file name (if details is chosen)
-
-•NoCorrFile: Dataset file name after correlation removal (if details is chosen)
-
-•lmFile: LM output file name with details
-
-•glmFile: GLM output file name with details
-
-•plsFile: PLS output file name with details
-
-•lassoFile: Lasso output file name with details
-
-•svrmFile: SVM Radial output file name with details
-
-•nnFile: NN output file name with details
-
-•rfFile: RF output file name with details
-
-•rfrefFile: RFREF output file name with details
-
-•svmrfeFile: SVMRFE output file name with details
-
-•enetFile: ENET output file name with details
-
-•fR2rule: If true, R2 rule will be used to select the best model (else adjR2)
-
-Even if RRegrs will create outputs files with all statistics and plots, the function return a list with model’s statistics and the the full regression model (resulted from caret training).
-
-Each regression function:
-
-•Uses caret package functions such as train function to train the model and trainControl to set the training conditions (10 repetitions, RMSE used as metrics to choose the model)
-
-•Generates the same list of statistics with 17 values: regression name, split number, cross-validation type, number of model features, names of model features, training adjusted R-squared, training root mean squared error (RMSE), training R-squared, training stan-dardized RMSE, test adjusted R-square, test RMSE, test R-squared, test correlation, both (training and test) adjusted R-squared, both RMSE, and both R-squared.
-
-•If details are needed, several output files are generated:
-
-– a CSV file with detailed statistics about the regression model:
-
-oRegression method, splitting number, cross-validation type Training set summary
-oTest set summary
-oFitting summary 
-oList of predictors
-oTraining predictors
-oTest predictors
-oFull statistics = the list of 17 values defined above
-oFeature importance
-oResiduals of the fitted model
-
-
-oAssessment of applicability domain / leverage analysis (if the determinant is not zero): mean of hat values, hat values with warnings (X3 and X2 for values 3 and 2 times than hat mean), leverage threshold, list of points with leverage greater than threshold, Cook’s distance cutoff, Cook’s distances, points influence
-
-– 5 − 12 plots for fitting statistics as a PDF file for each splitting and cross-validation method
-
-oTraining Yobs-Ypred 
-oTest Yobs-Ypred
-oFeature Importance
-oFitted vs. Residuals for Fitted Model
-oLeverage for Fitted Model
-oCook’s Distance for Fitted Model
-o6 standard fitting plots using plot function with cutoff.Cook
-
-The outputs can differ depending on the regression method used.
-
-After filtering the dataset for correlated variables, near-zero variance features and splitting the dataset into training and test sets, the user’s selected regression methods will be executed for each splitting and cross-validation type. Some of the complex regression methods (RF, SVM-RFE, RF-RFE) are using only 10-fold cross-validation (other validation methods could be very slow for these complex functions). The parallel support for calculations is presented only for the complex functions.
-
-In the next step, a CSV output file will be created with all the basic statistics (17 values) for each method type, splitting and cross-validation type. These summary statistics are used to generate another CSV file with the averaged statistics by all splittings, for each regression method and cross-validation type. The best regression model is chosen based on the following criteria: from the best test R-squared (+/- 0.05), the model with minimum RMSE is the final one. If fR2rule is False, adjR2 will be used to select the best model. For the best model, an additional CSV file is generated containing detailed statistics as well as PDF plots for important statistics.
-
-Please note that the Cross-validation types available are the resampling methods available from trainControl caret and rfeControl caret:
-
-•when no feature selection is requested: boot, boot632, cv, repeatedcv, LOOCV, LGOCV, none, oob, adaptive cv, adaptive boot or adaptive LGOCV,
-
-•when feature selection is requested: boot, cv, LOOCV or LGOCV.
-
-•when a mixture of methods is requested (feature and non feature selection), options from the second list should be selected.
-
-
-If the wrapper function are selected, SVMRFEreg and RFRFEreg functions could be used. The following section is presenting the code flow with details about the data objects, input
-
-and output files, and functions used into the main RRegrs function.
-
-3	RRegrs function code flow
-
-This section presents datails about variable names, input and output files, order of the sections:
-
-1.Load parameters and dataset
-
-•Load Parameters from the function call as data frame: Params.df
-
-•Write all parameters into a CSV file (default: Parameters.csv)
-
-2.Remove the NA values
-
-3.Remove near zero variance columns using RemNear0VarCols = ds - No0Var CSV
-
-
-5
-
-
-
-
-4.Scaling dataset (normalization - default, standardization, etc.) using ScalingDS = ds - Scaled
-
-CSV
-
-5.Remove correlated features using RemCorrs = ds
-
-•Dataset without correlated features: Scaled NoCorrs CSV
-
-•Correlation matrix: Scaled NoCorrs CorrMAT CSV
-
-•Correlation plot before removal of features: Scaled NoCorrs Corrs PNG
-
+>c u t o f f =0.9 , i S c a l i n g =1, i S c a l C o l =1,
+
+>t r a i n F r a c =0.75 , i S p l i t T i m e s =10 , noYrand =100 ,
+
+>CVtypes=” r e p e a t e d c v ;LOOCV” ,
+
+>No0NearVarFile=” ds . No0Var . c s v ” ,
+
+>S c a l e d F i l e=” ds . s c a l e d . c s v ” ,
+
+>NoCorrF ile=” ds . s c a l e d . NoCorrs . c s v ” ,
+
+>l m F i l e=”LM. d e t a i l s . c s v ” ,
+
+>g l m F i l e=”GLM. d e t a i l s . c s v ” ,
+
+>p l s F i l e=”PLS . d e t a i l s . c s v ” 
+
+>l a s s o F i l e=” Lasso . d e t a i l s . c s v ” ,
+
+>s v r m F i l e=”SVMRadial . d e t a i l s . c s v ” ,
+
+>n n F i l e=”NN. d e t a i l s . c s v ” ,
+
+>r f F i l e=”RF. d e t a i l s . c s v ” ,
+
+>r f r e f F i l e =”RFREF. d e t a i l s . c s v ” ,
+
+>s v m r f e F i l e=”SVMRFE. d e t a i l s . c s v ” ,
+
+>e n e t F i l e=”ENET. d e t a i l s . c s v ” ,
+
+>f R 2 r u l e=”T” )
+
+
+The calculations need to be done using a specific folder where all the input, output files can be found. RRegrs main function is using an extended set of parameters* 
+•DataFileName: Input dataset file name (default
+•PathDataSet: Working folder for all input and output file
+•noCores: number of CPU cores to be used for calculation - 0=all available, 1=no parallel, n = specific number of cores; depending on operating system, di↵erent R package will be needed: doMC for Linux or Mac, doSNOW and foreach for Windows; on Windows, using RStudio, several processes will be created and if all the available cores will be used, the computer will become very slow (it is indicated the use of available cores-1 and the restart of RStudio to free the RAM between calculations
+* ResAvgs: Output file name for averaged statistics (by splittings) for each regression metho
+* ResBySplits: Output file name statistics for each splitting and each regression method (main statistics for all calculations
+* ResBest: Output file name statistics for the best mode
+* fDet: If print details for all the functions (default = TRUE
+* fScaling: If Scalling datase
+* fFilters: if run custom filter (not implemented yet!
+* fRemNear0Var: If run Removal of near zero variance column
+* fRemCorr: If run Removal of correlated column
+* fLM : If run LM
+* fGLM : If run GLM
+* fPLS : If run PLS
+* fLASSO: If run Lasso
+* fENET : If run ENET
+* fSVRM : If run SVM radial
+* fNN : If run NN
+* fRF : If run RF
+* fSVMRFE : If run SVM-RFE
+* RFE SVM C : Values of C for SVM-RFE
+* RFE SVM epsilon: Values of epsilon for SVM-RFE
+* cutoff : Cutoff for correlated features (default = 0 .9)
+* iScalCol: Type of scaling: 1 = normalization; 2 = standardization; 3 = other; any other: no scaling
+* iScalCol: Scaling columns : 1 = including dependent variable; 2: only all the features
+* trainFrac: Fraction of training set from the entire dataset (default = 0.75); the rest of dataset is the test
+* iSplitTimes: Number of splittings the dataset into train and test (default =
+* noYrand: Number of Y-Randomization (default = 100* 
+* CVtypes: Cross-validation types: 10-CV (repeatedcv), LOOCV, etc. form caret package (see note below)
+* No0NearVarFile: Dataset file name without zero near features (if details is chosen)
+* ScaledFile: Scaled dataset file name (if details is chosen)
+* * NoCorrFile: Dataset file name after correlation removal (if details is chosen)
+* lmFile: LM output file name with details
+* glmFile: GLM output file name with details
+* plsFile: PLS output file name with de
+* lassoFile: Lasso output file name with details
+* svrmFile: SVM Radial output file name with det
+* nnFile: NN output file name with det
+* rfFile: RF output file name with det
+* rfrefFile: RFREF output file name with det
+* svmrfeFile: SVMRFE output file name with det
+* enetFile: ENET output file name with det
+* fR2rule: If true, R2 rule will be used to select the best model (else ad
+Even if RRegrs will create outputs files with all statistics and plots, the function return a list with model’s statistics and the the full regression model (resulted from caret traini
+Each regression funct
+* Uses caret package functions such as train function to train the model and trainControl to set the training conditions (10 repetitions, RMSE used as metrics to choose the mo* •Generates the same list of statistics with 17 values: regression name, split number, cross-validation type, number of model features, names of model features, training adjusted R-squared, training root mean squared error (RMSE), training R-squared, training stan-dardized RMSE, test adjusted R-square, test RMSE, test R-squared, test correlation, both (training and test) adjusted R-squared, both RMSE, and both R-squa
+* If details are needed, several output files are genera
+– a CSV file with detailed statistics about the regression mo
+  * Regression method, splitting number, cross-validation type Training set summary
+  * Test set summary
+  * Fitting summary 
+  * List of predictors
+  * Training predictors
+  * Test predictors
+  * Full statistics = the list of 17 values defined above
+  * Feature importance
+  * Residuals of the fitted m
+  * Assessment of applicability domain / leverage analysis (if the determinant is not zero): mean of hat values, hat values with warnings (X3 and X2 for values 3 and 2 times than hat mean), leverage threshold, list of points with leverage greater than threshold, Cook’s distance cutoff, Cook’s distances, points influ
+– 5 − 12 plots for fitting statistics as a PDF file for each splitting and cross-validation me
+  * Training Yobs-Ypred 
+  * Test Yobs-Ypred
+  * Feature Importance
+  * Fitted vs. Residuals for Fitted Model
+  * Leverage for Fitted Model
+  * Cook’s Distance for Fitted Model
+  * 6 standard fitting plots using plot function with cutoff.
+The outputs can differ depending on the regression method u
+After filtering the dataset for correlated variables, near-zero variance features and splitting the dataset into training and test sets, the user’s selected regression methods will be executed for each splitting and cross-validation type. Some of the complex regression methods (RF, SVM-RFE, RF-RFE) are using only 10-fold cross-validation (other validation methods could be very slow for these complex functions). The parallel support for calculations is presented only for the complex functi
+In the next step, a CSV output file will be created with all the basic statistics (17 values) for each method type, splitting and cross-validation type. These summary statistics are used to generate another CSV file with the averaged statistics by all splittings, for each regression method and cross-validation type. The best regression model is chosen based on the following criteria: from the best test R-squared (+/- 0.05), the model with minimum RMSE is the final one. If fR2rule is False, adjR2 will be used to select the best model. For the best model, an additional CSV file is generated containing detailed statistics as well as PDF plots for important statist
+Please note that the Cross-validation types available are the resampling methods available from trainControl caret and rfeControl ca
+* when no feature selection is requested: boot, boot632, cv, repeatedcv, LOOCV, LGOCV, none, oob, adaptive cv, adaptive boot or adaptive LG
+* when feature selection is requested: boot, cv, LOOCV or LG
+* when a mixture of methods is requested (feature and non feature selection), options from the second list should be selec
+If the wrapper function are selected, SVMRFEreg and RFRFEreg functions could be used. The following section is presenting the code flow with details about the data objects, i
+and output files, and functions used into the main RRegrs funct
+3	RRegrs function code 
+This section presents datails about variable names, input and output files, order of the secti
+1.Load parameters and dat
+* Load Parameters from the function call as data frame: Param
+* Write all parameters into a CSV file (default: Parameters.
+2.Remove the NA v* 
+3.Remove near zero variance columns using RemNear0VarCols = ds - No0Var
+4.Scaling dataset (normalization - default, standardization, etc.) using ScalingDS = ds - Sc
+5.Remove correlated features using RemCorrs 
+* Dataset without correlated features: Scaled NoCorrs
+* Correlation matrix: Scaled NoCorrs CorrMAT
+* Correlation plot before removal of features: Scaled NoCorrs Corrs
 6.Dataset splitting: Training and Test sets using DsSplit = ds.train, ds.test - CSVs for train and test; for each dataset splitting (default = 10) repeat steps 7 − 9 = dfMod
-7.Regression Methods
-
-•Executed for each cross-validation type (non-wrapper or wrapper)
-
-•Resulted PDF plots for each method, split and cross-validation type
-
-•Resulted CSV files for each method with detailed statistics
-
-•Each method return a list containing: statistics values and the fitter model obtained with caret package
-
-•All models are memorized into variable dfMod
-
-(a)Basic LM using LMreg ! lm.model appended to dfMod
-
-(b)GLM based on AIC regression using GLMreg ! glm.model appended to dfMod
-
-(c)PLS using PLSreg ! pls.model appended to dfMod
-
-(d)Lasso using LASSOreg ! lasso.model appended to dfMod
-
-(e)Elastic Nets ENETreg ! enet.model appended to dfMod
-
-(f)SVM radial regression using SVLMreg ! SVRM.model appended to dfMod
-
-(g)Neural Networks Regression using NNreg ! nn.model appended to dfMod
-
-(h)Random Forest Regression RFreg ! rf.model appended to dfMod
-
-(i)Random Forest-Recursive Feature Elimination (RF-RFE)
-
-(j)Support Vector Machines Recursive Feature Elimination SVMRFEreg ! svmrfe.model appended to dfMod
-
-8.Fitted models comparison plots.
-
-Models are compared in terms of their resampling results. The resamples() caret function
-
-is used to collect, summarize and contrast the resampling results. Plots are produced per training set (i.e. per data split), and for di↵erent estimated R2 and RMSE values, e.g. ’DifModels.RMSE.iSplits.1.pdf’, ’DifModels.R2.iSplits.1.pdf’. Note that only models with the same resampling scheme are compared.
-
-9.Results
-
-•All statistics results (not ordered) = df.res - RRegrsResBySplit.csv
-
-•Averaged statistics of the results by each Regression Method and CV type
-
-•All results as data table - dt.res
-
-•Averaged results = dt.mean
-
-•Ordered averaged results = dt.mean.ord - RRegsResAvgs.csv
-
-10.Best model selection – max R2.ts (+/ − 0.005), min RMSE
-
-•Max R2.ts = Best model statistics - best.dt
-
-
-6
-
-
-
-
-•R2.ts for the best model = best.R2 .ts
-
-•Add new conditions (max adjR2.ts (+/ − 0.005), min RMSE) = best.dt
-
-•Regression method for the best model = best.reg
-
-11.Best model detailed statistics
-
-•Detailed statistics for the best model = RRegrsResBest.csv
-
-•Run the caret function with the method from the best method = my.stats.reg
-
-•Plots for best model with 10-fold CV and last split: RRegrsResBest.csv.repeatedcv.split2.pdf
-
-•Regression method for the best model = best.reg
-
-12.Y-randomization for best model – default = 100 times
-
-•Using Yrandom = R2Di↵.Yrand - RRegrsResBest.csv.Yrand.Hist.pdf
-
-4	Resampling methods
-
+7.Regression Met
+* Executed for each cross-validation type (non-wrapper or wrap
+* Resulted PDF plots for each method, split and cross-validation 
+* Resulted CSV files for each method with detailed statis
+* Each method return a list containing: statistics values and the fitter model obtained with caret pac
+* All models are memorized into variable d
+(a)Basic LM using LMreg ! lm.model appended to d
+(b)GLM based on AIC regression using GLMreg ! glm.model appended to d
+(c)PLS using PLSreg ! pls.model appended to d
+(d)Lasso using LASSOreg ! lasso.model appended to d
+(e)Elastic Nets ENETreg ! enet.model appended to d
+(f)SVM radial regression using SVLMreg ! SVRM.model appended to d
+(g)Neural Networks Regression using NNreg ! nn.model appended to d
+(h)Random Forest Regression RFreg ! rf.model appended to d
+(i)Random Forest-Recursive Feature Elimination (RF-
+(j)Support Vector Machines Recursive Feature Elimination SVMRFEreg ! svmrfe.model appended to d
+8.Fitted models comparison pl
+Models are compared in terms of their resampling results. The resamples() caret func
+is used to collect, summarize and contrast the resampling results. Plots are produced per training set (i.e. per data split), and for di↵erent estimated R2 and RMSE values, e.g. ’DifModels.RMSE.iSplits.1.pdf’, ’DifModels.R2.iSplits.1.pdf’. Note that only models with the same resampling scheme are compa
+9.Res
+* All statistics results (not ordered) = df.res - RRegrsResBySplit
+* Averaged statistics of the results by each Regression Method and CV 
+* All results as data table - dt
+* Averaged results = dt.
+* Ordered averaged results = dt.mean.ord - RRegsResAvgs
+10.Best model selection – max R2.ts (+/ − 0.005), min 
+* Max R2.ts = Best model statistics - bes
+* R2.ts for the best model = best.R2
+* Add new conditions (max adjR2.ts (+/ − 0.005), min RMSE) = bes
+* Regression method for the best model = best
+11.Best model detailed statis
+* Detailed statistics for the best model = RRegrsResBest
+* Run the caret function with the method from the best method = my.stats
+* Plots for best model with 10-fold CV and last split: RRegrsResBest.csv.repeatedcv.split2
+* Regression method for the best model = best
+12.Y-randomization for best model – default = 100 t
+* Using Yrandom = R2Di↵.Yrand - RRegrsResBest.csv.Yrand.Hist
+4	Resampling met
 Model performance is estimated using resampling techniques, namely k-fold cross-validation (CV), leave-one-out (LOO) CV, bootstrapping. Particularly, repeated data splitting is performed (de-fault value 10), whereas during the procedure of building the model a set of modified data sets are created from the training samples based on the options o↵ered by train() and rfe() functions in caret package- NAMES in RRgres. Both functions consider a grid of candidate tunning param-eters, and the final tunning parameter set is chosen based on aggegating resampling performance estimates for each of the hold-out sample set. These performance estimates are used to evaluate which combination(s) of the tuning parameters are appropriate. Once the final tuning values are assigned, the final model is refit using the entire training set. Finally the performance of the model is evaluated on the test set.
 
-By default the root mean square error (RMSE) is used to calculate performance but R2 and adjusted-R2 options are also available.
-
+By default the root mean square error (RMSE) is used to calculate performance but R2 and adjusted-R2 options are also availab
 5	RRegrs package functions
 
-5.1	RRegrs function
-
-RRegrs is the main function of the current package and it permits to execute all regression methods for any dataset in only one call.
-
+5.1	RRegrs funct
+RRegrs is the main function of the current package and it permits to execute all regression methods for any dataset in only one ca
 RRegrs function is based on 11 regression methods that use caret package. The following subsections will present the regression methods which can also be used individually. In order to do that we need to specify all parameters and the data set used, by either defining the parameters file as we have done before:
 
 > #  f l a g	t o	c a l c u l a t e	and	p r i n t	d e t a i l s	f o r	a l l	t h e	f u n c t i o n s
@@ -601,11 +421,6 @@ Or by individually defining all parameters:
 >
 
 
-8
-
-
-
-
 > # r e t u r n  a  l i s t  w i t h  2  d a t a s e t s  =  d s L i s t $ t r a i n ,  d s L i s t $ t e s t
 
 > d s L i s t  <− D s S p l i t ( ds , t r a i n F r a c , fDet , PathDataSet , i S e e d )
@@ -660,14 +475,6 @@ If the details are used, the function is creating several output files such as a
 
 PLS is called via train() caret function using the mvr function of the pls package. RMSE was chosen as the summary metric used to select the optimal model. The number of components is the tuning parameter of the model, which we set to a sequence of integers from 1 to one fifth of the number of features in the training data set. (If the later is smaller than 1, tuning parameter is set to 1.)
 
-
-
-
-9
-
-
-
-
 trainControl() caret function is used to set the resampling method used and its parameters, namely for the k-fold CV we set k=10, and the default value is to repeat the resampling procedure 10 times.
 
 > # d e f i n e t h e o u t p u t f i l e where a l l r e s u l t s (CSV, PDF f i l e s ) > # w i l l b e s t o r e d
@@ -719,11 +526,6 @@ sCV can take the following values: boot, boot632, cv, repeatedcv, LOOCV, LGOCV (
 
 
 
-10
-
-
-
-
 If the details are used, the function is creating several output files such as a CSV file with all calculation details and PDF files for each cross-validation type and split.
 
 5.7	Support vector machine using radial functions (SVM radial) regres-sion function
@@ -764,23 +566,12 @@ If the details are used, the function is creating several output files such as a
 
 5.9	Random Forest (RF) regression function
 
-RF (random forest) is called via train() caret function using the randomForest function of the randomForest package. RMSE was chosen as the summary metric used to select the optimal model. Tuning parameters in this case are the number of features selected randomly for each tree in the forest. The recommended value is the square root of the total number of features, however, we recommend a set of values between this value and the total number of features. Of course, the bigger this number, the lower the algorithm. The adjustment values are TO COMPLETE
-
-
-
-
-11
-
-
-
-
+RF (random forest) is called via train() caret function using the randomForest function of the randomForest package. RMSE was chosen as the summary metric used to select the optimal model. Tuning parameters in this case are the number of features selected randomly for each tree in the forest. The recommended value is the square root of the total number of features, however, we recommend a set of values between this value and the total number of features. Of course, the bigger this number, the lower the algorithm. The adjustment values are TO COMPLE
 trainControl() caret function is used to set the resampling method used and its parameters, namely for the k-fold CV we set k=10, and the default value is to repeat the resampling procedure 10 times. Each random forest grows 1500 trees.
 
 During the model selection process, the sCV method try to find the best number of features automaticaly chosen in each tree of the RF. The possible values are: numberFeatures/3 (default in randomForest Package), numberFeatures and numberFeatures/2.
 
-sCV can take the following values: boot, boot632, cv, repeatedcv, LOOCV, LGOCV (for repeated training/test splits), none (only fits one model to the entire training set), oob (only for random forest, bagged trees, bagged earth, bagged flexible discriminant analysis, or conditional tree forest models), adaptive cv, adaptive boot or adaptive LGOCV.
-
-
+sCV can take the following values: boot, boot632, cv, repeatedcv, LOOCV, LGOCV (for repeated training/test splits), none (only fits one model to the entire training set), oob (only for random forest, bagged trees, bagged earth, bagged flexible discriminant analysis, or conditional tree forest models), adaptive cv, adaptive boot or adaptive LGOCV
 > # d e f i n e t h e o u t p u t f i l e where a l l r e s u l t s (CSV, PDF f i l e s ) > # w i l l b e s t o r e d
 
 >outRF <− ’ RFoutput . c s v ’
@@ -820,15 +611,7 @@ If the details are used, the function is creating several output files such as a
 
 RF-RFE represents a wrapper version of RF and, therefore, it will be executed only of feature selection flag was choose.
 
-RF (random forest) is called via train() caret function using the randomForest function of the randomForest package and uses the RFE function of the caret package to obtaing the best SVM model withe the best feature set. RMSE was chosen as the summary metric used to select the optimal model. Tuning parameters in this case are the number of features selected randomly for each tree in the forest. The recommended value is the square root of the total number of
-
-
-12
-
-
-
-
-features, however, we recommend a set of values between this value and the total number of features. Of course, the bigger this number, the lower the algorithm. The adjustment values are TO COMPLETE
+RF (random forest) is called via train() caret function using the randomForest function of the randomForest package and uses the RFE function of the caret package to obtaing the best SVM model withe the best feature set. RMSE was chosen as the summary metric used to select the optimal model. Tuning parameters in this case are the number of features selected randomly for each tree in the forest. The recommended value is the square root of the total number of features, however, we recommend a set of values between this value and the total number of features. Of course, the bigger this number, the lower the algorithm. The adjustment values are TO COMPLETE
 
 trainControl() caret function is used to set the resampling method used and its parameters, namely for the k-fold CV we set k=10, and the default value is to repeat the resampling procedure 10 times. Each random forest grows 1500 trees.
 
@@ -882,14 +665,7 @@ S c a l i n g D S ( ds , i S c a l i n g , i S c a l C o l , fDet , o u t F i l 
 
 5.14	Remove correlated features
 
-This function is based on scale functions from caret and corrplot packages. It has several param-eters as input: ds = dataset frame, fDet = flag for details (TRUE/FALSE), cutoff= correlation cut o↵(ex: 0.9), outFileName = file name with the corrected dataset (it could include the path).
-
-
-13
-
-
-
-
+This function is based on scale functions from caret and corrplot packages. It has several param-eters as input: ds = dataset frame, fDet = flag for details (TRUE/FALSE), cutoff= correlation cut o↵(ex: 0.9), outFileName = file name with the corrected dataset (it could include the path).* 
 > # Remove  t h e  c o r r e l a t e d  columns => ds . new = new
 
 > # ( as  d a t a  frame )  and  r e b u i l d  t h e  new  d a t a  frame
@@ -956,47 +732,25 @@ This function calls the best model regression method and, if it is a complex met
 5.17	Auxiliary functions
 
 Several functions have been developed in order to print specific data types to text or CSV files or to calculate several statistics:
-
-•r2.adj.funct = calculates adjusted R2
-
-•r2.adj.lm.funct = calculates adjusted R2 for LM
-
-•rmse.funct = calculates RMSE
-
-•r2.funct = calculates R2
-
-
-
-
-14
-
-
-
-
-•AppendList2CSv = writes a list to CSV file
-
-•AppendList2txt = writes a list to TXT file
-
-•findResamps.funct = find the number of re-samples for caret, rfe or sbf objects from caret package
-
-•svmFuncsW$fit = calculates the best model with the best feature set (c and epsilon)
-
-•svmFuncsW$rank = calculates the k w2 k as ranking criterion for measuring the importance of a particular featur in the RFE process.
-
-•svmFuncsW$pred = [to be completed]
-
-•svmFuncsGradW$rank = calculates gradient w, as proposed by Rakotomamonjy et. al based on the gradient of SVM coeﬃcients.
+* r2.adj.funct = calculates adjusted R2
+* r2.adj.lm.funct = calculates adjusted R2 for LM
+* rmse.funct = calculates RMSE
+* r2.funct = calculates R2
+* AppendList2CSv = writes a list to CSV file
+* AppendList2txt = writes a list to TXT file
+* findResamps.funct = find the number of re-samples for caret, rfe or sbf objects from caret package
+* svmFuncsW$fit = calculates the best model with the best feature set (c and epsilon)
+* svmFuncsW$rank = calculates the k w2 k as ranking criterion for measuring the importance of a particular featur in the RFE process.
+* svmFuncsW$pred = [to be completed]
+* svmFuncsGradW$rank = calculates gradient w, as proposed by Rakotomamonjy et. al based on the gradient of SVM coeﬃcients.
 
 6	Final model
-
 When all models are build based on the resampling scheme discussed above, the best model is selected given RMSE values on the test set, averaged over the 10 data splits. In fact only one winning model is reported at the end of the process with all model parameters and performance statistics. Nevertheless, the user can ask for full details in the working folder.
 
 7	Output
-
 RRegrs returns a list with three items: the name of the best method, the statistics for the best model, the list with all the fitted models based on caret functions (including the best model).
 
 8	Example: Regression model for Boston House dataset
-
 The following examples show simple calls of the RRegrs() function using a specific dataset file entitled ”MyDataSet.csv” that it should be provided by the user:
 
 >l i b r a r y ( RRegrs )
@@ -1057,17 +811,7 @@ d e f a u l t  v a l u e s
 
 >R R e g r s R e s u l t s = RRegrs ( DataFileName=”MyDataSet . c s v ” ,
 
->	PathDataSet=” My Re sul tsF old er ” )
-
-
-
-
-
-15
-
-
-
-
+>	PathDataSet=” My Re sul tsF old er ” )* 
 Method
 repeatedcv
 LOOCV
@@ -1154,51 +898,16 @@ b e s t r e g r e s s i o n model u s i n g p a r a m e t e r f i l e RRegrs ( D
 
 noCores =0, i S p l i t T i m e s =2, noYrand=2)
 
-
 The RRegrs call uses all available CPU cores for the complex methods, 2 splittings, 2 Y-randomizations, and all the regression methods.Table 1 presents the execution times on an Win-dows 8.1 64bit with i7-4790 CPU (3.60GHz, 4 cores, 8 logical cores), 16G RAM. repeatedcv rep-resents the 10-fold cross-validation. The total execution time was 11.63 minutes.
 The most important files into the working folder are:
-
-•Data set file = ds.House.csv (Fig. 1). First column represents the predicted variable (depen-dent variable) and the other 13 columns are the original features.
-
-•Parameter file = Parameters.csv (Fig. 2). It contains all the parameters used to run RRegrs function.
-
-•RRegrsResAllSplits.csv = Statistics for all data set splitting, method and CV type (Fig. 3)
-
-•RRegsResAvgs.csv = Averages statistics by method/CV type (Fig. 4)
-
-•RRegrsResBest.csv = Detailed statistics for the automatically best model (best R2 in test dataset with minimum RMSE)
-
-
-16
-
-
-
-
-•Comparison plots = DifModels.R2.iSplits.1.pdf (Fig. 5), DifModels.RMSE.iSplits.1.pdf (Fig. 6), ModelsComp.iSplits.1.pdf (Fig. 7), DifModels.R2.iSplits.2.pdf, DifModels.RMSE.iSplits.2.pdf, ModelsComp.iSplits.2.pdf.
-
-•ResBestF,”.repeatedcv.split”,i,”.pdf” = Best model plots only for repeatedcv
-
-•ResBestF,”.Yrand.Hist.pdf” = Best model Y-randomization plot
-
+* Data set file = ds.House.csv (Fig. 1). First column represents the predicted variable (depen-dent variable) and the other 13 columns are the original features.
+* Parameter file = Parameters.csv (Fig. 2). It contains all the parameters used to run RRegrs function.
+* RRegrsResAllSplits.csv = Statistics for all data set splitting, method and CV type (Fig. 3)
+* RRegsResAvgs.csv = Averages statistics by method/CV type (Fig. 4)
+* RRegrsResBest.csv = Detailed statistics for the automatically best model (best R2 in test dataset with minimum RMSE
+* Comparison plots = DifModels.R2.iSplits.1.pdf (Fig. 5), DifModels.RMSE.iSplits.1.pdf (Fig. 6), ModelsComp.iSplits.1.pdf (Fig. 7), DifModels.R2.iSplits.2.pdf, DifModels.RMSE.iSplits.2.pdf, ModelsComp.iSplits.2.pdf
+* ResBestF,”.repeatedcv.split”,i,”.pdf” = Best model plots only for repeatedc
+* ResBestF,”.Yrand.Hist.pdf” = Best model Y-randomization plo
 Additional files are presented for each regression method such as CSV detailed statistics and PDF plots. One PNG is created (ds.scaled.NoCorrs.csv.corrs.png) in order to show the correlated features in the original dataset (Fig. 8). The initial names of the features have been replaced with V2-V14.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 Figure 1: Boston House data set header.
