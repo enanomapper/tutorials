@@ -7,15 +7,24 @@ RRegrs is a collection of R regression tools based on the caret package. It is u
 ## 2	Concepts
 
 RRegrs represents a simple tool to screen any dataset for the best regression model using ten implemented regression method
-1.Linear Multi-regression (L
-2.Generalized Linear Model with Stepwise Feature Selection (GL
-3.Partial Least Squares Regression (PL
+1.Linear Multi-regression (L)
+
+2.Generalized Linear Model with Stepwise Feature Selection (GL)
+
+3.Partial Least Squares Regression (PL)
+
 4.Lasso regressi
-5.Elastic Net regression (ENE
-6.Support vector machine using radial functions (SVM radia
-7.Neural Networks regression (NN
-8.Random Forest (RF
-9.Random Forest-Recursive Feature Elimination (RF-RFE
+
+5.Elastic Net regression (ENE)
+
+6.Support vector machine using radial functions (SVM radia)
+
+7.Neural Networks regression (NN)
+
+8.Random Forest (RF)
+
+9.Random Forest-Recursive Feature Elimination (RF-RFE)
+
 10.Support Vector Machines Recursive Feature Elimination (SVM-RFE)
 
 RRegrs permits you to run all the methods by using only one function call. The main func-tion of the package (RRegrs) contains several sections: loading parameters and dataset, remove near zero variance features, scaling dataset, remove correlated features, dataset splitting, run the 10 regression methods, summary of statistics for all methods and splittings, averages for each method and cross-validation type for all splittings, automatic best model statistics, best model Y-randomization. Assessment of Applicability Domain was included in each method.
@@ -29,15 +38,24 @@ RSNNS, doSNOW, foreach, doMC. The minimal call for the RRegrs() function could b
 ```
 > library(RRegrs)
 ```
-
-'> #Run RRegrs with all default parameters
- > #(use default data set file and working folder,
- > #run	all regression	methods,	without wrappers,
- > #10	splitings,  100 times Y−randomization,
- > #no	parallel calculation= 1	CPU core)'
-
-'>RRegrs Results= RRegrs()'
-
+```
+> #Run RRegrs with all default parameters
+> #(use default data set file and working folder,
+> #run	all regression	methods,	without wrappers,
+> #10	splitings,  100 times Y−randomization,
+> #no	parallel calculation= 1	CPU core)
+```
+```
+>RRegrs Results= RRegrs()
+```
+> #Run RRegrs for a specific data set file and the rest > #default parameters
+>RRegrs Results = RRegrs(DataFileName=”MyDataSet.csv”)
+>
+> #Run RRegrs for a specific data set file ,
+> #working folder(it should exist and contains data set file)
+> # and the rest default parameters
+>RRegrs Results= RRegrs(DataFileName=”MyDataSet.csv”,
+>                       PathDataSet=”MyResultsFolder”)
 The default values could be found into the RRegrs definition:
 
 The calculations need to be done using a specific folder where all the input, output files can be found. RRegrs main function is using an extended set of parameters* 
