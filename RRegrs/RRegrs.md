@@ -26,47 +26,17 @@ The prerequisite libraries needed are data.table, corrplot, caret, kernlab, pls,
 
 RSNNS, doSNOW, foreach, doMC. The minimal call for the RRegrs() function could be:
 
-'>l i b r a r y ( RRegrs )'
-'> # Run	RRegrs  w i t h  a l l	d e f a u l t	p a r a m e t e r s
-> #	( u s e  d e f a u l t  d a t a s e t	f i l e  and  w o r k i n g  f o l d e r ,
-> #	run	a l l  r e g r e s s i o n	methods ,	w i t h o u t  wrappers ,
-> #	10	s p l i t i n g s ,  100	t i m e s  Y−r a n d o m i z a t i o n ,
-> #	no	p a r a l l e l  c a l c u l a t i o n  = 1	CPU c o r e )'
+'> library(RRegrs)'
 
-'>RR eg r s Res u l t s = RRegrs ( )'
+'> #Run RRegrs with all default parameters
+ > #(use default data set file and working folder,
+ > #run	all regression	methods,	without wrappers,
+ > #10	splitings,  100 times Y−randomization,
+ > #no	parallel calculation= 1	CPU core)'
+
+'>RRegrs Results= RRegrs()'
 
 The default values could be found into the RRegrs definition:
-
-'>RRegrs <− function ( DataFileName=” ds . House . c s v ” ,
->	                    PathDataSet=” D a t a R e s u l t s ” ,
->	                    noCores =1,
->	                    ResAvgs=”RRegsResAvgs . c s v ” ,
->	                    R e s B y S p l i t s=” R R e g r s R e s A l l S p l i t s . c s v ” ,
->	                    ResBest=” RRegrsResBest . c s v ” ,
->	                    fD et=”T” , f F i l t e r s=”F” , f S c a l i n g=”T” ,
->	                    fRemNear0Var=”T” , fRemCorr=”T” ,
->	                    fLM=”T” ,fGLM=”T” , fPLS=”T” , fLASSO=”T” ,
->	                    fENET=”T” ,fSVRM=”T” , fNN=”T” ,
->	                    fRF=”T” ,fRFREF=”T” ,fSVMRFE=”T” ,
->	                    RFE		SVM		C=” 1 ; 5 ; 1 5 ; 5 0 ” ,
->	                    RFE		SVM		e p s i l o n=” 0 . 0 1 ; 0 . 1 ; 0 . 3 ” ,
->	                    c u t o f f =0.9 , i S c a l i n g =1, i S c a l C o l =1,
->	                    T r a i n F r a c =0.75 , i S p l i t T i m e s =10 , noYrand =100 ,
->	                    CVtypes=” r e p e a t e d c v ;LOOCV” ,
->	                    No0NearVarFile=” ds . No0Var . c s v ” ,
->	                    S c a l e d F i l e=” ds . s c a l e d . c s v ” ,
->	                    NoCorrF ile=” ds . s c a l e d . NoCorrs . c s v ” ,
->	                    l m F i l e=”LM. d e t a i l s . c s v ” ,
->	                    g l m F i l e=”GLM. d e t a i l s . c s v ” ,
->	                    p l s F i l e=”PLS . d e t a i l s . c s v ” ,
->	                    l a s s o F i l e=” Lasso . d e t a i l s . c s v ” ,
->	                    s v r m F i l e=”SVMRadial . d e t a i l s . c s v ” ,
->	                    n n F i l e=”NN. d e t a i l s . c s v ” ,
->	                    r f F i l e=”RF. d e t a i l s . c s v ” ,
->	                    r f r e f F i l e =”RFREF. d e t a i l s . c s v ” ,
->	                    s v m r f e F i l e=”SVMRFE. d e t a i l s . c s v ” ,
->	                    e n e t F i l e=”ENET. d e t a i l s . c s v ” ,
->	                    f R 2 r u l e=”T” )* 
 
 The calculations need to be done using a specific folder where all the input, output files can be found. RRegrs main function is using an extended set of parameters* 
 * DataFileName: Input dataset file name (default
