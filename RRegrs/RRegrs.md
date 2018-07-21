@@ -52,7 +52,7 @@ RSNNS, doSNOW, foreach, doMC. The minimal call for the RRegrs() function could b
 > #Run RRegrs for a specific data set file and the rest 
 > #default parameters
 >RRegrs Results = RRegrs(DataFileName=”MyDataSet.csv”)
-
+```
 ```
 > #Run RRegrs for a specific data set file ,
 > #working folder(it should exist and contains data set file)
@@ -60,6 +60,7 @@ RSNNS, doSNOW, foreach, doMC. The minimal call for the RRegrs() function could b
 >RRegrs Results= RRegrs(DataFileName=”MyDataSet.csv”,
 >                       PathDataSet=”MyResultsFolder”)
 ```
+
 The default values could be found into the RRegrs definition:
 
 ```
