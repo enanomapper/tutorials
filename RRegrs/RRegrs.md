@@ -298,7 +298,7 @@ RRegrs function is based on 11 regression methods that use caret package. The fo
 ```
 >#flag to calculate	and print details for all	 the functions	
 >fDet <− as.logical(
->  Param.df[which(Param.df$RRegrs.Parameters==”fDet”),2])
+>    Param.df[which(Param.df$RRegrs.Parameters==”fDet”),2])
 >
 
 >#to reapeat the ds	splitting, different values of seed will	be used
@@ -313,18 +313,302 @@ RRegrs function is based on 11 regression methods that use caret package. The fo
 >
 >#data set folder for input and out put files
 >PathDataSet <− as.character(
->Param.df[which(Param.df$RRegrs.Parameters==”PathDataSet”),2]
+>    Param.df[which(Param.df$RRegrs.Parameters==”PathDataSet”),2]
 >)
 >
 >#input step1 = ds original file name
 >DataFileName <− as.character(
->Param.df[which(Param.df$RRegrs.Parameters==”DataFileName”),2]
+>    Param.df[which(Param.df$RRegrs.Parameters==”DataFileName”),2]
 >)
 ># Generate	path + file name = original dataset
 > inFile <− file.path(PathDataSet, DataFileName)
 >		
 > #scaleddsfile name(in the same folder)
 > ScaledFile = as.character (	
->Param.df [ which (Param.df$RRegrs.Parameters==” ScaledFile” ) , ]
+>    Param.df[which (Param.df$RRegrs.Parameters==” ScaledFile” ),2]
+>)
+>
+>ds<−read.csv(inFile,header=T)
+>
+>#returnalistwith2datasets=dsList$train,dsList$test
+>dsList<−DsSplit(ds,trainFrac,fDet,PathDataSet,iSeed)
+>
+>#gettrainandtestfromtheresultedlist
+>ds.train<−dsList$train
+>ds.test<−dsList$test
+>
+>#typesofcross−validationmethods
+>CVtypes<−strsplit(as.character(
+>    Param.df[which(Param.df$RRegrs.Parameters==”CVtypes”),2]),”;”
+>)[[1]]
 
 ```
+Or by individually defining all parameters:
+
+````
+>#flag to calculate and print details for all the functions
+>fDet<−FALSE
+>
+>#to reapeat the ds splitting, different values of seed will be used
+>iSeed<−i
+>
+>#the fraction of training set from the entire dataset;
+>trainFrac<− 0.75
+>
+>
+>#dataset folder for input and out put files
+>PathDataSet<−’DataResults’
+>
+>#upload data set
+>ds<−read.csv(ds.Housing,header=T)#!!!!
+>
+>#return a list with 2 data sets= dsList$train, dsList$test
+>dsList<−DsSplit(ds, trainFrac, fDet, PathDataSet, iSeed)
+>
+>#get train and test from the resulted list
+>ds.train<−dsList$train
+>ds.test<−dsList$test
+>
+>#types of cross− validation methods
+>CVtypes<−c(’repeatedcv’,’LOOCV’)
+```
+
+For this particular example we are looking at the Boston Housing data [1].
+
+5.2	Basic Linear regression (LM) function
+
+LM is called via train() caret function having no extra tuning parameters. RMSE was chosen as the summary metric used to select the optimal model. trainControl() caret function is used to set the resampling method used and its parameters, namely for the k-fold CV we set k=10, and the default value is to repeat the resampling procedure 10 times.
+
+>#define the output file where all results(CSV,PDFfiles)
+>#will be stored
+>outLM<−’LMoutput.csv’
+>LM.fit<−LMreg(
+>ds.train,ds.test,CVtypes[1],iSplit=1,fDet=F,outFile=outLM
+>)
+```
+
+If the details are used, the function is creating several output files such as a CSV file with all calculation details and PDF files for each cross-validation type and split.
+
+5.3	Generalized Linear Model with Stepwise Feature Selection (GLM) function
+
+GLM is called via train() caret function using the glmStepAIC function from the MASS package. No tuning parameters are set. RMSE was chosen as the summary metric used to select the optimal model. trainControl() caret function is used to set the resampling method used and its parameters, namely for the k-fold CV we set k=10, and the default value is to repeat the resampling procedure 10 times.
+
+```
+>#definetheoutputfilewhereallresults(CSV,PDFfiles)>#willbestored
+>outGLM<−’GLMoutput.csv’
+>GLM.fit<−GLMreg(
+>    ds.train,ds.test,CVtype[1],iSplit=1,fDet=F,outFile=outGLM
+>)
+```
+
+If the details are used, the function is creating several output files such as a CSV file with all calculation details and PDF files for each cross-validation type and split.
+
+5.4	Partial Least Squares Regression (PLS) function
+
+PLS is called via train() caret function using the mvr function of the pls package. RMSE was chosen as the summary metric used to select the optimal model. The number of components is the tuning parameter of the model, which we set to a sequence of integers from 1 to one fifth of the number of features in the training data set. (If the later is smaller than 1, tuning parameter is set to 1.)
+
+```trainControl()``` caret function is used to set the resampling method used and its parameters, namely for the k-fold CV we set k=10, and the default value is to repeat the resampling procedure 10 times.
+
+```
+>#define the output file where all results(CSV, PDFfiles)
+>#will bestored
+      >outPLS <− ’PLSoutput.csv’
+>PLS.fit <− PLSreg(
+>    ds.train,ds.test,CVtype[1],iSplit=1,fDet=F,outFile=outPLS
+>)
+```
+If the details are used, both functions are creating several output files such as a CSV file with all calculation details and PDF files for each cross-validation type and split.
+
+5.5	Lasso regression function
+
+Lasso is called via train() caret function using the enet function of the elasticnet package. RMSE was chosen as the summary metric used to select the optimal model. Fraction is the tuning parameter of the model which is the ratio of the L1 norm of the coeﬃcient vector, relative to the norm at the full LS solution. We have set fraction to vary in a sequence of 10 values between zero and one.
+
+```trainControl()``` caret function is used to set the resampling method used and its parameters, namely for the k-fold CV we set k=10, and the default value is to repeat the resampling procedure 10 times.
+
+```
+>#define the output file where all results(CSV,PDFfiles)
+>#will bestored
+>outLASSO<−’LASSOoutput.csv’
+>LASSO.fit<−LASSOreg(
+>ds.train, ds.test, CVtype[1], iSplit=1, fDet=F, outFile=outLASSO
+>)
+```
+Following the guidelines by the elasticnet package, LASSOreg only runs for k-fold CV schemes.
+
+If the details are used, the function is creating several output files such as a CSV file with all calculation details and PDF files for each cross-validation type and split.
+
+5.6	Elastic Net regression (ENET) function
+
+Elastic net from glmnet package have mainly two parameters, alpha and lambda. Instead of using the standard caret package sCV parameterization, the proper alpha value is chosen by sCV (alpha =1 lasso, alpha =0 ridge), and labda is chosen using the glmnet package. RMSE was chosen as the summary metric used to select the optimal model.
+
+trainControl() caret function is used to set the resampling method used and its parameters, namely for the k-fold CV we set k=10, and the default value is to repeat the resampling procedure 10 times.
+
+sCV can take the following values: boot, boot632, cv, repeatedcv, LOOCV, LGOCV (for repeated training/test splits), none (only fits one model to the entire training set), oob (only for random forest, bagged trees, bagged earth, bagged flexible discriminant analysis, or conditional tree forest models), adaptive cv, adaptive boot or adaptive LGOCV.
+
+```
+>#define the output file where all results(CSV,PDFfiles)
+>#will be stored
+     >outENET<−’ENEToutput.csv’
+      >ENET.fit<−ENETreg(my.datf.train,my.datf.test,sCV,iSplit1,fDet=F,outFile=outENET)
+```
+
+If the details are used, the function is creating several output files such as a CSV file with all calculation details and PDF files for each cross-validation type and split.
+
+5.7	Support vector machine using radial functions (SVM radial) regres-sion function
+
+SVM radial is called via train() caret function using the ksvm function of the kernlab package (the kernel function used is ’rbfdot’ Radial Basis Gaussian kernel). RMSE was chosen as the summary metric used to select the optimal model. Tuning parameters in this case are sigma (inverse kernel width) and a regularization parameter C cost (controls how much the regression line can adapt to the data smaller values result in more linear, i.e. flat surfaces.). We have set sigma to be estimated by sigest from kernlab package, and C to vary in c(1,5,10,15,20).
+
+```trainControl()``` caret function is used to set the resampling method used and its parameters, namely for the k-fold CV we set k=10, and the default value is to repeat the resampling procedure 10 times.
+
+```
+>#define the output file where all results(CSV,PDFfiles)
+>#will bestored
+>outSVRM<−’SVRMoutput.csv’
+>SVRM.fit<−SVRMreg(
+>    ds.train,ds.test,CVtype[1],iSplit=1,fDet=F,outFile=outSVRM
+>)
+```
+
+If the details are used, the function is creating several output files such as a CSV file with all calculation details and PDF files for each cross-validation type and split.
+
+5.8	Neural Networks regression (NN) function
+
+ANis called via ```train()``` caret function using the nnet function of the nnet package. RMSE was chosen as the summary metric used to select the optimal model. Tuning parameters in this case are size and decay, where size refers to the number of units in the hidden layer and decay to the weight decay. Size is set to vary in c(1, 5, 10, 15) and decay within a sequence of values in [0, 0.001].
+
+```trainControl()``` caret function is used to set the resampling method used and its parameters, namely for the k-fold CV we set k=10, and the default value is to repeat the resampling procedure 10 times.
+
+```
+>#define the output file where all results(CSV,PDFfiles)
+>#will be stored
+>outNN<−’NNoutput.csv’
+>NN.fit<−NNreg(
+>    ds.train,ds.test,CVtype[1],iSplit=1,fDet=F,outFile=outNN
+>)
+```
+
+5.9	Random Forest (RF) regression function
+
+RF (random forest) is called via train() caret function using the randomForest function of the randomForest package. RMSE was chosen as the summary metric used to select the optimal model. Tuning parameters in this case are the number of features selected randomly for each tree in the forest. The recommended value is the square root of the total number of features, however, we recommend a set of values between this value and the total number of features. Of course, the bigger this number, the lower the algorithm. The adjustment values are TO COMPLETE
+
+```trainControl()``` caret function is used to set the resampling method used and its parameters, namely for the k-fold CV we set k=10, and the default value is to repeat the resampling procedure 10 times. Each random forest grows 1500 trees.
+
+During the model selection process, the sCV method try to find the best number of features automaticaly chosen in each tree of the RF. The possible values are: numberFeatures/3 (default in randomForest Package), numberFeatures and numberFeatures/2.
+
+sCV can take the following values: boot, boot632, cv, repeatedcv, LOOCV, LGOCV (for repeated training/test splits), none (only fits one model to the entire training set), oob (only for random forest, bagged trees, bagged earth, bagged flexible discriminant analysis, or conditional tree forest models), adaptive cv, adaptive boot or adaptive LGOCV.
+
+```
+>#definetheoutputfilewhereallresults(CSV,PDFfiles)>#willbestored
+>outRF<−’RFoutput.csv’
+>RF.fit<−RFreg(
+>    my.datf.train,my.datf.test,sCV,iSplit1,fDet=F,outFile=outRF
+>)
+```
+If the details are used, the function is creating several output files such as a CSV file with all calculation details and PDF files for each cross-validation type and split.
+
+5.10	Support Vector Machines Recursive Feature Elimination (SVM-RFE) regression function
+
+SVM is called via eps-svr function of the kernlab package and uses the RFE function of the caret package to obtaing the best SVM model with the best feature set. RMSE was chosen as the summary metric used to select the optimal model.
+
+trainControl() caret function is used to set the resampling method used and its parameters, namely for the k-fold CV we set k=10, and the default value is to repeat the resampling procedure 10 times.
+
+sCV can take the following values: boot, boot632, cv, repeatedcv, LOOCV, LGOCV (for repeated training/test splits), none (only fits one model to the entire training set), oob (only for random forest, bagged trees, bagged earth, bagged flexible discriminant analysis, or conditional tree forest models), adaptive cv, adaptive boot or adaptive LGOCV.
+
+```
+>#define the output file where all results(CSV,PDFfiles)
+>#will bestored
+>outSVMRFE<−’SVMRFEoutput.csv’
+>SVMRFE.fit<−SVMRFEreg(
+>    my.datf.train,my.datf.test,sCV,iSplit1,
+>    fDet=F,outFile=outSVMRFE,cs=c(1,5,15,50),eps=c(0.01,0.1,0.3)
+>)
+```
+If the details are used, the function is creating several output files such as a CSV file with all calculation details and PDF files for each cross-validation type and split.
+
+5.11	Random Forest-Recursive Feature Elimination (RF-RFE) regres-sion function
+
+RF-RFE represents a wrapper version of RF and, therefore, it will be executed only of feature selection flag was choose.
+
+RF (random forest) is called via train() caret function using the randomForest function of the randomForest package and uses the RFE function of the caret package to obtaing the best SVM model withe the best feature set. RMSE was chosen as the summary metric used to select the optimal model. Tuning parameters in this case are the number of features selected randomly for each tree in the forest. The recommended value is the square root of the total number of features, however, we recommend a set of values between this value and the total number of features. Of course, the bigger this number, the lower the algorithm. The adjustment values are TO COMPLETE
+
+```trainControl()``` caret function is used to set the resampling method used and its parameters, namely for the k-fold CV we set k=10, and the default value is to repeat the resampling procedure 10 times. Each random forest grows 1500 trees.
+
+During the model selection process, the sCV method try to find the best number of features automaticaly chosen in each tree of the RF. The possible values are: numberFeatures/3 (default in randomForest Package), numberFeatures and numberFeatures/2.
+
+sCV can take the following values: boot, boot632, cv, repeatedcv, LOOCV, LGOCV (for repeated training/test splits), none (only fits one model to the entire training set), oob (only for random forest, bagged trees, bagged earth, bagged flexible discriminant analysis, or conditional tree forest models), adaptive cv, adaptive boot or adaptive LGOCV.
+
+```
+>#define the output file where all results(CSV,PDFfiles)
+>#will be stored
+>outRFRFE<−’RFRFEoutput.csv’
+>RFRFE.fit<−RFRFEreg(
+>    my.datf.train,my.datf.test,sCV,iSplit1,
+>    fDet=F,outFile=outRFRFE
+>)
+```
+
+If the details are used, the function is creating several output files such as a CSV file with all calculation details and PDF files for each cross-validation type and split.
+
+Several function have been created in order to split the dataset, remove near-zero variance features, remove correlated features, etc. (the the code flow section).
+
+5.12	Removal of near zero variance columns
+
+This function is based on nearZeroVar function from caret and it has several parameters as input: ds = dataset features without predicted variable (as data frame), fDet = if details (default is FALSE), outFile = output file with modified dataset (default is ”ds3.No0Var.csv”):
+
+```
+>#Removal of near zero variance columns and add the predicted variable
+>#=>ds.new=newdataset(asdataframe)
+>ds.new<−cbind(
+>    ”net.c”=ds[,1],RemNear0VarCols(ds[,2:dim(ds)[2]],fDet,outFile)
+>)
+```
+
+5.13	Scaling dataset
+
+This function is based on scale function from caret and it has several parameters as input: ds = dataset features (as data frame), s = 1,2,3 - type of scaling: 1 = normalization, 2 = standard-ization, 3 = other (default = 1 = Normalization), c = the number of column into the dataset to start scaling (default = 1; if c = 1, included the dependent variable; if c = 2, only the features will be scaled), fDet = if details (default is FALSE), outFile = output file with modified dataset (default is ”ds4.scaled.csv”). If s di↵erent of 1,2,3 is used, there is no scaling.
+```
+
+>#Scaling dataset=>ds.new=newdataset	(as	data	frame)
+>ds.new<−ScalingDS(ds,iScaling,iScalCol,fDet,outFile)
+```
+
+5.14	Remove correlated features
+
+This function is based on scale functions from caret and corrplot packages. It has several param-eters as input: ds = dataset frame, fDet = flag for details (TRUE/FALSE), cutoff= correlation cut o↵(ex: 0.9), outFileName = file name with the corrected dataset (it could include the path).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
