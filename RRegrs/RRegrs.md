@@ -38,6 +38,7 @@ RSNNS, doSNOW, foreach, doMC. The minimal call for the RRegrs() function could b
 ```
 > library(RRegrs)
 ```
+
 ```
 > #Run RRegrs with all default parameters
 > #(use default data set file and working folder,
@@ -45,6 +46,7 @@ RSNNS, doSNOW, foreach, doMC. The minimal call for the RRegrs() function could b
 > #10	splitings,  100 times Y−randomization,
 > #no	parallel calculation= 1	CPU core)
 ```
+
 ```
 >RRegrs Results= RRegrs()
 ```
@@ -308,8 +310,8 @@ RRegrs function is based on 11 regression methods that use caret package. The fo
 > trainFrac<−as.numeric(
 >                          as.character(
 >                              Param.df[which(Param.df$RRegrs.Parameters==”trainFrac”),2]
->                           )
->                       )
+>    )
+>)
 >
 >#data set folder for input and out put files
 >PathDataSet <− as.character(
@@ -345,7 +347,7 @@ RRegrs function is based on 11 regression methods that use caret package. The fo
 ```
 Or by individually defining all parameters:
 
-````
+```
 >#flag to calculate and print details for all the functions
 >fDet<−FALSE
 >
@@ -379,6 +381,7 @@ For this particular example we are looking at the Boston Housing data [1].
 
 LM is called via train() caret function having no extra tuning parameters. RMSE was chosen as the summary metric used to select the optimal model. trainControl() caret function is used to set the resampling method used and its parameters, namely for the k-fold CV we set k=10, and the default value is to repeat the resampling procedure 10 times.
 
+```
 >#define the output file where all results(CSV,PDFfiles)
 >#will be stored
 >outLM<−’LMoutput.csv’
@@ -417,6 +420,7 @@ PLS is called via train() caret function using the mvr function of the pls packa
 >    ds.train,ds.test,CVtype[1],iSplit=1,fDet=F,outFile=outPLS
 >)
 ```
+
 If the details are used, both functions are creating several output files such as a CSV file with all calculation details and PDF files for each cross-validation type and split.
 
 5.5	Lasso regression function
@@ -433,6 +437,7 @@ Lasso is called via train() caret function using the enet function of the elasti
 >ds.train, ds.test, CVtype[1], iSplit=1, fDet=F, outFile=outLASSO
 >)
 ```
+
 Following the guidelines by the elasticnet package, LASSOreg only runs for k-fold CV schemes.
 
 If the details are used, the function is creating several output files such as a CSV file with all calculation details and PDF files for each cross-validation type and split.
@@ -503,6 +508,7 @@ sCV can take the following values: boot, boot632, cv, repeatedcv, LOOCV, LGOCV (
 >    my.datf.train,my.datf.test,sCV,iSplit1,fDet=F,outFile=outRF
 >)
 ```
+
 If the details are used, the function is creating several output files such as a CSV file with all calculation details and PDF files for each cross-validation type and split.
 
 5.10	Support Vector Machines Recursive Feature Elimination (SVM-RFE) regression function
@@ -522,6 +528,7 @@ sCV can take the following values: boot, boot632, cv, repeatedcv, LOOCV, LGOCV (
 >    fDet=F,outFile=outSVMRFE,cs=c(1,5,15,50),eps=c(0.01,0.1,0.3)
 >)
 ```
+
 If the details are used, the function is creating several output files such as a CSV file with all calculation details and PDF files for each cross-validation type and split.
 
 5.11	Random Forest-Recursive Feature Elimination (RF-RFE) regres-sion function
@@ -565,8 +572,8 @@ This function is based on nearZeroVar function from caret and it has several par
 5.13	Scaling dataset
 
 This function is based on scale function from caret and it has several parameters as input: ds = dataset features (as data frame), s = 1,2,3 - type of scaling: 1 = normalization, 2 = standard-ization, 3 = other (default = 1 = Normalization), c = the number of column into the dataset to start scaling (default = 1; if c = 1, included the dependent variable; if c = 2, only the features will be scaled), fDet = if details (default is FALSE), outFile = output file with modified dataset (default is ”ds4.scaled.csv”). If s di↵erent of 1,2,3 is used, there is no scaling.
-```
 
+```
 >#Scaling dataset=>ds.new=newdataset	(as	data	frame)
 >ds.new<−ScalingDS(ds,iScaling,iScalCol,fDet,outFile)
 ```
