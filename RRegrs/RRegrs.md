@@ -745,7 +745,9 @@ The most important files into the working folder are:
 
 Additional files are presented for each regression method such as CSV detailed statistics and PDF plots. One PNG is created (ds.scaled.NoCorrs.csv.corrs.png) in order to show the correlated features in the original dataset (Fig. 8). The initial names of the features have been replaced with V2-V14.
 
+![A test image](Reg2.png)
 
+Figure 1: Boston House data set header.
 
 
 
