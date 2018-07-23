@@ -582,10 +582,122 @@ This function is based on scale function from caret and it has several parameter
 
 This function is based on scale functions from caret and corrplot packages. It has several param-eters as input: ds = dataset frame, fDet = flag for details (TRUE/FALSE), cutoff= correlation cut o↵(ex: 0.9), outFileName = file name with the corrected dataset (it could include the path).
 
+```
+>#Remove the correlated columns => ds.new=new
+>#(as data frame)and rebuild the new data frame
+>#predicted variable
+>ds.new <− cbind(data set with	the
+>    ”net.c”=ds[,1],RemCorrs(ds[,2:dim(ds)[2]],fDet,cutoff,outFile)
+>)
+```
+Additional files are generated if fDet is TRUE such as correlation matrix (CSV) and plot the correlation plot before correlation removal (PDF).
+
+5.15	Dataset splitting in Training and Test
+
+This function is based on createDataPartition function from caret and it has several parameters as input: ds = frame dataset object, trainFrac = training set ratio from the entire dataset (default=3/4 = 75%), fDet = flag for detais (default = FALSE), PathDataSet = pathway for results, iSeed = number to be used as seed.
+
+```
+>#Dataset spliting	in	Training and Test => dsList=list	with
+>#two data frames	for	trainingand	test
+>dsList <− DsSplit(ds,trainFrac,fDet,PathDataSet,iSeed)
+```
+
+5.16	Y-randomization for the best model
+
+It uses only one splitting, 10-cross validation (repeatedcv) and the best method. Best R2 for test (best.R2.ts) will be compared with R2 in test with Y-randomization (Yrand.R2.ts) and it returns ratios between the di↵erence of R2 and best R2 (Di↵sR2/bestR2). DsSplit is using for splitting the dataset.
+
+The function is appending outputs to the general CSV statistics file and a histogram as PDF plot.
+
+It is based on createDataPartition function from caret and it has several parameters as input: ds = frame dataset object, trainFrac = training set ratio from the entire dataset, best.reg = label of the method, best.r2.ts = value of R2 for the best model in test set, noYrand = number of randomization (optimal = 100), ResBetF = file name for the best model output CSV file.
+
+```
+>#Y−randomizationtest
+>#parallelsupportusing2CPUcores
+>R2Diff.Yrand<−Yrandom(
+>    ds,trainFrac,best.reg,best.R2.ts,
+>    noYrand,ResBestF
+>)
+```
+
+This function calls the best model regression method and, if it is a complex method, there is a need of parallel calculation.
+
+5.17	Auxiliary functions
+
+Several functions have been developed in order to print specific data types to text or CSV files or to calculate several statistics:
+
+* r2.adj.funct = calculates adjusted R2
+
+* r2.adj.lm.funct = calculates adjusted R2 for LM
+
+* rmse.funct = calculates RMSE
+
+* r2.funct = calculates R2
+
+* AppendList2CSv = writes a list to CSV file
+
+* AppendList2txt = writes a list to TXT file
+
+* findResamps.funct = find the number of re-samples for caret, rfe or sbf objects from caret package
+
+* svmFuncsW$fit = calculates the best model with the best feature set (c and epsilon)
+
+* svmFuncsW$rank = calculates the k w2 k as ranking criterion for measuring the importance of a particular featur in the RFE process.
+
+* svmFuncsW$pred = [to be completed]
+
+* svmFuncsGradW$rank = calculates gradient w, as proposed by Rakotomamonjy et. al based on the gradient of SVM coeﬃcients.
+
+6	Final model
+
+When all models are build based on the resampling scheme discussed above, the best model is selected given RMSE values on the test set, averaged over the 10 data splits. In fact only one winning model is reported at the end of the process with all model parameters and performance statistics. Nevertheless, the user can ask for full details in the working folder.
+
+7	Output
+
+RRegrs returns a list with three items: the name of the best method, the statistics for the best model, the list with all the fitted models based on caret functions (including the best model).
+
+8	Example: Regression model for Boston House dataset
+
+The following examples show simple calls of the RRegrs() function using a specific dataset file entitled ”MyDataSet.csv” that it should be provided by the user:
+
+```
+>library(RRegrs)
+>
+>#Run	RRegrs with all default parameters
+>#default data set file(”ds.House.csv”) and
+>#working directory (”DataResults”)
+>#run	all regression	methods
+>#10	splittings, 100	timesY−randomization,
+>#no	parallel support	for CPUcores
+>RRegrsResults=RRegrs()
+>
+>#Run RRegrs for a specific data set file  with default parameters
+>#including the default directory(”DataResults”)
+>RRegrsResults=RRegrs(DataFileName=”MyDataSet.csv”)
+>
+>#Run	RRegrs	for	aspecific data	set	file(”MyDataSet.csv”)and
+>#working folder (”MyResultsFolder”); both should exist
+>#the	rest of	RRegrs parameters	have	default values
+>RRegrsResults=RRegrs(DataFileName=”MyDataSet.csv”,
+>    PathDataSet=”MyResultsFolder”)
+```
+
+| Method | repeatedcv | LOOCV |
+|:------:|:----------:|:-----:|
+| LM  | 18.50 | 1.65 |
+| GLM | 3.02  | 8.86 |
+| PLS | 1.14  | 1.58 |
+| Lasso | 1.30 | - |
+| ENET | 13.74  | 49.45 |
+| SVM radial | 5.55  | 14.61 |
+| NN | 12.70 | 49.97 |
+| RF | 92.44  | - |
+| RF-RFE | 3.65  | - |
+| SVM-RFE | 60.75  | - |
 
 
+The output variable RRegrsResults is a complex object which contains the object of the fitted models and the main statistics for each regression model. Details about each function are presented into the tutorial of the RRegrs package.
 
-
+The following example could be used to test the RRegrs package using a the Boston housing dataset [1] from RRegrs GitHub URL. It has 13 features and 506 cases:
 
 
 
