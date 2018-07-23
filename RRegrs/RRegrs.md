@@ -694,10 +694,61 @@ The following examples show simple calls of the RRegrs() function using a specif
 | RF-RFE | 3.65  | - |
 | SVM-RFE | 60.75  | - |
 
+Table 1: RRegrs execution time for a split of Boston House dataset.
+
 
 The output variable RRegrsResults is a complex object which contains the object of the fitted models and the main statistics for each regression model. Details about each function are presented into the tutorial of the RRegrs package.
 
 The following example could be used to test the RRegrs package using a the Boston housing dataset [1] from RRegrs GitHub URL. It has 13 features and 506 cases:
+
+```
+>library(RRegrs)
+>
+>#Create defaul tworking directory ”DataResults”
+>dir.create(”DataResults”)
+>
+>#Get Housing dataset ”ds.House.csv” from RRegrs GitHub
+>#in the default RRegrs directory ”DataResults”
+>download.file(”https://raw.githubusercontent.com/enanomapper/RRegrs/master/TEST/d
+>”DataResults/ds.House.csv”,method=”auto”,quiet=FALSE)
+>
+>#RRegrs call with default parameters
+>RRegrsResults=RRegrs()
+```
+
+If you already have this dataset locally in the default working directory of RRegrs (”DataRe-sults”), the following call could be used:
+
+```
+>#Search for the best regression model using parameter file
+>ComplexOutput<− RRegrs(DataFileName=”ds.House.csv”,
+>    noCores=0,iSplitTimes=2,noYrand=2)
+```
+
+The RRegrs call uses all available CPU cores for the complex methods, 2 splittings, 2 Y-randomizations, and all the regression methods.Table 1 presents the execution times on an Win-dows 8.1 64bit with i7-4790 CPU (3.60GHz, 4 cores, 8 logical cores), 16G RAM. repeatedcv rep-resents the 10-fold cross-validation. The total execution time was 11.63 minutes.
+The most important files into the working folder are:
+
+* Data set file = ds.House.csv (Fig. 1). First column represents the predicted variable (depen-dent variable) and the other 13 columns are the original features.
+
+* Parameter file = Parameters.csv (Fig. 2). It contains all the parameters used to run RRegrs function.
+
+* RRegrsResAllSplits.csv = Statistics for all data set splitting, method and CV type (Fig. 3)
+
+* RRegsResAvgs.csv = Averages statistics by method/CV type (Fig. 4)
+
+* RRegrsResBest.csv = Detailed statistics for the automatically best model (best R2 in test dataset with minimum RMSE)
+
+* Comparison plots = DifModels.R2.iSplits.1.pdf (Fig. 5), DifModels.RMSE.iSplits.1.pdf (Fig. 6), ModelsComp.iSplits.1.pdf (Fig. 7), DifModels.R2.iSplits.2.pdf, DifModels.RMSE.iSplits.2.pdf, ModelsComp.iSplits.2.pdf.
+
+* ResBestF,”.repeatedcv.split”,i,”.pdf” = Best model plots only for repeatedcv
+
+* ResBestF,”.Yrand.Hist.pdf” = Best model Y-randomization plot
+
+Additional files are presented for each regression method such as CSV detailed statistics and PDF plots. One PNG is created (ds.scaled.NoCorrs.csv.corrs.png) in order to show the correlated features in the original dataset (Fig. 8). The initial names of the features have been replaced with V2-V14.
+
+
+
+
+
 
 
 
