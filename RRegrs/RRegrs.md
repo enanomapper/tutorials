@@ -1,3 +1,47 @@
+---
+layout: default
+
+trainingMaterial:
+  "@context": http://schema.org/
+  "@type": CreativeWork
+  about: "This tutorial explains how to use a collection of R regression tools for estimating the optimal model via a fully validated procedure."
+  audience:
+    - "@type": Audience
+      name: PhD students
+    - "@type": Audience
+      name: post-docs
+  genre:
+    - "@type": URL
+    #url:
+  name: RRegrs package
+  contributor:
+    - "@type": Person
+      name: Georgia Tsiliki, 
+    - "@type": Person
+      name: Cristian R Munteanu, 
+    - "@type": Person
+      name:  Jose A. Seoane,  
+    - "@type": Person
+      name: Carlos Fernandez-Lozano,
+    - "@type": Person
+      name: Haralambos Sarimveis,
+    - "@type": Person
+      name:  Egon L. Willighagen,  
+#- description: 
+  difficultyLevel: [Beginner]
+  keywords: Regression Models
+  license: CC-BY 4.0
+#- url: https://enanomapper.github.io/tutorials/RRegrs/RRegrs.html
+  version: 1.0
+  dateCreated: 2015-09-15
+
+# Available metadata fields can be found here:
+# http://bioschemas.org/specifications/TrainingMaterial/specification/
+---
+
+
+
+
 # RRegrs Package Tutorial
 
 ## 1 Introduction
