@@ -57,3 +57,37 @@ Mouse hovering on each tag reveals more information, as number of entries (the c
 ![The physchem facet close-up](media/image6.png)
 
 **Figure 4**: Summary details, e.g. shows the range of the Zeta potential measurements (-15.1, 24.3) mV
+
+## The toxicology facet
+
+Click on TOX panel at the left. TOX stands for toxicity assays, and shows a summary of the type of the experiments (the tags marked with green line at the right) and endpoints (the tags marked with blue line at the right).
+
+![The toxicology facet close-up](media/image7.png)
+
+**Figure 5**: The TOX (toxicity assays) panel shows the type and the number of entries available for different biological assays.  Hover with mouse on each tag in order to see more details.
+
+## The cell line facet
+
+Click on Cell panel ON the left The expanded panel will show the cell lines used in the biological ass­ays involved with zinc oxide (recall we are still exploring the “zinc oxide” search results, and the current filter is indicated by  tag ‘zinc oxide’ at the top of the hit lists).
+
+![The cell line facet close-up](media/image8.png)
+
+**Figure 6**: The cell lines used in the experiments, involving zinc oxide nanoparticles.
+
+Click on THP-1 macrophages button. The current filter will be updated with a second entry, restricting the query for zinc oxide + THP-1 macrophage. This is an illustration one can restrict the query by clicking any combination of the tags from the summary panels. The content of the result and summary panel will adapt to reflect the query results.
+
+![THP-1 macrophages as second filter](media/image9.png)
+
+**Figure 7**: The cell lines used in the experiments, involving zinc oxide nanoparticles.
+
+The content of the current filter (at the top of the hit list) can be directly modified by clicking on the tags or using the button clear, which will remove the selection and the result and summary panel content will be updated.
+
+## Removing filters 
+
+Clicking on the zinc oxide tag at the top of the hit list will remove the zinc oxide  from the query, retaining only the Cell line : THP 1 macrophage criteria.  The results panel and the summaries will be adapted accordingly.
+
+As the results list is now updated, it contains particles other than zinc oxide.  Click on the Nanomaterial type to explore what particles are included in the search results.
+
+![THP-1 macrophages tests are run for several nanomaterials](media/image10.png)
+
+**Figure 8**: Click on the nanomaterial type panel on the left to see the summary of nanomaterial types found in the current query.
