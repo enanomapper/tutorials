@@ -35,14 +35,14 @@ trainingMaterial:
   keywords: ontologies, enanomapper
   license: CC-BY 4.0
   url: https://enanomapper.github.io/tutorials/Entering_and_analysing_nano_safety_data/readme.html
-  version: 1.0.2
+  version: 1.0.3
 ---
 
 # Entering and analysing nano safety data
 
 * Author: Nina Jeliazkova, Egon Willighagen
 * License: CC-BY 4.0
-* Version 1.0.2
+* Version 1.0.3
 
 ## Introduction
 
@@ -57,5 +57,5 @@ the publication doi:[10.3762/bjnano.6.165](https://doi.org/10.3762/bjnano.6.165)
 
 * [Searching](searching.html) (HTML)
 * [Download data from within R](downloading.html) (HTML)
-* [Data preparation & Upload](uploading.html) (HTML; being migrated)
+* [Data preparation & Upload](uploading.html) (HTML)
 * [Data visualization](visualisation.html) (HTML)
