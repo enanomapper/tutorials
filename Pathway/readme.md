@@ -1,7 +1,6 @@
 ---
 layout: default
 
-
 trainingMaterial:
   "@context": http://schema.org/
   "@type": CreativeWork
