@@ -35,4 +35,20 @@ The following upload page will appear:
 
 ![The actual upload page](media/image20.png)
 
+## Using the web form for upload
 
+* Click on the top *Choose File* button and select the `MODENA-EC5_EC25.xlsx` file.
+* Click on the bottom *Choose File* button and select the `MODENA-modelling-pchem.json`
+* Uncheck the *Clear existing study records*
+* Uncheck the *Clear existing composition records*
+* Click *Submit*
+
+![The two places to provide the data file and the nmdataparser meta data](media/image21.png)
+
+Clicking the *Submit* button starts the upload task, the following screen appears:
+
+![After submitting the data, the may have to wait for the data to be processed...](media/image22.png)
+
+On completion, the status page changes to *Ready. Results available*:
+
+![...but at some point the loading is completed.](media/image23.png)
