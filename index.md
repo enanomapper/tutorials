@@ -24,7 +24,8 @@ can be a Word document or something else.
 ## Feedback
 
 For each tutorial, issues and feature requests can be filed
-in the issues tracker of this repository.
+in the [issue tracker](https://github.com/enanomapper/tutorials/issues) of
+[this repository](https://github.com/enanomapper/tutorials/).
 
 # How to cite
 
