@@ -52,3 +52,26 @@ Clicking the *Submit* button starts the upload task, the following screen appear
 On completion, the status page changes to *Ready. Results available*:
 
 ![...but at some point the loading is completed.](media/image23.png)
+
+## View the uploaded materials
+
+Clicking on the link will lead to the uploaded materials.
+Alternatively, use the menu *Data collections* > *Nanomaterial contributors* to display the datasets.
+
+![Navigating the menu...](media/image24.png)
+
+* Look for the *Nanomaterial contributor name* ENM_WORKSHOP (*Hint: use the Filter function, marked in blue*). 
+* Click on the substances link to explore the uploaded content (*marked in red*).
+
+![ENM_WORKSHOP contributions...](media/image25.png)
+
+The list of materials uploaded appears as shown in the next screenshot:
+
+![List of nanomaterials just uploaded.](media/image26.png)
+
+Each link in the columns *Substance name* leads to a detailed page with study details. Use the *Expand all* buttons to display and explore the results:
+
+![Details for one of the uploaded nanomaterials.](media/image27.png)
+    
+## Upload MODENA biological characterisation data
+
