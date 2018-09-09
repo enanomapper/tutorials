@@ -4,7 +4,7 @@ layout: default
 trainingMaterial:
   "@context": http://schema.org/
   "@type": CreativeWork
-  about: "This ontology describes how terms can be added to the eNanoMapper ontology."
+  about: "This tutorial describes how terms can be added to the eNanoMapper ontology."
   audience:
     - "@type": Audience
       name: post-docs
@@ -30,7 +30,7 @@ trainingMaterial:
   url:
     - "@type": URL
       url: https://enanomapper.github.io/tutorials/Added%20ontology%20terms/README.html
-  version: 1.0.1
+  version: 1.0.2
 ---
 
 # Adding ontology terms
