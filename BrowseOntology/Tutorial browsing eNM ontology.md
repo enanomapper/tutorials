@@ -11,16 +11,11 @@ trainingMaterial:
     - "@type": Audience
       name: post-docs
   genre:
-    - "@type": URL
-      url: http://edamontology.org/topic_0089
-    - "@type": URL
-      url: http://edamontology.org/topic_3070
-    - "@type": URL
-      url: http://edamontology.org/topic_3314
-    - "@type": URL
-      url: http://edamontology.org/topic_0091
-    - "@type": URL
-      url: http://edamontology.org/topic_2258
+    - url: http://edamontology.org/topic_0089
+    - url: http://edamontology.org/topic_3070
+    - url: http://edamontology.org/topic_3314
+    - url: http://edamontology.org/topic_0091
+    - url: http://edamontology.org/topic_2258
   name: Browsing the eNanoMapper ontology with BioPortal, AberOWL and Protégé
   author:
     - "@type": Person
