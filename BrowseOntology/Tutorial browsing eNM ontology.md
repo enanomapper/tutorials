@@ -32,7 +32,7 @@ trainingMaterial:
     - "@type": Person
       name: Egon Willighagen
       identifier: 0000-0001-7542-0286
-  difficultyLevel: [Beginner]
+  difficultyLevel: beginner
   keywords: nanotoxicology, Ontologies, BioPortal, AberOWL, Protégé
   license: CC-BY 4.0
   url: https://enanomapper.github.io/tutorials/BrowseOntology/Tutorial%20browsing%20eNM%20ontology.html
