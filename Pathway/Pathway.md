@@ -10,9 +10,6 @@ trainingMaterial:
       name: PhD students
     - "@type": Audience
       name: post-docs
-  genre:
-    - "@type": URL
-    #url:
   name: How to make a new pathway for WikiPathways using PathVisio
   contributor:
     - "@type": Person
@@ -33,7 +30,7 @@ trainingMaterial:
   difficultyLevel: [Beginner]
   keywords: Systems biology, Pathway analysis, Network analysis, Microarray data analysis, Nanomaterials
   license: CC-BY 4.0
-#- url: https://enanomapper.github.io/tutorials/Pathway/Pathway.html
+  url: https://enanomapper.github.io/tutorials/Pathway/Pathway.html
   version: 1.0
   dateCreated: 2016-05-31
 
