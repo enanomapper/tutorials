@@ -31,7 +31,7 @@ trainingMaterial:
   difficultyLevel: [Beginner]
   keywords: Regression Models
   license: CC-BY 4.0
-#- url: https://enanomapper.github.io/tutorials/RRegrs/RRegrs.html
+  url: https://enanomapper.github.io/tutorials/RRegrs/RRegrs.html
   version: 1.0
   dateCreated: 2015-09-15
 
