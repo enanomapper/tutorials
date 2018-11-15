@@ -23,7 +23,7 @@ trainingMaterial:
   difficultyLevel: [Beginner]
   keywords: Gene Ontology
   license: CC-BY 4.0
-#- url: https://enanomapper.github.io/tutorials/Omics%20descriptors%20calculation/Omics%20descriptors%20calculation%20R%20package.html
+  url: https://enanomapper.github.io/tutorials/Omics%20descriptors%20calculation/Omics%20descriptors%20calculation%20R%20package.html
   version: 0.9
   dateCreated: 2016-01-31
 
