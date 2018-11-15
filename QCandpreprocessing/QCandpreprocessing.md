@@ -31,7 +31,7 @@ trainingMaterial:
   difficultyLevel: [Beginner]
   keywords: Microarray data analysis, Quality control and data pre-processing, Affymetrix microarrays, Systems biology, Pathway and network analyis
   license: CC-BY 4.0
-#- url: https://enanomapper.github.io/tutorials/QCandpreprocessing/QCandpreprocessing.html
+  url: https://enanomapper.github.io/tutorials/QCandpreprocessing/QCandpreprocessing.html
   version: 1.0
   dateCreated: 2016-05-23
 
