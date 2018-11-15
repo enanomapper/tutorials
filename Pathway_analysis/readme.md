@@ -37,9 +37,7 @@ trainingMaterial:
   difficultyLevel: [Advanced]
   keywords: Pathway analysis
   license: CC-BY 4.0
-  url:
-    - "@type": URL
-      url: https://enanomapper.github.io/tutorials/Statistics/readme.html
+  url: https://enanomapper.github.io/tutorials/Statistics/readme.html
   version: 1.0.0
 ---
 
