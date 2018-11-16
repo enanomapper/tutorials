@@ -55,7 +55,7 @@ run the exercises. For detailed description of the eNanoMapper data solutions, p
 the publication doi:[10.3762/bjnano.6.165](https://doi.org/10.3762/bjnano.6.165) and resources at
 [http://enanomapper.net/](http://enanomapper.net/).
 
-* [Searching](searching.html) (HTML)
-* [Download data from within R](downloading.html) (HTML)
-* [Data preparation & Upload](uploading.html) (HTML)
-* [Data visualization](visualisation.html) (HTML)
+* [Searching](searching.md) (HTML)
+* [Download data from within R](downloading.md) (HTML)
+* [Data preparation & Upload](uploading.md) (HTML)
+* [Data visualization](visualisation.md) (HTML)
