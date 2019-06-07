@@ -46,4 +46,39 @@ on the work done by the CHEMINF ontology:
 
 * [Chemical Information Ontology](https://github.com/semanticchemistry/semanticchemistry/) (CHEMINF)
 
+## The model of a descriptor
+
+The CHEMINF ontology accepts the definition of a chemical descriptor to be:
+
+**the final result of a logical or
+mathematical procedure which transforms chemical information from a
+symbolic representation of a molecule into an useful number or the result of
+some standardized experiment [33].**
+
+That is translated into the notion that a descriptor (CHEMINF_xxxx) is calculated
+by an algorithm (CHEMINF_xxxxx) which is implemented some software library. For
+example, the Chemistry Development Kit implements an algorithm to calculate the
+molecular weight of a chemical formula.
+
+Specifcally, take the `average molecular weight descriptor`:
+
+```(turtle)
+cheminf:CHEMINF_000216
+  a owl:Class ;
+  rdfs:label "average molecular weight descriptor"@en ;
+  rdfs:ClassOf cheminf:CHEMINF_000088 ;
+  dc:description "The mass of a molecule calculated using the average mass of each
+    element weighted for its natural isotopic abundance. E.g., Carbon has two natural
+    isotopes 12 and 13 with relative abundances of 98.9% and 1.1% to yield an average
+    mass of 12.011 g/mol" .
+````
+
+Now, the descriptor subclasses `molecular mass descriptor` (CHEMINF_000088) which
+subclasses a `mass descriptor` (CHEMINF_000083) which subclasses a
+`physical descriptor` (CHEMINF_000025) which subclasses a `chemical descriptor`
+(CHEMINF_000123). But this does not cover the semantic meaning of these concepts
+yet. These aspects are defined as OWL axioms.
+
+# A software library implementation of a descriptor
+
 
