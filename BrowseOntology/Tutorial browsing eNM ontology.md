@@ -36,13 +36,13 @@ trainingMaterial:
   keywords: nanotoxicology, Ontologies, BioPortal, AberOWL, Protégé
   license: CC-BY 4.0
   url: https://enanomapper.github.io/tutorials/BrowseOntology/Tutorial%20browsing%20eNM%20ontology.html
-  version: 1.1.2
+  version: 1.2.0
 ---
 
 # Browsing the eNanoMapper ontology with BioPortal, AberOWL and Protégé
 
 * Release: 2019-08-13
-* Version: v1.1.2
+* Version: v1.2.0
 * Main Author: Linda Rieswijk (ORCID:[0000-0002-6106-1347](https://orcid.org/0000-0002-6106-1347))
 * Authors: Linda Rieswijk, Friederike Ehrhart (ORCID:[0000-0002-7770-620X](https://orcid.org/0000-0002-7770-620X)), and Egon Willighagen (ORCID:[0000-0001-7542-0286](https://orcid.org/0000-0001-7542-0286))
 * License: [Creative Commons Attribution (CC-BY) 4.0](https://creativecommons.org/licenses/by/4.0/)
@@ -137,7 +137,7 @@ Figure 2: Browsing the eNM ontology using AberOWL.
 Figure 3: The OWL file from the eNM ontology on BioPortal.
 
 * Open Protégé and go to “file” “open” and select the downloaded .owl file
-  * Alternatively, “open from URL” and enter the URL: http://purl.enanomapper.net/onto/enanomapper-auto.owl
+  * Alternatively, “open from URL” and enter the URL: http://enanomapper.github.io/ontologies/enanomapper.owl
 * Open the tab “entities” to get to the terms.
 * In this case we are interested in finding “amphiphilic”.
 * In class annotations and class usage you will find the detailed information: label, code, preferred name, synonym which can be edited, deleted or annotated (See Figure 4).
