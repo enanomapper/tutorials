@@ -36,13 +36,13 @@ trainingMaterial:
   keywords: nanotoxicology, Ontologies, BioPortal, AberOWL, Protégé
   license: CC-BY 4.0
   url: https://enanomapper.github.io/tutorials/BrowseOntology/Tutorial%20browsing%20eNM%20ontology.html
-  version: 1.1.1
+  version: 1.1.2
 ---
 
 # Browsing the eNanoMapper ontology with BioPortal, AberOWL and Protégé
 
-* Release: 2018-05-08
-* Version: v1.1.1
+* Release: 2019-08-13
+* Version: v1.1.2
 * Main Author: Linda Rieswijk (ORCID:[0000-0002-6106-1347](https://orcid.org/0000-0002-6106-1347))
 * Authors: Linda Rieswijk, Friederike Ehrhart (ORCID:[0000-0002-7770-620X](https://orcid.org/0000-0002-7770-620X)), and Egon Willighagen (ORCID:[0000-0001-7542-0286](https://orcid.org/0000-0001-7542-0286))
 * License: [Creative Commons Attribution (CC-BY) 4.0](https://creativecommons.org/licenses/by/4.0/)
@@ -192,5 +192,5 @@ We would like to express our gratitude for using the open-access applications of
 BioPortal, AberOWL and Protégé.   
 
 The eNanoMapper project is funded by the European Union's Seventh Framework Program
-for research, echnological development and demonstration (FP7-NMP-2013-SMALL-7) under
+for research, technological development and demonstration (FP7-NMP-2013-SMALL-7) under
 grant agreement no. [604134](http://cordis.europa.eu/projects/604134).
