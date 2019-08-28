@@ -25,19 +25,19 @@ trainingMaterial:
       name: Egon Willighagen
       identifier: 0000-0001-7542-0286
   difficultyLevel: [Advanced]
-  keywords: ontologies, enanomapper
+  keywords: [ ontologies, enanomapper ]
   license: CC-BY 4.0
   url:
     - "@type": URL
       url: https://enanomapper.github.io/tutorials/Added%20ontology%20terms/README.html
-  version: 1.0.2
+  version: 1.0.3
 ---
 
 # Adding ontology terms
 
 * Author: Egon Willighagen (orcid:[0000-0001-7542-0286](https://orcid.org/0000-0001-7542-0286))
 * License: [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/)
-* Version: 1.0.1
+* Version: 1.0.3
 * Source: [https://github.com/enanomapper/tutorials/tree/master/Added%20ontology%20terms](https://github.com/enanomapper/tutorials/tree/master/Added%20ontology%20terms)
 
 This ontology describes how terms can be added to the eNanoMapper ontology.
