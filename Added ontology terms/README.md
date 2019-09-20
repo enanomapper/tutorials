@@ -40,7 +40,7 @@ trainingMaterial:
 * Version: 1.0.3
 * Source: [https://github.com/enanomapper/tutorials/tree/master/Added%20ontology%20terms](https://github.com/enanomapper/tutorials/tree/master/Added%20ontology%20terms)
 
-This ontology describes how terms can be added to the eNanoMapper ontology.
+This tutorial describes how terms can be added to the eNanoMapper ontology.
 Before walking through this tutorial, it is recommended to read the following
 documents:
 
