@@ -4,23 +4,22 @@ layout: default
 trainingMaterial:
   "@context": http://schema.org/
   "@type": CreativeWork
-  about: "This tutorial explains how the eNanoMapper ontology can be browsed with three tools, of which two are online."
+  "http://purl.org/dc/terms/conformsTo":
+    - "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
+      "@type": "CreativeWork"
+  "@id": https://enanomapper.github.io/tutorials/BrowseOntology/Tutorial%20browsing%20eNM%20ontology.html
+  description: "This tutorial explains how the eNanoMapper ontology can be browsed with three tools, of which two are online."
   audience:
     - "@type": Audience
       name: PhD students
     - "@type": Audience
       name: post-docs
   genre:
-    - "@type": URL
-      url: http://edamontology.org/topic_0089
-    - "@type": URL
-      url: http://edamontology.org/topic_3070
-    - "@type": URL
-      url: http://edamontology.org/topic_3314
-    - "@type": URL
-      url: http://edamontology.org/topic_0091
-    - "@type": URL
-      url: http://edamontology.org/topic_2258
+    - http://edamontology.org/topic_0089
+    - http://edamontology.org/topic_3070
+    - http://edamontology.org/topic_3314
+    - http://edamontology.org/topic_0091
+    - http://edamontology.org/topic_2258
   name: Browsing the eNanoMapper ontology with BioPortal, AberOWL and Protégé
   author:
     - "@type": Person
@@ -32,7 +31,7 @@ trainingMaterial:
     - "@type": Person
       name: Egon Willighagen
       identifier: 0000-0001-7542-0286
-  difficultyLevel: beginner
+  educationalLevel: beginner
   keywords: nanotoxicology, Ontologies, BioPortal, AberOWL, Protégé
   license: CC-BY 4.0
   url: https://enanomapper.github.io/tutorials/BrowseOntology/Tutorial%20browsing%20eNM%20ontology.html
