@@ -4,7 +4,11 @@ layout: default
 trainingMaterial:
   "@context": http://schema.org/
   "@type": CreativeWork
-  about: "Tutorial that covers various aspects of working with the eNanoMapper database. It discussed searching, adding, and downloading data from an eNanoMapper database."
+  "@id": https://enanomapper.github.io/tutorials/Entering_and_analysing_nano_safety_data/
+  description: "Tutorial that covers various aspects of working with the eNanoMapper database. It discussed searching, adding, and downloading data from an eNanoMapper database."
+  "http://purl.org/dc/terms/conformsTo":
+    - "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
+      "@type": "CreativeWork"
   audience:
     - "@type": Audience
       name: PhD students
@@ -13,16 +17,11 @@ trainingMaterial:
     - "@type": Audience
       name: Bioinformatician
   genre:
-    - "@type": URL
-      url: http://edamontology.org/topic_0089
-    - "@type": URL
-      url: http://edamontology.org/topic_3070
-    - "@type": URL
-      url: http://edamontology.org/topic_3314
-    - "@type": URL
-      url: http://edamontology.org/topic_0091
-    - "@type": URL
-      url: http://edamontology.org/topic_2258
+    - http://edamontology.org/topic_0089
+    - http://edamontology.org/topic_3070
+    - http://edamontology.org/topic_3314
+    - http://edamontology.org/topic_0091
+    - http://edamontology.org/topic_2258
   name: Entering and analysing nano safety data
   author:
     - "@type": Person
@@ -31,7 +30,7 @@ trainingMaterial:
     - "@type": Person
       name: Nina Jeliazkova
       identifier: 0000-0002-4322-6179
-  difficultyLevel: [Intermediate]
+  educationalLevel: Intermediate
   keywords: ontologies, enanomapper
   license: CC-BY 4.0
   url: https://enanomapper.github.io/tutorials/Entering_and_analysing_nano_safety_data/readme.html
