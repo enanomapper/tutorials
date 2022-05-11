@@ -23,7 +23,7 @@ trainingMaterial:
     - "@type": Person
       name: Egon Willighagen
       identifier: 0000-0001-7542-0286
-  difficultyLevel: [Advanced]
+  educationalLevel: Advanced
   keywords: [ ontologies, enanomapper ]
   license: CC-BY 4.0
   url: https://enanomapper.github.io/tutorials/Added%20ontology%20terms/README.html
