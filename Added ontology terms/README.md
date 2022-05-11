@@ -13,16 +13,11 @@ trainingMaterial:
     - "@type": Audience
       name: post-docs
   genre:
-    - "@type": URL
-      url: http://edamontology.org/topic_0089
-    - "@type": URL
-      url: http://edamontology.org/topic_3070
-    - "@type": URL
-      url: http://edamontology.org/topic_3314
-    - "@type": URL
-      url: http://edamontology.org/topic_0091
-    - "@type": URL
-      url: http://edamontology.org/topic_2258
+    - http://edamontology.org/topic_0089
+    - http://edamontology.org/topic_3070
+    - http://edamontology.org/topic_3314
+    - http://edamontology.org/topic_0091
+    - http://edamontology.org/topic_2258
   name: Adding ontology terms
   author:
     - "@type": Person
@@ -31,9 +26,7 @@ trainingMaterial:
   difficultyLevel: [Advanced]
   keywords: [ ontologies, enanomapper ]
   license: CC-BY 4.0
-  url:
-    - "@type": URL
-      url: https://enanomapper.github.io/tutorials/Added%20ontology%20terms/README.html
+  url: https://enanomapper.github.io/tutorials/Added%20ontology%20terms/README.html
   version: 1.0.3
 ---
 
