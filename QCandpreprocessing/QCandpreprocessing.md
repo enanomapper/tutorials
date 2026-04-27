@@ -16,17 +16,19 @@ trainingMaterial:
   name: How to use the AffyQC web tool of ArrayAnalysis.org for quality control and pre-processing of Affymetrix microarray data
   contributor:
     - "@type": Person
-      name: Friederike Ehrhart, 
+      name: Friederike Ehrhart
     - "@type": Person
-      name: Lars Eijssen, 
+      name: Lars Eijssen
     - "@type": Person
-      name: Anwesha Bohler,
+      name: Anwesha Bohler
     - "@type": Person
-      name:  Linda Rieswijk,  
+      name:  Linda Rieswijk
     - "@type": Person
-      name: Egon Willighagen, 
+      name: Egon Willighagen
+      identifier: https://orcid.org/0000-0001-7542-0286
+      "@id": https://orcid.org/0000-0001-7542-0286
     - "@type": Person
-      name: Penny Nymark, 
+      name: Penny Nymark
 #- description: 
   difficultyLevel: [Beginner]
   keywords: Microarray data analysis, Quality control and data pre-processing, Affymetrix microarrays, Systems biology, Pathway and network analyis

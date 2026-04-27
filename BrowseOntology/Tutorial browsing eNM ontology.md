@@ -24,13 +24,16 @@ trainingMaterial:
   author:
     - "@type": Person
       name: Linda Rieswijk
-      identifier: 0000-0002-6106-1347
+      identifier: https://orcid.org/0000-0002-6106-1347
+      "@id": https://orcid.org/0000-0002-6106-1347
     - "@type": Person
       name: Friederike Ehrhart
-      identifier: 0000-0002-7770-620X
+      identifier: https://orcid.org/0000-0002-7770-620X
+      "@id": https://orcid.org/0000-0002-7770-620X
     - "@type": Person
       name: Egon Willighagen
-      identifier: 0000-0001-7542-0286
+      identifier: https://orcid.org/0000-0001-7542-0286
+      "@id": https://orcid.org/0000-0001-7542-0286
   educationalLevel: beginner
   keywords: nanotoxicology, Ontologies, BioPortal, AberOWL, Protégé
   license: CC-BY 4.0

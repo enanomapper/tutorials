@@ -27,6 +27,8 @@ trainingMaterial:
       name: Haralambos Sarimveis,
     - "@type": Person
       name:  Egon L. Willighagen,  
+      identifier: https://orcid.org/0000-0001-7542-0286
+      "@id": https://orcid.org/0000-0001-7542-0286
 #- description: 
   difficultyLevel: [Beginner]
   keywords: Regression Models

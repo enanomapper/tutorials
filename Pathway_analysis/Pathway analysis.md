@@ -14,14 +14,20 @@ trainingMaterial:
   contributor:
     - "@type": Person
       name: Friederike Ehrhart
+      identifier: https://orcid.org/0000-0002-7770-620X
+      "@id": https://orcid.org/0000-0002-7770-620X
     - "@type": Person
       name: Lars Eijssen
     - "@type": Person
       name: Anwesha Bohler
     - "@type": Person
       name: Linda Rieswijk
+      identifier: https://orcid.org/0000-0002-6106-1347
+      "@id": https://orcid.org/0000-0002-6106-1347
     - "@type": Person
       name:  Egon Willighagen
+      identifier: https://orcid.org/0000-0001-7542-0286
+      "@id": https://orcid.org/0000-0001-7542-0286
     - "@type": Person
       name: Penny Nymark
   difficultyLevel: [Beginner]

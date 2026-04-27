@@ -13,19 +13,25 @@ trainingMaterial:
   name: How to make a new pathway for WikiPathways using PathVisio
   contributor:
     - "@type": Person
-      name: Friederike Ehrhart, 
+      name: Friederike Ehrhart
+      identifier: https://orcid.org/0000-0002-7770-620X
+      "@id": https://orcid.org/0000-0002-7770-620X
     - "@type": Person
-      name: Martina Summer-Kutmon, 
+      name: Martina Summer-Kutmon
     - "@type": Person
-      name: Egon Willighagen, 
+      name: Egon Willighagen
     - "@type": Person
-      name: Kristina Hanspers, 
+      identifier: https://orcid.org/0000-0001-7542-0286
+      "@id": https://orcid.org/0000-0001-7542-0286
+      name: Kristina Hanspers
     - "@type": Person
-      name: Alexander Pico, 
+      name: Alexander Pico
     - "@type": Person
-      name: Penny Nymark, 
+      name: Penny Nymark
     - "@type": Person
       name: Linda Rieswijk
+      identifier: https://orcid.org/0000-0002-6106-1347
+      "@id": https://orcid.org/0000-0002-6106-1347
 #- description: 
   difficultyLevel: [Beginner]
   keywords: Systems biology, Pathway analysis, Network analysis, Microarray data analysis, Nanomaterials

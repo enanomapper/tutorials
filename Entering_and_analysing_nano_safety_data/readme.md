@@ -26,10 +26,12 @@ trainingMaterial:
   author:
     - "@type": Person
       name: Egon Willighagen
-      identifier: 0000-0001-7542-0286
+      identifier: https://orcid.org/0000-0001-7542-0286
+      "@id": https://orcid.org/0000-0001-7542-0286
     - "@type": Person
       name: Nina Jeliazkova
-      identifier: 0000-0002-4322-6179
+      identifier: https://orcid.org/0000-0002-4322-6179
+      "@id": https://orcid.org/0000-0002-4322-6179
   educationalLevel: Intermediate
   keywords: ontologies, enanomapper
   license: CC-BY 4.0
