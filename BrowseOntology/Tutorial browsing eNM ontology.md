@@ -3,10 +3,10 @@ layout: default
 
 trainingMaterial:
   "@context": http://schema.org/
-  "@type": CreativeWork
+  "@type": LearningResource
   "http://purl.org/dc/terms/conformsTo":
     - "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
-      "@type": "CreativeWork"
+      "@type": "LearningResource"
   "@id": https://enanomapper.github.io/tutorials/BrowseOntology/Tutorial%20browsing%20eNM%20ontology.html
   description: "This tutorial explains how the eNanoMapper ontology can be browsed with three tools, of which two are online."
   audience:

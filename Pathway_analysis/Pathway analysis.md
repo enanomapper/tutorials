@@ -3,7 +3,7 @@ layout: default
 
 trainingMaterial:
   "@context": http://schema.org/
-  "@type": CreativeWork
+  "@type": LearningResource
   about: "This tutorial explains how to use the Pathway module of ArrayAnalysis.org for pathway analysis of microarray data."
   audience:
     - "@type": Audience

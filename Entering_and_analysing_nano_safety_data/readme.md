@@ -3,12 +3,12 @@ layout: default
 
 trainingMaterial:
   "@context": http://schema.org/
-  "@type": CreativeWork
+  "@type": LearningResource
   "@id": https://enanomapper.github.io/tutorials/Entering_and_analysing_nano_safety_data/
   description: "Tutorial that covers various aspects of working with the eNanoMapper database. It discussed searching, adding, and downloading data from an eNanoMapper database."
   "http://purl.org/dc/terms/conformsTo":
     - "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
-      "@type": "CreativeWork"
+      "@type": "LearningResource"
   audience:
     - "@type": Audience
       name: PhD students

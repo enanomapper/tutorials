@@ -3,11 +3,11 @@ layout: default
 
 trainingMaterial:
   "@context": http://schema.org/
-  "@type": CreativeWork
+  "@type": LearningResource
   "@id": https://enanomapper.github.io/tutorials/Added%20ontology%20terms/
   "http://purl.org/dc/terms/conformsTo":
     - "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
-      "@type": "CreativeWork"
+      "@type": "LearningResource"
   description: "This tutorial describes how terms can be added to the eNanoMapper ontology."
   audience:
     - "@type": Audience

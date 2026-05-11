@@ -3,7 +3,7 @@ layout: default
 
 trainingMaterial:
   "@context": http://schema.org/
-  "@type": CreativeWork
+  "@type": LearningResource
   about: "This tutorial explains how to use the AffyQC web tool of ArrayAnalysis.org for quality control and pre-processing of Affymetrix microarray data."
   audience:
     - "@type": Audience
