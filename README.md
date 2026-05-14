@@ -22,6 +22,10 @@ For each tutorial, issues and feature requests can be filed
 in the [issue tracker](https://github.com/enanomapper/tutorials/issues) of
 [this repository](https://github.com/enanomapper/tutorials/).
 
+## Acknowledgments
+
+Thanks to [Niall Beard](https://github.com/njall) and [Phil Reed](https://github.com/PhilReedData) for feedback and patches!
+
 # How to cite
 
 Further information can be found in the following reference which can be used as citation:
