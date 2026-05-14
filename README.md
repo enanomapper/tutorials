@@ -24,7 +24,7 @@ in the [issue tracker](https://github.com/enanomapper/tutorials/issues) of
 
 ## Acknowledgments
 
-Thanks to [Niall Beard](https://github.com/njall) and [Phil Reed](https://github.com/PhilReedData) for feedback and patches!
+Thanks to [Niall Beard](https://github.com/njall), Finn Bacall, and [Phil Reed](https://github.com/PhilReedData) for feedback and patches!
 
 # How to cite
 
