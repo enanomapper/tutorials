@@ -3,7 +3,7 @@ layout: default
 
 trainingMaterial:
   "@context": http://schema.org/
-  "@type": CreativeWork
+  "@type": LearningResource
   about: "This tutorial describes how to perform pathway analysis."
   audience:
     - "@type": Audience

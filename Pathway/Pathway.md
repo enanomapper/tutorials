@@ -3,7 +3,7 @@ layout: default
 
 trainingMaterial:
   "@context": http://schema.org/
-  "@type": CreativeWork
+  "@type": LearningResource
   about: "This tutorial explains how to a new pathway for WikiPathways using PathVisio."
   audience:
     - "@type": Audience

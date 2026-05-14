@@ -3,7 +3,7 @@ layout: default
 
 trainingMaterial:
   "@context": http://schema.org/
-  "@type": CreativeWork
+  "@type": LearningResource
   "http://purl.org/dc/terms/conformsTo":
     - "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
       "@type": "CreativeWork"

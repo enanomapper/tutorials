@@ -3,7 +3,7 @@ layout: default
 
 trainingMaterial:
   "@context": http://schema.org/
-  "@type": CreativeWork
+  "@type": LearningResource
   about: "This tutorial explains how to use the statistics module of ArrayAnalysis.org for statistics analysis of microarray data."
   audience:
     - "@type": Audience

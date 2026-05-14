@@ -3,7 +3,7 @@ layout: default
 
 trainingMaterial:
   "@context": http://schema.org/
-  "@type": CreativeWork
+  "@type": LearningResource
   about: "This tutorial explains how to generate a new set of GO descriptors using two novel created R packages."
   audience:
     - "@type": Audience

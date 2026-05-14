@@ -3,7 +3,7 @@ layout: default
 
 trainingMaterial:
   "@context": http://schema.org/
-  "@type": CreativeWork
+  "@type": LearningResource
   about: "This tutorial explains how to use a collection of R regression tools for estimating the optimal model via a fully validated procedure."
   audience:
     - "@type": Audience
